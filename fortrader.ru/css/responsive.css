@@ -410,8 +410,37 @@
 		margin-top: -5px;
 		line-height: 20px;
 	}
-
-
+	/***quotaion table***/
+	.quotation_table th {
+		font-size: 12px;
+		padding-left: 5px;
+	}
+	.quotation_table td {
+		font-size: 12px;
+		padding-left: 5px;
+	}
+	.change span {
+		font-size: 13px;
+	}
+	.change_up span:after {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 12px;
+	  right: 15px;
+    }
+    .change_down span:after {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 12px;
+	  right: 15px;
+    }
+	.users_top,
+	.table_top {
+      background-position: 4px 13px;
+    }
+	
 
 }
 
@@ -794,6 +823,29 @@
 
 	.come_back_btn{
 		width: 100%;
+	}
+	/***quotaion table***/
+	.quotation_table th {
+		font-size: 9px;
+		padding-left: 4px;
+	}
+	.quotation_table td {
+		font-size: 10px;
+		padding-left: 4px;
+	}
+	.change span {
+    	font-size: 11px;
+	}
+	.change_up span::after {
+	    right: 8px;
+	}
+	.change_down span::after {
+	    right: 8px;
+	}
+	.change sup {
+	    font-size: 8px;
+	    top: -2
+	    px;
 	}
 
 }
