@@ -41,6 +41,13 @@
 	.read_all{width: 410px;}
 
 	.news_post_box figcaption{height: 72px;}
+	/***quotation***/
+	.change_up::after {
+	    right: 50px;
+	}
+	.change_down::after {
+	    right: 50px;
+	}
 }
 
 @media only screen and (max-width: 992px) {
@@ -422,19 +429,19 @@
 	.change span {
 		font-size: 13px;
 	}
-	.change_up span:after {
+	.change_up::after {
       display: block;
       content: '';
       position: absolute;
       top: 12px;
-	  right: 15px;
+	  right: 16px ;
     }
-    .change_down span:after {
+    .change_down::after {
       display: block;
       content: '';
       position: absolute;
       top: 12px;
-	  right: 15px;
+	  right: 16px ;
     }
 	.users_top,
 	.table_top {
@@ -836,16 +843,15 @@
 	.change span {
     	font-size: 11px;
 	}
-	.change_up span::after {
+	.change_up::after {
 	    right: 8px;
 	}
-	.change_down span::after {
+	.change_down::after {
 	    right: 8px;
 	}
 	.change sup {
 	    font-size: 8px;
-	    top: -2
-	    px;
+	    top: -2px;
 	}
 
 }
