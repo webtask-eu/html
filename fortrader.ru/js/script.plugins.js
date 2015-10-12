@@ -84,10 +84,10 @@
                 $('.table_button').click(function() {
                     $(this).toggleClass('active');
                     if( $(this).hasClass('active')){
-                        $(this).parent('.table_description').next().hide(1000);
+                        $(this).parent('.table_description').next().hide(500);
                         $(this).parent('.table_description').css({'margin-bottom' : '5px'});
                     }else{
-                        $(this).parent('.table_description').next().show(1000);
+                        $(this).parent('.table_description').next().show(500);
                         $(this).parent('.table_description').css({'margin-bottom' : '0px'});
                     }
                 });
