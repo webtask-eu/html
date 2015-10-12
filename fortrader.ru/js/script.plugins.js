@@ -78,12 +78,23 @@
 	$(window).load(function(){
 
 		/* ------------------------------------------------
-				Name pudin
+				Table switch
 		------------------------------------------------ */
-
-
+            jQuery(function tableSwitch(){
+                $('.table_button').click(function() {
+                    $(this).toggleClass('active');
+                    if( $(this).hasClass('active')){
+                        $(this).parent('.table_description').next().hide();
+                        $(this).parent('.table_description').css({'margin-bottom' : '5px'});
+                    }else{
+                        $(this).parent('.table_description').next().show();
+                        $(this).parent('.table_description').css({'margin-bottom' : '0px'});
+                    }
+                });
+            });
+           
         /* ------------------------------------------------
-				End of Name pudin
+				End of Table switch
 		------------------------------------------------ */
 
 	});

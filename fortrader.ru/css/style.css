@@ -3795,6 +3795,19 @@
       border: 2px solid #e3e3e3;
       z-index: 9;
     }
+    .table_button:hover, 
+    .table_description .active {
+      background-color: #146eb3;
+    }
+    .table_button:hover:before,
+    .table_description .active:before {
+       background: url(../images/table_arrow.png) 0 0 no-repeat;
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      transform: rotate(180deg);
+    }
     .table_button:before {
       display: block;
       content: '';
