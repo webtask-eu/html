@@ -3891,6 +3891,9 @@
       height: 10px;
       background: url(../images/arrow_up.png);
     }
+	.change_s {
+       color: #61903c;
+    }
     .change_down {
       color: #d42424;
     }

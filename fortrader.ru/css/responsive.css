@@ -650,7 +650,9 @@
 
  	[class*="banner"]{display: none;}
 	
-	.container{width: 460px;}
+	.container{
+	width: 420px;
+}
 
 	.white_container{
 		padding: 0 15px;
