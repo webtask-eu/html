@@ -80,7 +80,7 @@
 	.add_mood>a{
 		width: 270px;
 	}
-	
+
 }
 
 @media only screen and (max-width: 992px) {
@@ -629,6 +629,15 @@
     .overview_list li a{
     	width: 58px;
     }
+    
+    .rates_box1_difference{
+    	display: block;
+    }
+
+    .rates_box1{
+    	margin-top: 0;
+    }
+
 
 
 }
