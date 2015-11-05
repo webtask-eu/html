@@ -25,6 +25,7 @@
 			self.goUp();
 			self.nextButtonHover();
 			self.dropdoun();
+			self.optionsBox();
 
 		},
 
@@ -392,7 +393,7 @@
 
 		buttonSlider : function(){
 
-			$('.nav_buttons>a').on('click',function(event){
+			$('.nav_buttons>*').on('click',function(event){
 
 				var parent = $(this).parents('.turn_box'),
 					turn = $(this).parents('.turn_box').find('.turn_content'),
@@ -413,6 +414,7 @@
 				else if($(this).hasClass('turn_btn')){
 
 					turn.slideToggle(500);
+					$(this).toggleClass("active");
 					event.preventDefault();
 				}
 
@@ -596,18 +598,22 @@
 
 		digitalWatch : function() {
 		    
-		    var self = this;
-		    var date = new Date();
-		    var hours = date.getHours();
-		    var minutes = date.getMinutes();
-		    var seconds = date.getSeconds();
-		    if (hours < 10) hours = "0" + hours;
-		    if (minutes < 10) minutes = "0" + minutes;
-		    if (seconds < 10) seconds = "0" + seconds;
-		    document.getElementById("digital_watch").innerHTML = hours + ":" + minutes + ":" + seconds;
-		    setTimeout(function(){
-		    	self.digitalWatch();
-		    },1000);
+		    if($("#digital_watch").length){
+
+			    var self = this;
+			    var date = new Date();
+			    var hours = date.getHours();
+			    var minutes = date.getMinutes();
+			    var seconds = date.getSeconds();
+			    if (hours < 10) hours = "0" + hours;
+			    if (minutes < 10) minutes = "0" + minutes;
+			    if (seconds < 10) seconds = "0" + seconds;
+			    document.getElementById("digital_watch").innerHTML = hours + ":" + minutes + ":" + seconds;
+			    setTimeout(function(){
+			    	self.digitalWatch();
+			    },1000);
+			    
+		    }
 		
 		},
 
@@ -635,7 +641,37 @@
 
 			});
 
-		}
+		},
+
+
+		/**
+		**	Dropdoun 
+		**/
+
+		optionsBox : function(){
+
+			$(".turn_box").on("click",".options_btn",function(){
+
+				var $this = $(this),
+					parent = $this.closest(".turn_box");
+
+				$this.toggleClass("active");
+				parent.find('.options_box').toggleClass("opened");				
+
+			});
+
+			$(document).on("click",function(){
+
+				if(!$(event.target).closest('.options_box,.options_btn').length){
+
+					$('.options_box').removeClass('opened');
+					$('.options_btn').removeClass('active');
+
+				}
+
+			});
+
+		},
 
 
 

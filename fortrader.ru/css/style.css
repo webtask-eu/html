@@ -59,10 +59,13 @@
   19. Author Block
   20. Error
   21. Search
-  22. Footer
-    22.1. Footer Top
-    22.2. Footer Middle
-    22.3. Footer Bottom
+  22. Quotes
+    22.1 Quotes
+    22.2 Table Quotes
+  23. Footer
+    23.1. Footer Top
+    23.2. Footer Middle
+    23.3. Footer Bottom
 =======
 */
 @import "reset.css";
@@ -159,7 +162,20 @@
     .blue_color{
       color: #146eb3;
     }
+
+    /*background*/
     
+    .red_bg{
+      background-color: #f6e1e1;
+    }
+
+    .green_bg{
+      background-color: #eaf7e1;
+    }
+
+    .grey_bg{
+      background-color: #f6f6f6;
+    }
 
   /* --------------------------------------------
         1.2. Fonts
@@ -2116,6 +2132,7 @@
     .tooltip{
       position: absolute;
       display: block;
+      white-space: nowrap;
       font-size: 12px;
       line-height: 17px;
       color: #f1f1f1;
@@ -2451,7 +2468,7 @@
       padding-top: 7px;
     }
 
-    .nav_buttons>a{
+    .nav_buttons>*{
       display: block;
       position: relative;
       float: left;
@@ -2461,11 +2478,11 @@
       margin-left: 4px;
     }
 
-    .nav_buttons>a:hover{
+    .nav_buttons>*:hover{
       background-color: #333131;
     }
 
-    .nav_buttons>a:before{
+    .nav_buttons>*:before{
       content: "";
       display: block;
       position: absolute;
@@ -2480,18 +2497,25 @@
     }
     
 
-    .nav_buttons>a.prev_btn:before{background-position: -47px 0;}
+    .nav_buttons>*.prev_btn:before{background-position: -47px 0;}
 
-    .nav_buttons>a.next_btn:before{background-position: -89px 0;}
+    .nav_buttons>*.next_btn:before{background-position: -89px 0;}
 
-    .nav_buttons>a.turn_btn:before{background-position: -34px -34px;}
+    .nav_buttons>*.turn_btn:before{background-position: -34px -34px;}
 
-    .nav_buttons>a.prev_btn:hover:before{background-position: -68px 0;}
+    .nav_buttons>*.prev_btn:hover:before{background-position: -68px 0;}
     
-    .nav_buttons>a.next_btn:hover:before{background-position: -114px 0;}
+    .nav_buttons>*.next_btn:hover:before{background-position: -114px 0;}
 
-    .nav_buttons>a.turn_btn:hover:before{background-position: -54px -34px;}
+    .nav_buttons>*.turn_btn:hover:before{background-position: -54px -34px;}
+    
+    .nav_buttons>*.turn_btn .tooltip:after{
+      content: "Свернуть";
+    }
 
+    .nav_buttons>*.turn_btn.active .tooltip:after{
+      content: "Развернуть";
+    }
 
   /* --------------------------------------------
         8.4. Article
@@ -3636,283 +3660,17 @@
   .search_result figcaption p{
     line-height: 24px;
   }
+
+
 /* ------------------------------------------------
 
-    22. Footer
+    22. Quotes
 
 ------------------------------------------------ */
 
-  #footer{
-    background-color: #1f1d1d;
-    border-top: 5px solid #ff1616;
-    padding-bottom: 30px;
-  }
-
-
   /* --------------------------------------------
-        22.2. Footer Top
+      22.1  Quotes inner 
   -------------------------------------------- */
-    
-
-    .footer_top{
-      background-color: #2b2a2a;
-      padding: 10px 0;
-    }
-
-    .social_label{
-      display: none;
-      font: 15px/44px 'pf_dindisplay_proregular';
-      color: #ccc8c8;
-      text-transform: uppercase;
-      padding-right: 14px;
-    }
-
-    .social>li{
-      float: left;
-      margin-right: 6px;
-    }
-
-    .social>li>a{
-      display: block;
-      width: 44px;
-      height: 44px;
-      background: url(../images/social_icon.png) no-repeat;
-      -webkit-transition: transform 0.5s;
-      -o-transition: transform 0.5s;
-      transition: transform 0.5s;
-    }
-
-    .social>li:hover>a{
-      -webkit-transform: translate(0, -5px);
-      -ms-transform: translate(0, -5px);
-      -o-transform: translate(0, -5px);
-      transform: translate(0, -5px);
-      -webkit-transition: transform 0.3s;
-      -o-transition: transform 0.3s;
-      transition: transform 0.3s;
-    }
-
-    .social>li>a.google_plus{background-position: 0 0;}
-    .social>li>a.fb{background-position: -50px 0;}
-    .social>li>a.tw{background-position: -100px 0;}
-    .social>li>a.vk{background-position: -150px 0;}
-
-    .social>li>a.google_plus:hover{background-position: 0 -49px;}
-    .social>li>a.fb:hover{background-position: -50px -49px;}
-    .social>li>a.tw:hover{background-position: -100px -49px;}
-    .social>li>a.vk:hover{background-position: -150px -49px;}
-
-
-    .newsletter_form label{
-      font: 15px/44px 'pf_dindisplay_proregular';
-      color: #ccc8c8;
-      text-transform: uppercase;
-      padding-right: 14px;
-    }
-
-    .newsletter_form input[type="text"]{
-      width: 300px;
-      border-radius: 3px 0 0 3px;
-      border: none;
-      outline: none;
-      background-color: #f1f1f1;
-      font-size: 14px;
-      line-height: 20px;
-      padding: 12px 10px;
-    }
-
-    .newsletter_form button{
-      font: 13px/20px 'pf_dindisplay_proregular';
-      padding: 12px 10px;
-      text-transform: uppercase;
-      background-color: #4d4a4a;
-      border: none;
-      cursor: pointer;
-      outline: none;
-      color: #fff;
-      display: inline-block;
-      float: right;
-    }
-
-    .newsletter_form button:hover{
-      background-color: #666363;
-      color: #fff;
-    }
-
-
-  /* --------------------------------------------
-        22.2. Footer Middle
-  -------------------------------------------- */
-    
-    .footer_middle{
-      padding: 20px 0 10px;
-      border-bottom: 1px solid #595656;
-      position: relative;
-    }
-
-    .footer_middle:before{
-      content: "";
-      display: block;
-      position: absolute;
-      width: 5px;
-      height: 5px;
-      bottom: -3px;
-      left: 50%;
-      margin-left: -2px;
-      background-color: #595656;
-    }
-
-    .list_box{
-      float: left;
-      width: 25%;
-      padding-right: 15px;
-    }
-
-    .list_box>h6{
-      font: 17px/24px 'pf_dindisplay_proregular';
-      color: #fff;
-      text-transform: uppercase;
-      /*margin-bottom: 10px;*/
-    }  
-
-
-  /* --------------------------------------------
-        22.3. Footer Bottom
-  -------------------------------------------- */
-    
-    .footer_bottom{
-      text-align: center;
-      font-size: 14px;
-      line-height: 25px;
-      color: #807d7d;
-      padding: 25px 0 0;
-    }
-/* ------------------------------------------------
-
-    23. Quotation table
-
------------------------------------------------- */
-    .table_description {
-      padding: 11px 15px;
-      background: #F7F7F7;
-      position: relative;
-      text-transform: uppercase;
-    }
-    .table_button {
-      display: block;
-      width: 38px;
-      height: 38px;
-      position: absolute;
-      top: 20px;
-      right: 15px;
-      background: #fff;
-      border: 2px solid #e3e3e3;
-      z-index: 9;
-    }
-    
-    .table_button:hover:before,
-    .table_description .active:before {
-       background: url(../images/table_arrow.png) 0 0 no-repeat;
-      -webkit-transform: rotate(180deg);
-      -moz-transform: rotate(180deg);
-      -ms-transform: rotate(180deg);
-      -o-transform: rotate(180deg);
-      transform: rotate(180deg);
-    }
-    .table_button:before {
-      display: block;
-      content: '';
-      position: absolute;
-      top: 14px;
-      left: 11px;
-      width: 11px;
-      height: 6px;
-      background: url(../images/table_arrow.png);
-    }
-    .table_description h3{
-      font-size: 17px;
-      line-height: 1;
-    }
-    .table_description .subtitle {
-      font-size: 11px;
-      display: inline-block;
-      position: relative;
-    }
-    .quotation_table {
-      width: 100%;
-      text-align: left;
-      border: 1px solid #f7f7f7;
-      border-bottom: 4px solid #f7f7f7;
-      margin-bottom: 20px;
-      
-    }
-    .quotation_table th{
-      padding: 11px 0 9px 16px;
-      font-size: 15px;
-      font-weight: normal;
-      color: #000;
-      text-transform: uppercase;
-    }
-    .quotation_table td{
-      padding-left: 16px;
-      border-bottom: 1px solid #f1f1f1;
-      height: 37px;
-      vertical-align: middle;
-      font-size: 13px;
-    }
-    .users_top {
-      background: url(../images/users_top.png) no-repeat 15px 13px;
-    }
-    .table_top {
-      background: url(../images/table_top.png) no-repeat 15px 13px;
-    }
-    .change {
-      position: relative;
-    }
-    .change span {
-      font-size: 14px;
-      font-weight: bold;
-    }
-    .change sup {
-      position: relative;
-      left: 2px;
-      font-size: 10px;
-    }
-    .change_up {
-      color: #61903c;
-    }
-    .change_up:after {
-      display: block;
-      content: '';
-      position: absolute;
-      top: 14px;
-      right: 68px;
-      width: 7px;
-      height: 10px;
-      background: url(../images/arrow_up.png);
-    }
-	.change_s {
-       color: #61903c;
-    }
-    .change_down {
-      color: #d42424;
-    }
-    .change_down:after {
-      display: block;
-      content: '';
-      position: absolute;
-      top: 14px;
-      right: 68px;
-      width: 7px;
-      height: 10px;
-      background: url(../images/arrow_down.png);
-    }
-
-    
-
-/* --------------------------------------------
-    Quotes
--------------------------------------------- */
     
     .title_box1{
         padding-bottom: 26px;
@@ -4521,4 +4279,536 @@
         margin: 0;
         margin-top: 2px;
     }
+
+
+  /* --------------------------------------------
+      22.2  Table Quotes 
+  -------------------------------------------- */
+      
+      .quotes_search_box{
+        position: relative;
+        margin-bottom: 30px;
+      }
+
+      .quotes_search_box input{
+        width: 100%;
+        outline: none;
+        font-size: 18px;
+        line-height: 22px;
+        color: #333131;
+        font: 18px/22px 'pf_dindisplay_prolight',sans-serif;
+        padding: 24px 150px 24px 12px;
+        border: none;
+        border-left: 4px solid #b3b1b1;
+        background-color: #f5f5f5;
+      }
+
+      .quotes_search_box input:focus{
+        border-color: #146eb3;
+      }
+
+      .quotes_search_box .quotes_search_btn{
+        position: absolute;
+        top: 0;
+        right: 0;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        color: #f2f0f0;
+        background-color: #333030;
+        font: 18px/30px 'pf_dindisplay_proregular',sans-serif;
+        padding: 20px 18px;
+      }
+
+      .quotes_search_box .quotes_search_btn:hover{
+        background-color: #423e3e;
+      }
+
+      .quotes_search_btn i{
+        line-height: 30px;
+        font-size: 26px;
+        margin-top: -3px;
+      }
+
+      .quotes_search_list{
+        position: absolute;
+        z-index: 9;
+        top: 100%;
+        width: 100%;
+        background-color: #f7f7f7;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transform: translate(0, 20px);
+        -ms-transform: translate(0, 20px);
+        -o-transform: translate(0, 20px);
+        transform: translate(0, 20px);
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+      }
+
+      .quotes_search_box input:focus + .quotes_search_list{
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: translate(0);
+        -ms-transform: translate(0);
+        -o-transform: translate(0);
+        transform: translate(0);
+      }
+
+      .quotes_search_list li a{
+        display: block;
+        font: 18px/22px 'pf_dindisplay_prolight', sans-serif;
+        color: #5e5d5d;
+        padding: 11px 15px;
+      }
+
+      .quotes_search_list li a:hover{
+        background-color: #f0f0f0;
+      }
+      
+      /*tabl quotes*/
+
+      .tabl_quotes_header{
+        position: relative;
+        background-color: #b3b1b1;
+        padding: 15px 12px 15px 15px;
+      }
+
+      .tabl_quotes_btn{
+        padding: 0;
+      }
+
+      .tabl_quotes_btn>*{
+        position: relative;
+        background: none;
+        width: 38px;
+        height: 38px;
+        padding: 0;
+        border: 2px solid #fff;
+        color: #fff;
+        font-size: 25px;
+        outline: none;
+        cursor: pointer;
+      }
+
+      .tabl_quotes_btn>*.options_btn:before{
+        display: none;
+      }
+
+      .tabl_quotes_btn>*.turn_btn:before{
+        background: #fff;
+        width: 12px;
+        height: 3px;
+        margin-top: -2px;
+      }
+
+      .tabl_quotes_btn>*:hover,
+      .tabl_quotes_btn>*.active{
+        border-width: 3px;
+        background: none !important;
+        color: #fff;
+      }
+
+      .tabl_quotes_btn>* i{
+        display: block;
+        position: absolute;
+        top: 50%;
+        margin-top: -15px;
+        line-height: 30px;
+        width: 100%;
+        text-align: center;
+      }
+
+      .tabl_quotes_title{
+        overflow: hidden;
+      }
+
+      .tabl_quotes_title{
+        font: 22px/1 'pf_dindisplay_promedium',sans-serif;
+        color: #fff;
+        margin-bottom: 0;
+        padding: 0;
+      }
+
+      .tabl_quotes_title>p{
+        font: 14px/18px 'pf_dindisplay_proregular',sans-serif;
+      }
+
+      .tabl_quotes table{
+        width: 100%;
+        table-layout: fixed;
+        color: #333131;
+      }
+
+      .tabl_quotes thead th{
+        background-color: #f6f6f6;
+        text-transform: uppercase;
+      }
+
+      .tabl_quotes table th,
+      .tabl_quotes table td{
+        border: 1px solid #e3e3e3;
+        font-size: 14px;
+        line-height: 21px;
+        font-weight: 600;
+        padding: 15px 0;
+        text-align: center;
+      }
+      
+      /*options*/
+
+      .options_box{
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        background-color: #b3b1b1;
+        top: 100%;
+        width: 100%;
+        border-top: 1px solid #cccaca;
+        padding: 17px 15px 10px 15px;
+        color: #fff;
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transform: translate(0, 30px);
+        -ms-transform: translate(0, 30px);
+        -o-transform: translate(0, 30px);
+        transform: translate(0, 30px);
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+      }
+
+      .options_box.opened{
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: translate(0);
+        -ms-transform: translate(0);
+        -o-transform: translate(0);
+        transform: translate(0);
+      }
+
+      .options_title{
+        font: 15px/20px "Open Sans", sans-serif;
+        color: #fff;
+      }
+
+      .options_item{
+        float: left;
+        width: 163px;
+        margin-bottom: 17px;
+      }
+
+      .options_item label{
+        font: 15px/18px 'pf_dindisplay_proregular',sans-serif;
+        position: relative;
+        padding-left: 26px;
+        cursor: pointer;
+      }
+
+      .options_item label:before{
+        content: "";
+        display: block;
+        position: absolute;
+        width: 18px;
+        height: 18px;
+        left: 0;
+        top: 0;
+        background-color: #fff;
+        border-radius: 2px;
+      }
+
+      .options_item input:checked ~ label:before{
+        background-color: #5e5d5d;
+      }
+
+      .options_item label:after{
+        content: "\f00c";
+        display: block;
+        position: absolute;
+        text-align: center;
+        top: 0;
+        left: 0;
+        width: 18px;
+        height: 18px;
+        font: normal normal normal 14px/18px FontAwesome;
+      }
+
+
+
+/* ------------------------------------------------
+
+    23. Footer
+
+------------------------------------------------ */
+
+  #footer{
+    background-color: #1f1d1d;
+    border-top: 5px solid #ff1616;
+    padding-bottom: 30px;
+  }
+
+
+  /* --------------------------------------------
+        23.2. Footer Top
+  -------------------------------------------- */
+    
+
+    .footer_top{
+      background-color: #2b2a2a;
+      padding: 10px 0;
+    }
+
+    .social_label{
+      display: none;
+      font: 15px/44px 'pf_dindisplay_proregular';
+      color: #ccc8c8;
+      text-transform: uppercase;
+      padding-right: 14px;
+    }
+
+    .social>li{
+      float: left;
+      margin-right: 6px;
+    }
+
+    .social>li>a{
+      display: block;
+      width: 44px;
+      height: 44px;
+      background: url(../images/social_icon.png) no-repeat;
+      -webkit-transition: transform 0.5s;
+      -o-transition: transform 0.5s;
+      transition: transform 0.5s;
+    }
+
+    .social>li:hover>a{
+      -webkit-transform: translate(0, -5px);
+      -ms-transform: translate(0, -5px);
+      -o-transform: translate(0, -5px);
+      transform: translate(0, -5px);
+      -webkit-transition: transform 0.3s;
+      -o-transition: transform 0.3s;
+      transition: transform 0.3s;
+    }
+
+    .social>li>a.google_plus{background-position: 0 0;}
+    .social>li>a.fb{background-position: -50px 0;}
+    .social>li>a.tw{background-position: -100px 0;}
+    .social>li>a.vk{background-position: -150px 0;}
+
+    .social>li>a.google_plus:hover{background-position: 0 -49px;}
+    .social>li>a.fb:hover{background-position: -50px -49px;}
+    .social>li>a.tw:hover{background-position: -100px -49px;}
+    .social>li>a.vk:hover{background-position: -150px -49px;}
+
+
+    .newsletter_form label{
+      font: 15px/44px 'pf_dindisplay_proregular';
+      color: #ccc8c8;
+      text-transform: uppercase;
+      padding-right: 14px;
+    }
+
+    .newsletter_form input[type="text"]{
+      width: 300px;
+      border-radius: 3px 0 0 3px;
+      border: none;
+      outline: none;
+      background-color: #f1f1f1;
+      font-size: 14px;
+      line-height: 20px;
+      padding: 12px 10px;
+    }
+
+    .newsletter_form button{
+      font: 13px/20px 'pf_dindisplay_proregular';
+      padding: 12px 10px;
+      text-transform: uppercase;
+      background-color: #4d4a4a;
+      border: none;
+      cursor: pointer;
+      outline: none;
+      color: #fff;
+      display: inline-block;
+      float: right;
+    }
+
+    .newsletter_form button:hover{
+      background-color: #666363;
+      color: #fff;
+    }
+
+
+  /* --------------------------------------------
+        23.2. Footer Middle
+  -------------------------------------------- */
+    
+    .footer_middle{
+      padding: 20px 0 10px;
+      border-bottom: 1px solid #595656;
+      position: relative;
+    }
+
+    .footer_middle:before{
+      content: "";
+      display: block;
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      bottom: -3px;
+      left: 50%;
+      margin-left: -2px;
+      background-color: #595656;
+    }
+
+    .list_box{
+      float: left;
+      width: 25%;
+      padding-right: 15px;
+    }
+
+    .list_box>h6{
+      font: 17px/24px 'pf_dindisplay_proregular';
+      color: #fff;
+      text-transform: uppercase;
+      /*margin-bottom: 10px;*/
+    }  
+
+
+  /* --------------------------------------------
+        23.3. Footer Bottom
+  -------------------------------------------- */
+    
+    .footer_bottom{
+      text-align: center;
+      font-size: 14px;
+      line-height: 25px;
+      color: #807d7d;
+      padding: 25px 0 0;
+    }
+
+/* ------------------------------------------------
+
+    23. Quotation table
+
+------------------------------------------------ */
+    .table_description {
+      padding: 11px 15px;
+      background: #F7F7F7;
+      position: relative;
+      text-transform: uppercase;
+    }
+    .table_button {
+      display: block;
+      width: 38px;
+      height: 38px;
+      position: absolute;
+      top: 20px;
+      right: 15px;
+      background: #fff;
+      border: 2px solid #e3e3e3;
+      z-index: 9;
+    }
+    
+    .table_button:hover:before,
+    .table_description .active:before {
+       background: url(../images/table_arrow.png) 0 0 no-repeat;
+      -webkit-transform: rotate(180deg);
+      -moz-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+      -o-transform: rotate(180deg);
+      transform: rotate(180deg);
+    }
+    .table_button:before {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 14px;
+      left: 11px;
+      width: 11px;
+      height: 6px;
+      background: url(../images/table_arrow.png);
+    }
+    .table_description h3{
+      font-size: 17px;
+      line-height: 1;
+    }
+    .table_description .subtitle {
+      font-size: 11px;
+      display: inline-block;
+      position: relative;
+    }
+    .quotation_table {
+      width: 100%;
+      text-align: left;
+      border: 1px solid #f7f7f7;
+      border-bottom: 4px solid #f7f7f7;
+      margin-bottom: 20px;
+      
+    }
+    .quotation_table th{
+      padding: 11px 0 9px 16px;
+      font-size: 15px;
+      font-weight: normal;
+      color: #000;
+      text-transform: uppercase;
+    }
+    .quotation_table td{
+      padding-left: 16px;
+      border-bottom: 1px solid #f1f1f1;
+      height: 37px;
+      vertical-align: middle;
+      font-size: 13px;
+    }
+    .users_top {
+      background: url(../images/users_top.png) no-repeat 15px 13px;
+    }
+    .table_top {
+      background: url(../images/table_top.png) no-repeat 15px 13px;
+    }
+    .change {
+      position: relative;
+    }
+    .change span {
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .change sup {
+      position: relative;
+      left: 2px;
+      font-size: 10px;
+    }
+    .change_up {
+      color: #61903c;
+    }
+    .change_up:after {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 14px;
+      right: 68px;
+      width: 7px;
+      height: 10px;
+      background: url(../images/arrow_up.png);
+    }
+	.change_s {
+       color: #61903c;
+    }
+    .change_down {
+      color: #d42424;
+    }
+    .change_down:after {
+      display: block;
+      content: '';
+      position: absolute;
+      top: 14px;
+      right: 68px;
+      width: 7px;
+      height: 10px;
+      background: url(../images/arrow_down.png);
+    }
+
+    
+
     
