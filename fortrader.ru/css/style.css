@@ -4368,6 +4368,46 @@
       }
       
       /*tabl quotes*/
+      
+      .tabl_quotes_nav{
+        display: none;
+        padding: 5px 0 0;
+        margin-bottom: 5px;
+      }
+      
+      .tabl_quotes_nav>*{
+        display: block;
+        outline: none;
+        float: left;
+        text-align: center;
+        background-color: #ededed;
+        border: none;
+        height: 50px;
+        width: 50%;
+        cursor: pointer;
+      }
+
+      .tabl_quotes_nav>*.disable{
+        opacity: 0.5;
+        cursor: default;
+      }
+
+      .tabl_quotes_nav>*:hover{
+        background-color: #e8e8e8;
+      }
+
+      .tabl_quotes_nav>* i{
+        font-size: 30px;
+        color: #5e5d5d;
+      }
+
+      .tabl_quotes_nav .prev{
+        border-right: 2px solid #fff;
+      }
+
+      .tabl_quotes_nav .next{
+        border-left: 2px solid #fff;
+      }
 
       .tabl_quotes_header{
         position: relative;

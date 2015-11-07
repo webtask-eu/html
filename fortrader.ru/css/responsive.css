@@ -1,6 +1,9 @@
 /*==================================RESPONSIVE LAYOUTS===============================================*/
 @media only screen and (min-width: 993px) {
 
+	.tabl_quotes table{
+		width: 100% !important;
+	}
 	.site_list>ul,.list_box>ul{display: block !important;}
 }
 
@@ -638,7 +641,98 @@
     	margin-top: 0;
     }
 
+    /*Tabl Quotes*/
+	
+	.tabl_quotes{
+		position: relative;
+		overflow: hidden;
+		margin-top: 5px;
+	}
 
+	.tabl_quotes:before,
+	.tabl_quotes:after{
+		content: "";
+		display: block;
+		position: absolute;
+		top: 0;
+		right: 0;
+		height: 100%;
+		width: 1px;
+		background-color: #e3e3e3;
+	}
+
+	.tabl_quotes:after{
+		right: auto;
+		left: 0;
+	}
+
+    .tabl_quotes table{
+    	position: relative;
+    	display: block;
+    	left: 0;
+    	-webkit-transition: left 0.3s ease-out;
+    	-o-transition: left 0.3s ease-out;
+    	transition: left 0.3s ease-out;
+    }
+
+    .tabl_quotes table .tooltip{display: none !important;}
+
+    .tabl_quotes table thead{display: none;}
+
+	.tabl_quotes table tr{
+		float: left;
+	}
+
+	.tabl_quotes table td{
+		display: block;
+		position: relative;
+		height: 50px;
+		padding: 5px 0;
+		font-size: 13px;
+		vertical-align: middle;
+	}
+
+	.tabl_quotes table td:not(:first-child){
+		border-top: none;
+		font-size: 12px;
+	}
+
+
+	.tabl_quotes table td{
+		border-left: none;
+	}
+
+	.tabl_quotes table td:before{
+		content: attr(data-title);
+		color: #787777;
+		display: block;
+	}
+	
+	.tabl_quotes table td:first-child:before{
+		display: inline-block;
+		height: 100%;
+		width: 0;
+		margin-left: -5px;
+		vertical-align: middle;
+	}
+
+	.tabl_quotes table td:first-child span{
+		display: inline-block;
+		vertical-align: middle;
+	}
+
+	.tabl_quotes_nav{
+		display: block;
+	}
+
+	.quotes_search_list li a{
+		font-size: 14px;
+		line-height: 18px;
+	}
+
+	.options_item{
+		width: 33.33%;
+	}
 
 }
 
@@ -651,8 +745,8 @@
  	[class*="banner"]{display: none;}
 	
 	.container{
-	width: 420px;
-}
+		width: 420px;
+	}
 
 	.white_container{
 		padding: 0 15px;
@@ -1045,6 +1139,10 @@
 	.change sup {
 	    font-size: 8px;
 	    top: -2px;
+	}
+
+	.options_item{
+		width: 50%;
 	}
 
 }

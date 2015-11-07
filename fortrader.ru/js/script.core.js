@@ -26,6 +26,7 @@
 			self.nextButtonHover();
 			self.dropdoun();
 			self.optionsBox();
+			self.tablQuotesSlider.init();
 
 		},
 
@@ -674,6 +675,139 @@
 		},
 
 
+		/**
+		**	Dropdoun 
+		**/
+
+		tablQuotesSlider : {
+
+			init: function(){
+
+				var self = this;
+
+				self.ww = $(window);
+				self.table = $('.tabl_quotes table');
+				self.tableNav = $('.tabl_quotes_nav');
+				self.nav = $('tabl_quotes_nav');
+
+				$('.tabl_quotes tr').addClass('tabl_quotes_item');
+
+				self.createBtn();
+				self.itemWidth();
+				self.moveSlider();
+
+				$(window).on("resize", function(){
+
+					self.itemWidth();
+				
+				});
+
+
+
+			},
+
+			itemWidth: function(){
+
+				var wrapBox = $('.tabl_quotes').width(),
+					itemWidth = wrapBox/4,
+					self = this;
+
+				if(self.ww.width() < 992){
+
+					$('.tabl_quotes tr').width(itemWidth);
+
+				
+				}
+
+				self.table.each(function(){
+
+						var qItem = $(this).find("tbody>tr").length;
+						$(this).width(qItem*itemWidth +1)
+				});
+
+
+			},
+
+			createBtn : function(){
+
+				var self = this;
+
+				self.table.each(function(){
+
+					var $this = $(this),
+					template = '<div class="tabl_quotes_nav clearfix"><button class="prev disable"><i class="fa fa-angle-left"></i></button><button class="next"><i class="fa fa-angle-right"></i></button></div>',
+						qItem = $this.find("tbody>tr").length;
+
+					if(qItem > 4){
+						$this.closest('.turn_content').prepend(template);
+					}
+
+				});
+
+			},
+
+			moveSlider : function(){
+
+				$('body').on("click",".tabl_quotes_nav>*:not(.process)",function(){
+
+					if($(this).hasClass('disable')) return false;
+
+					var $this = $(this),
+						wrapSlider = $this.closest('.turn_content').find('.tabl_quotes'),
+						itemWidth = wrapSlider.width()/4, 
+						slider = wrapSlider.find('table'),
+						sliderWidth = slider.width(),
+						wrapOffset = wrapSlider.offset().left,
+						sliderOffset = slider.offset().left,
+						lastOffset = wrapSlider.width() - slider.width(),
+						position = wrapOffset - sliderOffset,
+						prevItem = - position + itemWidth,
+						nextItem = - position - itemWidth;
+
+					if($this.hasClass("next")){
+
+						$this.addClass('process');
+						slider.css({
+							'left' : nextItem
+						});
+						setTimeout(function(){
+							$this.removeClass('process');
+						},500);
+
+						$this.siblings().removeClass('disable');
+
+						if((nextItem - itemWidth) < lastOffset){
+
+							$this.addClass('disable');
+						
+						}
+
+					}
+					else{
+
+						$this.addClass('process');
+						slider.css({
+							'left' : prevItem
+						});
+						setTimeout(function(){
+							$this.removeClass('process');
+						},500);
+
+						$this.siblings().removeClass('disable');
+
+						if((prevItem + itemWidth) > 0 ){
+
+							$this.addClass('disable');
+						
+						}
+
+					}
+
+				});
+
+			},
+
+		}
 
 	}
 
