@@ -719,6 +719,7 @@
 	.tabl_quotes table td:first-child span{
 		display: inline-block;
 		vertical-align: middle;
+		max-width: 100%;
 	}
 
 	.tabl_quotes_nav{
