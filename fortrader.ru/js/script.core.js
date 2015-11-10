@@ -329,10 +329,11 @@
 			$('.tabs_list>li').on('click',function(){
 
 				var $this = $(this),
+					tab = $this.closest('.tabs_box'), 
 					index = $this.index();
 
 				$this.addClass('active').siblings().removeClass('active');
-				$(".tabs_contant>div").eq(index).addClass('active').siblings().removeClass('active');
+				tab.find(".tabs_contant>div").eq(index).addClass('active').siblings().removeClass('active');
 
 			});
 

@@ -62,10 +62,12 @@
   22. Quotes
     22.1 Quotes
     22.2 Table Quotes
+    22.3 Graph of Quotes
   23. Footer
     23.1. Footer Top
     23.2. Footer Middle
     23.3. Footer Bottom
+  24. Modal Window
 =======
 */
 @import "reset.css";
@@ -73,7 +75,8 @@
 @import "../fonts/PFDindisplayproRegMedLight/font.css";
 @import "../fonts/PFDindisplayproThinBold/font.css";
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Roboto:300&subset=latin,cyrillic);
 
 /* ------------------------------------------------
 
@@ -4332,7 +4335,7 @@
 
       .quotes_search_list{
         position: absolute;
-        z-index: 9;
+        z-index: 999;
         top: 100%;
         width: 100%;
         background-color: #f7f7f7;
@@ -4500,7 +4503,7 @@
 
       .options_box{
         position: absolute;
-        z-index: 1;
+        z-index: 99;
         left: 0;
         background-color: #b3b1b1;
         top: 100%;
@@ -4575,6 +4578,81 @@
       }
 
 
+  /* --------------------------------------------
+      22.3  Graph of Quotes 
+  -------------------------------------------- */
+     
+      .graph_box{
+        margin: 10px -5px 0;
+      }
+
+      .graph_inner{
+        padding: 0 5px;
+        width: 50%;
+        float: left;
+      }
+
+      .graph_inner:nth-child(even){
+        clear: right;
+      }
+
+      .graph_title{
+        font: 20px/24px 'pf_dindisplay_prolight',sans-serif;
+        color: #fff;
+        padding: 12px 5px;
+        background-color: #b3b1b1;
+        text-align: center;
+        margin-bottom: 0;
+      }
+
+      .graph_list{
+        margin: 0;
+      }
+
+      .graph_list:before{
+        display: none;
+      }
+
+      .graph_list li{
+        float: left;
+        width: 25%;
+        margin: 0;
+        padding: 0;
+        border: none;
+      }
+
+      .graph_list li a{
+        display: block;
+        text-align: center;
+        color: #fff;
+        font: 17px/24px 'Roboto',sans-serif;
+        padding: 12px 5px;
+        background-color: #8c8b8b;
+        border: none;
+        border-left: 1px solid #a6a4a4;
+      }
+
+      .graph_list>li.active>a:before,
+      .graph_list>li.active>a:after{display: none;}
+
+      .graph_list li:first-child a{
+        border: none;
+      }
+
+      .graph_list li a:hover,
+      .graph_list li.active a{
+        background-color: #9e9d9d;
+        color: #fff;
+      }
+
+      .graph{
+        background-color: #f6f6f6;
+        border: 1px solid #e3e3e3;
+      }
+
+      .graph img{
+        width: 100%;
+      }
 
 /* ------------------------------------------------
 
@@ -4850,5 +4928,135 @@
     }
 
     
+/* ------------------------------------------------
 
-    
+    24. Modal Window
+
+------------------------------------------------ */
+
+    .modal_box{
+      background-color: #f6f6f6;
+      position: relative;
+      width: 450px;
+      border-radius: 3px;
+    }
+
+    .modal_close{
+      position: absolute;
+      text-align: center;
+      font-size: 18px;
+      line-height: 30px;
+      width: 30px;
+      height: 30px;
+      top: -37px;
+      right: -37px;
+      color: #fff;
+      cursor: pointer;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s;
+    }
+
+    .modal_close:hover{
+      color: #ff1616;
+    }
+
+    .login_header{
+      background-color: #2e2b2b;
+      text-align: center;
+      padding: 59px 0 25px;
+    }
+
+    .login_header_title{
+      font: 20px/30px 'pf_dindisplay_probold', sans-serif;
+      color: #fff;
+      margin-bottom: 5px;
+    }
+
+    .login_header a{
+      font: 16px/24px 'pf_dindisplay_proregular', sans-serif;
+      display: inline-block;
+      background-color: #474242;
+      padding: 0 6px;
+      color: #fff;
+    }
+
+    .login_header a:hover{
+      background-color: #524f4f;
+      color: #fff;
+    }
+
+    .logo_modal{
+      position: absolute;
+      left: 50%;
+      top: -45px;
+      margin-left: -45px;
+      border-radius: 50%;
+      text-align: center;
+      color: #fff;
+      font: 900 30px/82px Arial,sans-serif;
+      width: 90px;
+      height: 90px;
+      background-color: #312e2e;
+      border: 4px solid rgba(255,255,255,0.7);
+    }
+
+    .modal_inner{
+      padding: 30px 45px 40px;
+      background-color: #f6f6f6;
+    }
+
+    .modal_input{
+      width: 100%;
+      font-size: 13px;
+      line-height: 26px;
+      padding: 10px 10px 10px 12px;
+      border: 1px solid #d4d2d2;
+      color: #787777;
+      border-radius: 3px;
+    }
+
+    .modal_input:not(:last-child){
+      margin-bottom: 15px;
+    }
+
+    .modal_input:focus{
+      border-width: 2px;
+      padding: 9px 10px 9px 12px;
+    }
+
+    .modal_input.invalid{
+      border-width: 2px;
+      border-color: #ff1616;
+      padding: 9px 10px 9px 12px;
+    }
+
+    .modal_input::-webkit-input-placeholder{
+      color: #787777;
+    }
+
+    .modal_input::-moz-placeholder{
+      color: #787777;
+    }
+
+    .modal_input::ms-input-placeholder{
+      color: #787777;
+    }
+
+    .modal_button{
+      font: 17px/20px 'pf_dindisplay_proregular', sans-serif;
+      background-color: #ff1616;
+      padding: 20px 0;
+      width: 100%;
+      color: #fff;
+      border-radius: 2px;
+      text-align: center;
+      border: none;
+      outline: none;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+
+    .modal_button:hover{
+      background-color: #ff4040;
+    }
