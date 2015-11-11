@@ -1106,6 +1106,36 @@
 		text-overflow: initial;
 	}
 
+
+	/*modal window*/
+
+	.modal_box{
+		width: 320px;
+	}
+
+	.modal_logo{
+		display: inline-block;
+		position: static;
+		margin: 0 0 10px;
+	}
+
+	.modal_header{
+		padding-top: 10px;
+	}
+
+	.modal_close{
+		top: 10px;
+		right: 10px;
+	}
+
+	.modal_social li a i{
+		display: none;
+	}
+
+	.modal_inner{
+		padding: 25px 20px 32px;
+	}
+
 }
 
 @media only screen and (max-width: 479px) {

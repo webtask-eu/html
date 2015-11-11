@@ -4945,7 +4945,6 @@
       position: absolute;
       text-align: center;
       font-size: 18px;
-      line-height: 30px;
       width: 30px;
       height: 30px;
       top: -37px;
@@ -4957,23 +4956,27 @@
       transition: all 0.3s;
     }
 
+    .modal_close i{
+      line-height: 30px;
+    }
+
     .modal_close:hover{
       color: #ff1616;
     }
 
-    .login_header{
+    .modal_header{
       background-color: #2e2b2b;
       text-align: center;
       padding: 59px 0 25px;
     }
 
-    .login_header_title{
+    .modal_header_title{
       font: 20px/30px 'pf_dindisplay_probold', sans-serif;
       color: #fff;
       margin-bottom: 5px;
     }
 
-    .login_header a{
+    .modal_header a{
       font: 16px/24px 'pf_dindisplay_proregular', sans-serif;
       display: inline-block;
       background-color: #474242;
@@ -4981,12 +4984,12 @@
       color: #fff;
     }
 
-    .login_header a:hover{
+    .modal_header a:hover{
       background-color: #524f4f;
       color: #fff;
     }
 
-    .logo_modal{
+    .modal_logo{
       position: absolute;
       left: 50%;
       top: -45px;
@@ -5007,6 +5010,7 @@
     }
 
     .modal_input{
+      outline: none;
       width: 100%;
       font-size: 13px;
       line-height: 26px;
@@ -5057,6 +5061,167 @@
       cursor: pointer;
     }
 
+    .modal_button:not(:last-child){
+      margin-bottom: 25px;
+    }
+
     .modal_button:hover{
       background-color: #ff4040;
+    }
+
+    .modal_title{
+      border-top: 1px solid #d4d4d4;
+      position: relative;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    .modal_title:before,
+    .modal_title:after{
+      content: "";
+      display: block;
+      position: absolute;
+      top: -3px;
+      left: 0;
+      width: 5px;
+      height: 5px;
+      background-color: #d4d4d4;
+    }
+
+    .modal_title:after{
+      right: 0;
+      left: auto;
+    }
+
+    .modal_title span{
+      font-size: 14px;
+      line-height: 19px;
+      display: inline-block;
+      padding: 0 20px;
+      background-color: #f6f6f6;
+      margin-top: -10px;
+    }
+
+    .modal_social{
+      margin: 0 -3px;
+    }
+
+    .modal_social:not(:last-child),
+    .modal_social_box:not(:last-child){
+      margin-bottom: 25px;
+    }
+
+    .modal_social li{
+      float: left;
+      padding: 0 3px;
+      width: 33.33%;
+    }
+
+    .modal_social li a{
+      display: block;
+      border-radius: 3px;
+      text-transform: uppercase;
+      font-size: 13px;
+      line-height: 21px;
+      font-weight: 900;
+      color: #fff;
+      padding: 10px 0;
+      text-align: center;
+    }
+
+    .modal_social li a.google_plus{background-color: #ef482e;}
+    .modal_social li a.fb{background-color: #4964bf;}
+    .modal_social li a.vk{background-color: #2e6cb3;}
+
+
+    .modal_social li a.google_plus:hover{background-color: #ff553b;}
+    .modal_social li a.fb:hover{background-color: #5272d9;}
+    .modal_social li a.vk:hover{background-color: #357bcc;}
+  
+    .modal_social li a i{
+      font-size: 16px;
+      line-height: 21px;
+      width: 23px;
+    }
+
+    .modal_remember{
+      color: #454444;
+    }
+
+    .modal_remember:not(:last-child){
+      margin-bottom: 25px;
+    }
+
+    .modal_remember_inner label{
+      position: relative;
+      padding-left: 24px;
+      line-height: 20px;
+      cursor: pointer;
+    }
+
+    .modal_remember_inner label:before,
+    .modal_remember_inner label:after{
+      content: "";
+      width: 18px;
+      height: 18px;
+      background-color: #fff;
+      border: 1px solid #d4d2d2;
+      border-radius: 3px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    .modal_remember_inner label:after{
+      opacity: 0;
+      border: none;
+      background: url(../images/modal_remember_after.png) 0 0 no-repeat;
+    }
+
+    .modal_remember_inner input:checked + label:after{
+      opacity: 1;
+    }
+
+    .modal_text{
+      text-align: center;
+      font-weight: 600;
+      color: #454444;
+    }
+
+    .subscribe{
+      position: relative;
+    }
+
+    .subscribe input{
+      width: 100%;
+      border-radius: 3px;
+      border: 1px solid #d4d2d2;
+      padding: 13px 110px 13px 10px;
+      font-size: 13px;
+      line-height: 20px;
+      color: #333;
+      font-weight: 600;
+    }
+
+    .subscribe button{
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 108px;
+      text-align: center;
+      font: 13px/18px 'pf_dindisplay_proregular', sans-serif;
+      text-transform: uppercase;
+      padding: 15px 0;
+      border: none;
+      background-color: #2e2b2b;
+      color: #fff;
+      cursor: pointer;
+    }
+
+    .subscribe button:hover{
+      background-color: #454343;
+      color: #fff;
     }

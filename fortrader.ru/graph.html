@@ -63,7 +63,7 @@
                 
                 <div class="enter_box alignright clearfix">
                 
-                    <a href="#" class="arcticmodal" data-modal="#logIn">Выход</a>
+                    <a href="#" class="arcticmodal" data-modal="#logIn">Вход</a>
                 
                 </div>
                 
@@ -1250,11 +1250,12 @@
                 
                 <div class="arcticmodal-close modal_close"><i class="fa fa-times"></i></div>
 
-                <div class="logo_modal">FT</div>
+                <div class="modal_header">
 
-                <div class="login_header">
-                    <h6 class="login_header_title">Войти используя ваш логин</h6>
-                    <a href="#" class="">или зарегистрируйтесь</a>
+                    <div class="modal_logo">FT</div>
+                    <h6 class="modal_header_title">Войти используя ваш логин</h6>
+                    <a href="#" class="arcticmodal arcticmodal-close" data-modal="#registration">или зарегистрируйтесь</a>
+                
                 </div>
 
                 <div class="modal_inner">
@@ -1262,9 +1263,111 @@
                     <form>
 
                         <input type="text" class="modal_input" placeholder="Имя пользователя">
-                        <input type="text" class="modal_input invalid" placeholder="Пароль">
+                        <input type="password" class="modal_input invalid" placeholder="Пароль">
                         <button class="modal_button">Войти на сайт</button>
+                        
+                        <div class="modal_social_box">
+                            
+                            <h6 class="modal_title">
+                                <span>Войти через аккаунт:</span>
+                            </h6>
+
+                            <ul class="modal_social clearfix">
+                                
+                                <li>
+                                    <a href="#" class="google_plus"><i class="fa fa-google-plus"></i>Google</a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="fb"><i class="fa fa-facebook"></i>Facebook</a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="vk"><i class="fa fa-vk"></i>Вконтакте</a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="modal_remember clearfix">
+                            
+                            <div class="modal_remember_inner alignleft">
+                                <input type="checkbox" id="remember_me">
+                                <label for="remember_me">Запомнить меня</label>
+                            </div>
+
+                            <a href="#" class="alignright">Забыли пароль?</a>
+
+                        </div>
+
+                        <div class="modal_title"></div>
                     
+                    </form>
+
+                    <p class="modal_text">Подпишитесь на рассылку и получайте самые свежие новости</p>
+
+                    <form>
+                        
+                        <div class="subscribe">
+                            
+                            <input type="text" placeholder="Электронная почта">
+                            <button class="">Подписаться</button>
+
+                        </div>    
+
+                    </form>
+
+                </div>
+
+            </div>
+
+            <div id="registration" class="modal_box">
+                
+                <div class="arcticmodal-close modal_close"><i class="fa fa-times"></i></div>
+
+                <div class="modal_header">
+
+                    <div class="modal_logo">FT</div>
+                    <h6 class="modal_header_title">Зарегистрироваться</h6>
+                    <a href="#" class="arcticmodal arcticmodal-close" data-modal="#logIn">или войти</a>
+                
+                </div>
+
+                <div class="modal_inner">
+                    
+                    <form>
+
+                        <input type="text" class="modal_input" placeholder="Имя пользователя">
+                        <input type="email" class="modal_input invalid" placeholder="Электронная почта">
+                        <button class="modal_button">Зарегистрироваться</button>
+
+                        <p class="modal_text">Подтверждение регистрации будет отправлено на ваш e-mail</p>
+                        
+                        <div class="modal_social_box">
+                            
+                            <h6 class="modal_title">
+                                <span>Или зарегистрироваться через:</span>
+                            </h6>
+
+                            <ul class="modal_social clearfix">
+                                
+                                <li>
+                                    <a href="#" class="google_plus"><i class="fa fa-google-plus"></i>Google</a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="fb"><i class="fa fa-facebook"></i>Facebook</a>
+                                </li>
+
+                                <li>
+                                    <a href="#" class="vk"><i class="fa fa-vk"></i>Вконтакте</a>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
                     </form>
 
                 </div>
