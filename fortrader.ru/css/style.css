@@ -62,7 +62,8 @@
   22. Quotes
     22.1 Quotes
     22.2 Table Quotes
-    22.3 Graph of Quotes
+    22. Graph of Quotes
+    22.4 Ticket Quotes
   23. Footer
     23.1. Footer Top
     23.2. Footer Middle
@@ -265,6 +266,15 @@
     3. Main
 
 ------------------------------------------------ */
+
+  .bg_page{
+    background-image: url(../images/bg_wide.png);
+    background-position: 50% 0;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    min-width: 1200px;
+  }
   
   .container{
     width: 1103px;
@@ -604,6 +614,10 @@
       width: 16px;
       height: 27px;
       background-position: -186px -195px;
+    }
+
+    .icon{
+
     }
 
 
@@ -1229,11 +1243,18 @@
       h3>.icon,
       h4>.icon,
       h5>.icon,
-      h6>.icon{
+      h6>.icon,
+      h2>.fa,
+      h3>.fa,
+      h4>.fa,
+      h5>.fa,
+      h6>.fa{
         position: absolute;
         right: 0;
         top: 50%;
         line-height: 0;
+        font-size: 30px;
+        color: #bebebe;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         -o-transform: translateY(-50%);
@@ -1328,6 +1349,27 @@
         color: #333030;
         text-transform: uppercase;
       }
+      
+      .title5{
+        font: 21px/25px 'pf_dindisplay_proregular';
+        margin-bottom: 10px;
+      }
+
+      .title6{
+        font: 21px/25px 'pf_dindisplay_proregular';
+        margin-bottom: 10px;
+        text-transform: none;
+        padding: 0;
+      }
+
+      .title7{
+        font: 19px/25px 'pf_dindisplay_prolight';
+        background-color: #f0f0f0;
+        border-left: 3px solid #333;
+        padding: 10px 14px;
+        margin-bottom: 25px;
+      }
+
 
       p:not(:last-child){margin-bottom: 15px;}
 
@@ -3800,6 +3842,27 @@
       border-radius: 3px;
     }
 
+    /*small*/
+
+    label.square_input.small{
+      font: 14px/16px 'pf_dindisplay_prolight',sans-serif;
+      color: #9d9c9c;
+    }
+
+    label.square_input.small i{
+      width: 14px;
+      height: 14px;
+    }
+
+    input[type="radio"]:checked + label.small>i:before,
+    input[type="checkbox"]:checked + label.small>i:before{
+      width: 10px;
+      height: 10px;
+      top: 1px;
+      left: 1px;
+    }
+
+
     .real_time_choice{
         padding-bottom: 26px;
     }
@@ -4579,7 +4642,7 @@
 
 
   /* --------------------------------------------
-      22.3  Graph of Quotes 
+      22.3 Graph of Quotes 
   -------------------------------------------- */
      
       .graph_box{
@@ -4652,6 +4715,217 @@
 
       .graph img{
         width: 100%;
+      }
+
+  /* --------------------------------------------
+      22.4 Ticket Quotes 
+  -------------------------------------------- */
+      
+      .box2{
+        padding: 0 17px;
+      }
+
+      .box2:after{
+        content: "";
+        display: block;
+        clear: both;
+      }
+      
+      .change_color{
+          position: relative;
+          width: 50%;
+          float: left;
+          min-height: 60px;
+      }
+
+      .change_color:after{
+        content: "";
+        display: block;
+        clear: both;
+      }
+
+      .change_color_title{
+        float: left;
+        width: 238px;
+        color: #333;
+        font: 17px/28px 'pf_dindisplay_prolight', sans-serif;
+      }
+
+      .colorSelector{
+        float: left;
+        width: 28px;
+        height: 28px;
+        background: url(../plagins/colorpicker/images/select2.png) center;
+        cursor: pointer;
+      }
+
+      .colorpicker{
+        margin-top: 5px;
+      }
+
+      .checkbox1{
+        float: left;
+        width: 170px;
+        margin-bottom: 20px;
+      }
+
+      .more_tools_box{
+        display: none;
+      }
+
+      .more_tools_btn{
+        padding: 20px 0;
+      }
+
+      .more_tools_btn>a{
+        font: 17px/28px 'pf_dindisplay_prolight', sans-serif;
+        color: #014587;
+      }
+
+      .more_tools_btn>a:hover{
+        text-decoration: underline;
+      }
+
+      .more_tools_btn>a:before{
+        content: "Еще инструменты";
+      }
+
+      .more_tools_btn>a.active:before{
+        content: "Свернуть список";
+      }
+
+      .checkbox_box{
+        display: inline-block;
+        padding-right: 20px;
+        padding-bottom: 10px;
+      }
+
+      .get_code_box{
+        padding-top: 20px;
+        border-top: 1px solid #e3e3e3;
+      }
+
+      .agreement_box{
+        padding-bottom: 38px;
+      }
+
+      .get_code{
+        display: none;
+        padding-top: 20px;
+      }
+
+      .get_code textarea{
+        background-color: #fff;
+        border: 1px solid #dddddd;
+        border-radius: 2px;
+        resize: none;
+        width: 100%;
+        padding: 10px 17px;
+      }
+
+      .ticker_quotes_table{
+        table-layout: fixed;
+        width: 100%;
+      }
+
+      .ticker_quotes_table tr:nth-child(odd){
+        background-color: #eeeeee;
+      }
+
+      .ticker_quotes_table th{
+        text-align: center;
+        border: 1px solid #dddddd;
+        color: #707070;
+        text-transform: uppercase;
+        font: 18px/25px 'pf_dindisplay_promedium', sans-serif;
+        padding: 15px 10px;
+      }
+
+      .ticker_quotes_table th.ticker_quotes_type{
+        text-align: left;
+        width: 210px;
+        padding: 15px 10px 15px 24px;
+      }
+
+      .ticker_quotes_table td{
+        border: 1px solid #dddddd;
+        color: #9a8f8d;
+        text-align: center;
+        padding: 15px 10px;
+        font: 18px/25px 'pf_dindisplay_proregular',sans-serif;
+      }
+
+      .ticker_quotes_table td.ticker_quotes_type{
+        color: #000;
+        text-align: left;
+        padding-left: 24px;
+      }
+
+      .ticker_quotes_table td.ticker_quotes_change{
+        font: 18px/25px 'pf_dindisplay_promedium', sans-serif;
+      }
+
+      .profit td.ticker_quotes_change{
+        color: #00876a;
+      }
+
+      .lesion td.ticker_quotes_change{
+        color: #dc0001;
+      }
+
+      .ticker_quotes_type_inner{
+        position: relative;
+        padding-left: 28px;
+      }
+
+      .profit .ticker_quotes_type_inner:before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 7px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border: 7px solid transparent;
+        border-top: 10px solid #98d33e;
+      }
+
+      .lesion .ticker_quotes_type_inner:before{
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 0;
+        height: 0;
+        border: 7px solid transparent;
+        border-bottom: 10px solid #dc0001;
+      }
+
+      .ticker_quotes_author{
+        font: 15px/20px 'pf_dindisplay_prolight', sans-serif;
+        color: #333;
+        display: block;
+        padding: 10px 0;
+      }
+
+      .link_box a{
+        font: 15px/20px 'pf_dindisplay_prolight', sans-serif;
+        margin-right: 25px;
+      }
+
+      .link_box a i{
+        font-size: 18px;
+        margin-top: 2px;
+        color: #bebebe;
+        margin-right: 6px;
+      }
+
+      .edition_btn.disabled,
+      .edition_btn.disabled:hover{
+        cursor: default;
+        background-color: #bebebe;
+        border-color: #bdb7bd;
       }
 
 /* ------------------------------------------------

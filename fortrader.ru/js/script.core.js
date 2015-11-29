@@ -27,6 +27,8 @@
 			self.dropdoun();
 			self.optionsBox();
 			self.tablQuotesSlider.init();
+			self.moreTools();
+			self.getCode();
 
 		},
 
@@ -808,7 +810,54 @@
 
 			},
 
-		}
+		},
+
+
+		/**
+		**	More Tools
+		**/
+
+		moreTools : function(){
+
+			$('.more_tools_btn').on('click','a', function(){
+
+				$(this).toggleClass('active');
+				$(this).parent().next('.more_tools_box').slideToggle();
+
+			});
+
+		},
+
+
+		/**
+		**	More Tools
+		**/
+
+		getCode : function(){
+
+			$(".agreement_box").on("click","label", function(){
+
+				var input = $(this).parent().find('input'),
+					button = $(this).parents('.get_code_box').find('.edition_btn'),
+					box = $(this).parents('.get_code_box').find('.get_code');
+
+				if(!input.is(':checked')){
+					
+					box.slideDown();
+					button.removeClass('disabled');
+
+				}
+				else{
+
+					box.slideUp();
+					button.addClass('disabled');			
+				
+				}
+
+			});
+
+		},
+
 
 	}
 

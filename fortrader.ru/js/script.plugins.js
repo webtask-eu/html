@@ -114,6 +114,46 @@
 				End of Table switch
 		------------------------------------------------ */
 
+		/* ------------------------------------------------
+				Color Picker
+		------------------------------------------------ */
+			
+			if($(".colorSelector").length){
+
+				$(".colorSelector").each(function(){
+					var $this = $(this),
+						color = $this.attr('data-bg');
+
+					$this.css({
+						"background-color": color
+					}).next().val(color);
+					
+					$this.ColorPicker({
+						color: color,
+						onSubmit: function(hsb, hex, rgb, el) {
+							$(el).css({
+								"background-color": "#"+hex
+							});
+							$(el).next().val('#'+hex);
+							$(el).ColorPickerHide();
+						},
+						onShow: function(colpkr){
+							$(colpkr).fadeIn(500);
+							return false;
+						},
+						onHide: function(colpkr){
+							$(colpkr).fadeOut(500);
+							return false;
+						},
+					});
+				});
+			
+			}
+
+        /* ------------------------------------------------
+				End of Color Picker
+		------------------------------------------------ */
+
 	});
 
 })(jQuery);
