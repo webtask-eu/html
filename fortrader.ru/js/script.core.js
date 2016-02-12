@@ -30,6 +30,9 @@
 			self.moreTools();
 			self.getCode();
 
+			/**  add 00.02.16   **/
+			self.dropdounRequirements();
+
 		},
 
 		windowLoad: function(){
@@ -687,21 +690,23 @@
 			init: function(){
 
 				var self = this;
-
+				
 				self.ww = $(window);
 				self.table = $('.tabl_quotes table');
 				self.tableNav = $('.tabl_quotes_nav');
 				self.nav = $('tabl_quotes_nav');
+				self.itemWidth;
+				self.itemQt = self.table.attr('data-item') ? self.table.attr('data-item') : 4;
 
 				$('.tabl_quotes tr').addClass('tabl_quotes_item');
 
 				self.createBtn();
-				self.itemWidth();
+				self.WidthSlideItem();
 				self.moveSlider();
 
 				$(window).on("resize", function(){
 
-					self.itemWidth();
+					self.WidthSlideItem();
 				
 				});
 
@@ -709,23 +714,25 @@
 
 			},
 
-			itemWidth: function(){
+			WidthSlideItem: function(){
 
-				var wrapBox = $('.tabl_quotes').width(),
-					itemWidth = wrapBox/4,
-					self = this;
+				var self = this,
+					wrapBox = $('.tabl_quotes').width();
+
+				self.itemWidth = wrapBox/self.itemQt;
 
 				if(self.ww.width() < 992){
 
-					$('.tabl_quotes tr').width(itemWidth);
+					$('.tabl_quotes tr').width(self.itemWidth);
 
-				
 				}
 
 				self.table.each(function(){
 
-						var qItem = $(this).find("tbody>tr").length;
-						$(this).width(qItem*itemWidth +1)
+						var $this = $(this),
+							qItem = $(this).find("tbody>tr").length;
+						$(this).width(qItem*self.itemWidth +1);
+
 				});
 
 
@@ -741,7 +748,7 @@
 					template = '<div class="tabl_quotes_nav clearfix"><button class="prev disable"><i class="fa fa-angle-left"></i></button><button class="next"><i class="fa fa-angle-right"></i></button></div>',
 						qItem = $this.find("tbody>tr").length;
 
-					if(qItem > 4){
+					if(qItem > self.itemQt){
 						$this.closest('.turn_content').prepend(template);
 					}
 
@@ -751,21 +758,23 @@
 
 			moveSlider : function(){
 
+				var self = this;
+
 				$('body').on("click",".tabl_quotes_nav>*:not(.process)",function(){
 
 					if($(this).hasClass('disable')) return false;
 
 					var $this = $(this),
 						wrapSlider = $this.closest('.turn_content').find('.tabl_quotes'),
-						itemWidth = wrapSlider.width()/4, 
 						slider = wrapSlider.find('table'),
 						sliderWidth = slider.width(),
 						wrapOffset = wrapSlider.offset().left,
 						sliderOffset = slider.offset().left,
 						lastOffset = wrapSlider.width() - slider.width(),
 						position = wrapOffset - sliderOffset,
-						prevItem = - position + itemWidth,
-						nextItem = - position - itemWidth;
+						prevItem = - position + self.itemWidth,
+						nextItem = - position - self.itemWidth;
+
 
 					if($this.hasClass("next")){
 
@@ -779,7 +788,7 @@
 
 						$this.siblings().removeClass('disable');
 
-						if((nextItem - itemWidth) < lastOffset){
+						if((nextItem - self.itemWidth) < lastOffset){
 
 							$this.addClass('disable');
 						
@@ -798,7 +807,7 @@
 
 						$this.siblings().removeClass('disable');
 
-						if((prevItem + itemWidth) > 0 ){
+						if((prevItem + self.itemWidth) > 0 ){
 
 							$this.addClass('disable');
 						
@@ -855,6 +864,21 @@
 				}
 
 			});
+
+		},
+
+		/**
+		**	Dropdoun Requirements  add 00.02.16
+		**/
+
+		dropdounRequirements : function(){
+
+			$('.requirements_dropdown_button').on("click",function(){
+
+				$(this).parent('.requirements_dropdown').toggleClass('active').next().slideToggle();
+
+			});
+
 
 		},
 

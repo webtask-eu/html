@@ -84,6 +84,31 @@
 		width: 270px;
 	}
 
+	/*------- add 00.02.16 --------*/
+	.search_col75 {
+	    width: 453px;
+	}
+	.tabs_list_1 a {
+		padding: 15px 15px !important;
+	}
+	.tabs_list_2 a {
+		padding: 6px 15px 5px 15px !important;
+	}
+	.tabs_rating .tabs_list:before {
+		background-color: #fff
+	}
+	.requirements_cont_box {
+		height: 190px;
+	}
+	.counter_wr {
+		background: none;
+		margin-bottom: 0px;
+	}
+	.counter_box {
+		width: 119px;
+	}
+	/*------- end 00.02.16 --------*/
+
 }
 
 @media only screen and (max-width: 992px) {
@@ -751,6 +776,86 @@
 		margin-bottom: 10px;
 	}
 
+	/*------- add 00.02.16 --------*/
+
+	.table_rating .table_rating_place span, .table_rating .table_rating_place {
+		max-width: none !important;
+	}
+
+
+	.table_rating table td {
+		height: 67px;
+		padding: 0;
+	}
+
+	.table_rating_select  {
+		display: inline-block;
+		width: 100%;
+		float: left;
+	}
+
+	.table_rating table td:before {
+	    content: "";
+	    display: inline-block;
+	    vertical-align: middle;
+	    height: 100%;
+	   }
+	.country_ico {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.table_rating .blue_color {
+		display: inline-block;
+		vertical-align: middle;
+	}
+	.table_rating table td:nth-last-child(1) .options_list, .table_rating table td:nth-last-child(2) .options_list,  table td:nth-last-child(3) .options_list {
+		bottom: 67px;
+		top: auto;
+	}
+	.table_rating .options_list {
+		max-height: 200px;
+		overflow: auto;
+	}
+
+	.table_rating_select .options_list.opened {
+
+	}
+
+	.social_pl {
+		margin-top: 10px;
+		float: none;
+		display: block;
+		border-top: 1px solid #e3e3e3;
+		padding-top: 15px;
+	}
+	.with_social_pl {
+		border: none !important;
+		margin-bottom: 5px !important;
+	}
+	.search_col25 {
+		display: none;
+	}
+	.search_col75 {
+		width: 100%;
+	}
+	.financial_box {
+	    float: none;
+	    width: 230px;
+	    margin: 0 auto;
+	    margin-bottom: 25px;
+	}
+	.requirements_cont_box {
+		height: 250px;
+	}
+	.counter_box {
+		width: 133px;
+	}
+	.counter_box_4 {
+		margin-left: 70px;
+	}
+
+	/*------- end 00.02.16 --------*/
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -1136,6 +1241,17 @@
 		padding: 25px 20px 32px;
 	}
 
+	/*------- add 00.02.16 --------*/
+
+	.counter_box {
+		width: 125px;
+	}
+	.counter_box_4 {
+		margin-left: 65px;
+	}
+
+	/*------- end 00.02.16 --------*/
+
 }
 
 @media only screen and (max-width: 479px) {
@@ -1191,5 +1307,41 @@
 	.options_item{
 		width: 50%;
 	}
+
+	/*------- add 00.02.16 --------*/
+	[class*="box_size"] {
+	  float: left;
+	  padding: 0;
+	}
+	.box_size50{
+	  width: 100%;
+	}
+	.box_wr {
+	  margin: 0;
+	}
+	.requirements_cont_box {
+		height: 180px;
+	}
+	.requirements_box p {
+		font-size: 12px;
+	}
+
+	.counter_wr {
+		width: 300px;
+		margin: 0 auto;
+	}
+	.counter_box {
+		width: 142px;
+	}
+	.counter_box_4 {
+		margin-left: 0px;
+	}
+	.counter_box_5 {
+		margin-left: 80px;
+	}
+	.nav_list_2 li a {
+		width: 38px;
+	}
+	/*------- end 00.02.16 --------*/
 
 }
