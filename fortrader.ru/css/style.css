@@ -5988,6 +5988,102 @@
   }
 
 
+/* --------------------------------------------
+      8.5. Navigation
+-------------------------------------------- */
+  .navigation_box_2 {
+    float: right;
+    margin-bottom: 30px;
+  }
+  .navigation_box_2 .prev,
+  .navigation_box_2 .next{
+    display: block;
+    position: relative;
+    width: 43px;
+    height: 43px;
+    background-color: #fff;
+    border: 2px solid #e3e3e3;
+    float: left;
+    margin-right: 4px;
+  }
+
+  .navigation_box_2 .next{
+    float: right;
+    margin-left: 0px;
+    margin-right: 0;
+  }
+
+  .navigation_box_2 .prev:before,
+  .navigation_box_2 .next:before{
+    content: "";
+    display: block;
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    top: 50%;
+    left: 50%;
+    margin-left: -6px;
+    margin-top: -6px;
+    background: url(../images/icon.png) -47px 0 no-repeat;
+  }
+
+  .navigation_box_2 .next:before{
+    background-position: -89px 0;
+  }
+
+  .navigation_box_2 .prev:hover,
+  .navigation_box_2 .next:hover{
+    background-color: #333131;
+  }
+
+  .navigation_box_2 .prev:hover:before{
+    background-position: -68px 0;
+  }
+
+  .navigation_box_2 .next:hover:before{
+    background-position: -114px 0;
+  }
+
+  .nav_list_2 li{
+    float: left;
+    font: 16px/18px 'pf_dindisplay_proregular';
+    color: #333131;
+  }
+
+  .nav_list_2 li a{
+    text-align: center;
+    color: #5e5d5d;
+    display: block;
+    position: relative;
+    width: 43px;
+    height: 43px;
+    line-height: 43px;
+    background-color: #fff;
+    border: 2px solid #e3e3e3;
+    float: left;
+    margin-right: 4px;
+  }
+
+  .nav_list_2 li span{
+    padding: 0 5px;
+  }
+
+  .nav_list_2 li a:hover{
+    color: #fff;
+    background-color: #333131;
+  }
+
+  .nav_list_2 li.current a{
+    color: #5e5d5d;
+    background-color: #f1f1f1;
+  }
+  .box3 {
+    overflow: hidden;
+    position: relative;
+  }
+
+
+
 
   .financial_box {
     margin: 0 15px 20px 0;

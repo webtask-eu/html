@@ -124,6 +124,10 @@
 
 	.post_col_sm1{width: 100%;}
 
+	.d_none992{
+		display: none;
+	}
+
 
 	/*header*/
 
