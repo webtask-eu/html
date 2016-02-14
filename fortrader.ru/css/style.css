@@ -6077,6 +6077,7 @@
     color: #5e5d5d;
     background-color: #f1f1f1;
   }
+
   .box3 {
     overflow: hidden;
     position: relative;
@@ -6307,3 +6308,144 @@
     height: 40px;
     padding-top: 12px;
   }
+
+
+
+
+/* --------------------------------------------
+     Modal news 13.02.16
+-------------------------------------------- */
+
+  .arcticmodal-container_i2{
+    padding: 155px 10px  30px;
+  }
+
+  .modal-news-attention-box,
+  .box-modal_close{
+    position: relative;
+  }
+
+  .modal-news-attention-img{
+    position: absolute;
+    right: -41px;
+    top: -161px;
+  }
+
+  .icon-close-modal-news{
+    position: absolute;
+    right: -60px;
+    top: -75px;
+    font-size: 21px;
+    cursor: pointer;
+    color: #fff;
+  }
+
+  .modal_news_container{margin: 0 -11px;}
+
+  .modal-news-title{
+    color: #167ac6;
+    font-family: 'pf_dindisplay_proregular';
+    letter-spacing: 0.3px;
+    font-size: 19px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+  }
+
+
+   /* Style for "bg" */
+  .modal_box1{
+    max-width: 940px;
+    width: 100%;
+    height: auto;
+    background: #f6f6f6;
+    border-radius: 1px;
+    padding: 25px 15px 30px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+  }
+
+  .post_modal_new{
+    width: 50%;
+    float: left;
+    padding: 0 11px;
+    margin-top: 15px;
+  }
+
+  .post_modal_new_description{
+    display: block;
+    padding:5px 5px 5px 0;
+    overflow: hidden;
+    min-height: 100px;
+    border-bottom:1px solid #e0e0e0;
+  }
+
+  .post_modal_new_description:nth-child(odd){
+    clear:both;
+  }
+
+  .post_modal_new_img{
+    float: left;
+    display: block;
+    margin-right: 13px;
+  }
+
+  .post_modal_new_title{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    line-height: 20px;
+    color: #454242;
+    font-weight: 600;
+  }
+
+  .modal_text{
+    color: #787878;
+    font-weight: 400;
+    overflow: hidden;
+    font-size: 13px;
+    line-height: 20px;
+    text-align: left;
+    font-family: 'Open Sans', sans-serif;
+  }
+
+  .navigation_box_modal_news{
+    display: inline-block;
+    float: none;
+    width: 448px;
+    margin-top: 25px;
+    margin-bottom: 0;
+  }
+
+  .navigation_box_modal_news:not(:last-child){
+    margin-bottom: 30px;
+  }
+
+  .last{
+    width: 90px;
+    height: 47px;
+    position: relative;
+    float: right;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(227, 227, 227);color: #5e5d5d;
+    font-family: 'OpenSans', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    line-height: 43px;
+    margin-left: 4px;
+  }
+
+  .last:hover {
+    color: #fff;
+    background: #333131;
+  }
+
+  .nav_list_my_style li a{
+    width: 47px;
+    height: 47px;
+  }
+
+   .nav_list_my_prev,
+   .nav_list_my_next{
+    width: 47px !important;
+    height: 47px !important;
+   }

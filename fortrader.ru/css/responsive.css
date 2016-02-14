@@ -109,6 +109,11 @@
 	}
 	/*------- end 00.02.16 --------*/
 
+	/*-------- 13.02.16 ------------*/
+	.modal-news-attention-img,
+	.icon-close-modal-news{
+		right: 0;
+	}
 }
 
 @media only screen and (max-width: 992px) {
@@ -860,6 +865,15 @@
 
 	/*------- end 00.02.16 --------*/
 
+
+	/* --------------------------------------------
+	     Modal news 13.02.16
+	-------------------------------------------- */
+	.modal_box1{
+		max-width: 750px;
+	}
+
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -1256,6 +1270,50 @@
 
 	/*------- end 00.02.16 --------*/
 
+
+	/* --------------------------------------------
+	     Modal news 13.02.16
+	-------------------------------------------- */
+		.modal-news-attention-img{
+			display: none;
+		}
+
+		.icon-close-modal-news{
+			right: 0;
+		}
+
+		.post_modal_new{
+			width: 100%;
+		}
+
+		.modal_box1{
+			width: 420px;
+		}
+
+		.modal_news_container{
+			height: 260px;
+			overflow: auto;
+		}
+
+		.navigation_box_modal_news{
+			width: 260px;
+		}
+
+		.navigation_box_2 .next{
+			float: left;
+		}
+
+		.navigation_box_2 .last{
+			margin-left: 0;
+			margin-right: 9px;
+		}
+
+		.box3{
+			padding-top: 4px;
+			clear: both;
+		}
+
+
 }
 
 @media only screen and (max-width: 479px) {
@@ -1347,5 +1405,30 @@
 		width: 38px;
 	}
 	/*------- end 00.02.16 --------*/
+
+	/*--------13.02.16------------*/
+
+	.box-modal-item{
+		width: 100%;
+	}
+
+	.modal_box1{
+		width: 280px;
+	}
+
+	.post_modal_new_img{
+		float: none;
+		margin-right: 0;
+		margin-bottom: 8px;
+	}
+
+	.post_modal_new_img img{
+		width: 100%;
+	}
+
+	.post_modal_new_description{
+		min-height: 0;
+		padding:0 0 10px;
+	}
 
 }
