@@ -7,11 +7,11 @@
 	
 	<body>
 		
-		<a href="#" class="download1">Скачать скрин графика</a>
+		<a href="#" class="link_type1 download">Скачать скрин графика <i class="link_type1_icon"></i></a>
 		
 		<style>
 			
-			.download1{
+			.link_type1{
 				display: inline-block;
 				position: relative;
 				text-decoration: none;
@@ -22,23 +22,44 @@
 				color: #454242;
 			}
 
-			.download1:before{
-				content: '';
+			.link_type1_icon{
 				display: block;
 				position: absolute;
 				width: 45px;
 				height: 100%;
-				background: #167ac6 url(images/button_download.png) 0 0 no-repeat;
+				text-align: center;
 				top: 0;
 				right: 0;
 			}
 
-			.download1:hover{
+			.link_type1_icon:before{
+				content: '';
+				display: block;
+				width: 44px;
+				height: 44px;
+				line-height: 45px;
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-top: -22px;
+				margin-left: -22px;
+			}
+
+			.link_type1.download .link_type1_icon{
+				background-color: #167ac6;
+			}
+
+			.link_type1.download .link_type1_icon:before{
+				color: #fff;
+				background: url(images/button_download.png) 0 0 no-repeat;
+			}
+
+			.link_type1:hover{
 				color: #167ac6;
 				text-decoration: none;
 			}
 
-			.download1:hover:before{
+			.link_type1:hover .link_type1_icon{
 				background-color: #198ae0;
 			}
 
