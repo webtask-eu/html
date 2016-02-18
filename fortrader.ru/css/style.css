@@ -4828,6 +4828,10 @@
         width: 100%;
       }
 
+      .ticker_quotes_table:not(:last-child){
+        margin-bottom: 30px;
+      }
+
       .ticker_quotes_table tr:nth-child(odd){
         background-color: #eeeeee;
       }
@@ -4906,7 +4910,11 @@
         font: 15px/20px 'pf_dindisplay_prolight', sans-serif;
         color: #333;
         display: block;
-        padding: 10px 0;
+        padding: 12px 0;
+      }
+
+      .link_box{
+        padding-top: 15px;
       }
 
       .link_box a{
