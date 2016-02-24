@@ -114,6 +114,31 @@
 	.icon-close-modal-news{
 		right: 0;
 	}
+
+	
+	/*23.02.16*/
+		.wrapper_tabs_list > .tabs_list > li > a {
+			padding: 12px 15px !important;
+		}
+
+		.table_currency table th{
+			width: 20%;
+		}
+	/*/ 23.02.16*/
+
+	/*CURRENCY PAGE*/
+
+		
+	.chart_box {
+	  width: 380px;
+	}
+	.converter_form_inp {
+	  width: 198px;
+	}
+	.converter_form .jq-selectbox__dropdown {
+	  width: 278px;
+	}
+
 }
 
 @media only screen and (max-width: 992px) {
@@ -873,6 +898,77 @@
 		max-width: 750px;
 	}
 
+	/*23.02.16*/
+		.wrapper_tabs_list,
+		.wrapper_quotes_search_box_2{
+			width: 100%;
+			float: none;
+		}
+
+		.wrapper_tabs_list > .tabs_list > li:last-child{
+			padding-right: 0;
+		}
+
+		.table_currency .tabl_quotes_item td{
+			padding: 15px 0;
+		}
+	/*23.02.16*/
+
+	/*CURRENCY PAGE*/
+
+	.exchange_rates_box {
+	  width: 50%;
+	  margin-bottom: 10px;
+	}
+	.chart_box {
+	  border: 1px solid #e3e3e3;
+	  margin-top: 10px;
+	  width: 100%;
+	}
+	.dynamics_course  {
+	  background-color: #fff;
+	  padding: 0;
+	}
+	.dynamics_course_table {
+	  width: 100%;
+	}
+	.dynamics_course_table table {
+	  margin: 0 auto;
+	}
+	.converter_arrow {
+	  display: none;
+	}
+	.converter_form_inp {
+	  width: 333px;
+	}
+	.converter_form .jq-selectbox__dropdown {
+	  width: 413px;
+	}
+	.converter_right {
+	  float: left;
+	}
+	.quotes_list_sm li:first-child {
+	  float: none;
+	}
+	.quotes_list_sm {
+	  float: none;
+	}
+	.popular_currencies_box {
+	  width: 100%;
+	  padding-bottom: 0;
+	  padding-top: 0;
+	}
+	.popular_currencies {
+	  padding: 10px;
+	}
+	.sub_title_right {
+	  display: none;
+	}
+	.exchange_rates_form .jq-selectbox__dropdown {
+	  width: 413px ;
+	}
+
+
 
 }
 
@@ -1313,6 +1409,17 @@
 			clear: both;
 		}
 
+		/*CURRENCY PAGE*/
+
+		.converter_form_inp {
+		  width: 310px;
+		}
+		.exchange_rates_form .jq-selectbox__dropdown {
+		  width: 390px ;
+		}
+		.converter_form .jq-selectbox__dropdown {
+		  width: 390px;
+		}
 
 }
 
@@ -1429,6 +1536,34 @@
 	.post_modal_new_description{
 		min-height: 0;
 		padding:0 0 10px;
+	}
+
+
+	/*add 23.02.16*/
+
+		.wrapper_tabs_list > .tabs_list > li > a {
+			padding: 12px 15px !important;
+		}
+
+		.wrapper_quotes_search_box_2 .quotes_search_box_2{
+			margin-bottom: 10px;
+		}
+
+		.wrapper_tabs_list .tabs_list{
+			margin-bottom: 15px;
+		}
+	/*/ add 23.02.16*/
+
+	/*CURRENCY PAGE*/
+
+	.converter_form_inp {
+	  width: 210px;
+	}
+	.exchange_rates_form .jq-selectbox__dropdown {
+	  width: 280px !important;
+	}
+	.converter_form .jq-selectbox__dropdown {
+	  width: 280px !important;
 	}
 
 }
