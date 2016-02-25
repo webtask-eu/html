@@ -120,9 +120,13 @@
 				jQueryFormStyler  add 20.02.16
 		------------------------------------------------ */
 
-			$('input, select.form_styler').styler({
-                        selectSearch: true
-                    });
+			if($('.form_styler').length){
+
+				$('.form_styler').styler({
+                    selectSearch: true
+                });
+
+			}
 
         /* ------------------------------------------------
 				End jQueryFormStyler
