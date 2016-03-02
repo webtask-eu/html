@@ -6134,9 +6134,12 @@
   } 
   .social_button {
     margin: 10px 0;
+  }
+
+  .social_button a{
     opacity: 0.8;
   }
-  .social_button:hover {
+  .social_button a:hover {
     opacity: 1;
   }
 
@@ -7246,4 +7249,82 @@
 .sub_title_right {
   float: right;
 }
+
+
+
+
+/*Buttons 02.03.2016*/
+
+  
+  .btn_box1:not(:last-child){
+    margin-bottom: 10px;
+  }
+  
+  .btn_type1{
+    display: block;
+    outline: none;
+    border: none;
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 13px;
+    line-height: 18px;
+    padding: 15px 10px;
+    color: #fff;
+    text-align: center;
+  }
+
+  .btn_type1.red{
+    background-color: #ff1616;
+  }
+
+  .btn_type1.red:hover{
+    color: #fff;
+    background-color: #198ae0;
+  }
+
+  .btn_type1.grey{
+    background-color: #333030;
+  }
+
+  .btn_type1.grey:hover{
+    color: #fff;
+    background-color: #4d4848;
+  }
+
+  .btn_box2{
+    margin: 0 -15px;
+  }
+  
+  .btn_box2:not(:last-child){
+    margin-bottom: 10px;
+  }
+
+  .btn_box2:after{
+    content: "";
+    display: block;
+    clear: both;
+  }
+
+  .btn_box2>.btn_box2_inner{
+    display: block;
+    float: left;
+    padding: 0 15px;
+    width: 33.33%;
+  }
+
+  .btn_box2 a{
+    display: block;
+    font-size: 13px;
+    line-height: 16px;
+    border: 2px solid #e3e3e3;
+    text-align: center;
+    padding: 14px 10px;
+    color: #454444;
+  }
+
+  .btn_box2 a:hover{
+    color: #454444;
+    background-color: #ebebeb;
+    border-color: #ebebeb;
+  }
 

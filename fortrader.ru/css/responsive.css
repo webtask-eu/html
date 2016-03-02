@@ -970,6 +970,18 @@
 
 
 
+	/*Buttons 02.03.2016*/
+
+	 	.btn_box2>.btn_box2_inner{
+	 		width: 100%;
+	 	}
+
+	 	.btn_box2>.btn_box2_inner:not(:last-child){
+	 		margin-bottom: 10px;
+	 	}
+
+
+
 }
 
 @media only screen and (max-width: 767px) {
