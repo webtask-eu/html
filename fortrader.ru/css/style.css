@@ -5819,6 +5819,7 @@
     background-color: #f1f1f1;
     overflow: hidden;
   }
+
   .table_rating_place span {
     display: block;
     height: 46px;
@@ -5828,8 +5829,12 @@
     font-size: 9px;
     -webkit-transform: rotate(270deg); /* Chrome y Safari */
     -moz-transform: rotate(270deg); /* Firefox */
-    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=3); /* Internet Explorer */
     -o-transform: rotate(270deg); /* Opera */
+    transform: rotate(270deg);
+  }
+
+  .jq-selectbox li{
+    white-space: initial;
   }
   .table_rating_ico {
     float: left;
@@ -6769,7 +6774,7 @@
   width: 100%;
 }
 .exchange_rates_form .jq-selectbox ul {
-  margin-top: 200px;
+  margin-top: 210px;
   position: static  !important;
   background-color: #f1f1f1;
   padding-top: 20px;
