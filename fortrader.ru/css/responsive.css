@@ -16,7 +16,7 @@
 }
 
 @media only screen and (max-width: 1200px) {
-	
+
 	.container{width: 960px;}
 
 	.left_part{width: 640px;}
@@ -36,7 +36,7 @@
 	.news_right1{width: 250px;}
 
 	.more_interview_btn{margin-bottom: 20px;}
-	
+
 	.share_list li.like_block{float: none;}
 
 	.banner3{padding: 0;}
@@ -115,7 +115,7 @@
 		right: 0;
 	}
 
-	
+
 	/*23.02.16*/
 		.wrapper_tabs_list > .tabs_list > li > a {
 			padding: 12px 15px !important;
@@ -128,7 +128,7 @@
 
 	/*CURRENCY PAGE*/
 
-		
+
 	.chart_box {
 	  width: 380px;
 	}
@@ -139,10 +139,62 @@
 	  width: 278px;
 	}
 
+	/*Social_buttons*/
+	.social_buttons li{
+		width: 50%;
+	}
+
+	/*code_script*/
+	.code_img{
+		margin-left: 0;
+		float: none;
+	}
+
+ 	.code_script{
+ 		margin:55px 0 20px;
+ 	}
+
+ 	.code_cover_form{
+ 		float: none;
+ 	}
+
+ 	.code_cover_title{
+ 		top: -35px;
+ 	}
+
+	/*post_edition*/
+ 	.post_edition figcaption:after{
+ 		width: 145px;
+ 	}
+
+ 	/*btn*/
+
+ 	.watch_btn:not(:last-child){
+		margin-right: 0;
+ 	}
+
+ 	.download_pdf_btn:not(:first-child){
+ 		margin-left: 0;
+ 	}
+
+ 	.watch_btn,.download_pdf_btn{
+ 		position: relative;
+ 		left: 50%;
+ 		-webkit-transform: translate(-50%, 0);
+ 			-ms-transform: translate(-50%, 0);
+	 		 -o-transform: translate(-50%, 0);
+		 		transform: translate(-50%, 0);
+ 	}
+
+ 	.watch_btn{
+ 		margin-bottom: 5px;
+ 	}
+
+
 }
 
 @media only screen and (max-width: 992px) {
-	
+
 	body{
 		min-width:768px;
 		font-size: 13px;
@@ -224,7 +276,7 @@
 		width: auto;
 		margin-bottom: 15px;
 	}
-	
+
 	h2,
 	h3{
 		font-size: 18px;
@@ -258,13 +310,13 @@
 	.list1>li,
 	.tabs_list>li>a,
 	.post.big figcaption>a{font-size: 14px;}
-	
+
 	.archive_btn{font-size: 15px;}
 
 	.button1,.button2{font-size: 16px;}
-	
+
 	article{font-size: 14px;}
-	
+
 	.news_list>li{min-height: 62px;}
 
 	.news_list>li time{
@@ -283,7 +335,7 @@
 		padding-top: 20px;
 	}
 
-	
+
 	.events_table th{
 		vertical-align: middle;
 	}
@@ -542,7 +594,7 @@
 	.table_top {
       background-position: 4px 13px;
     }
-	
+
 	/*quotes*/
 
 	.forecast_tabs .tabs_list>li{
@@ -632,7 +684,7 @@
 		margin: 0 !important;
 	}
 
-	.quotes_list li a:hover, 
+	.quotes_list li a:hover,
 	.quotes_list li.active a{
 		background-color: #f1f1f1;
 		color: #454242;
@@ -658,7 +710,7 @@
 	.quotes_list1 li a{
 		width: auto;
 	}
-	
+
 	.add_mood>a{
 		width: 134px;
 		font-size: 16px;
@@ -691,7 +743,7 @@
     .overview_list li a{
     	width: 58px;
     }
-    
+
     .rates_box1_difference{
     	display: block;
     }
@@ -701,7 +753,7 @@
     }
 
     /*Tabl Quotes*/
-	
+
 	.tabl_quotes{
 		position: relative;
 		overflow: hidden;
@@ -766,7 +818,7 @@
 		color: #787777;
 		display: block;
 	}
-	
+
 	.tabl_quotes table td:first-child:before{
 		display: inline-block;
 		height: 100%;
@@ -980,18 +1032,85 @@
 	 		margin-bottom: 10px;
 	 	}
 
+		/*Magazine page table*/
 
+		.tabl_quotes.magazine_page_table:before,
+		.tabl_quotes.magazine_page_table:after{
+			background: none;
+		}
+
+		.tabl_quotes.magazine_page_table td{
+			border-left: 1px solid #e3e3e3;
+		}
+
+	 	.magazine_table_website,
+	 	.magazine_table_download{
+	 		width: 100%;
+	 	}
+
+	 	.tabl_quotes.magazine_page_table td{
+	 		text-align: center;
+	 		height: auto;
+	 		padding: 11px 9px 12px;
+	 	}
+
+	 	.tabl_quotes.magazine_page_table td:first-child:before{
+	 		margin-left: -25px;
+	 	}
+
+	 	.tabl_quotes.magazine_page_table td:before{
+	 		font-size: 13px;
+	 		color: #333131;
+	 	}
+
+	 	/*banner4*/
+	 	.banner4_link{
+			float: none;
+	 	}
+
+	 	.banner4_text{
+	 		margin-bottom: 20px;
+	 	}
+
+	 	.banner4_text,.banner4_link a{
+	 		display: block;
+	 		width: 100%;
+	 	}
+
+	 	/*Magazine navigation*/
+	 	.magazine_navigation{
+	 		width: 100%;
+	 	}
+
+	 	/*Code script*/
+	 	.code_script{
+	 		width: 100%;
+	 	}
+
+	 	/*post_edition*/
+	 	.post_edition .post_col4{
+	 		width: 50%;
+	 	}
+
+	  	.post_edition figcaption:after{
+	 		width: 180px;
+	 	}
+
+ 		/*magazine_navigation*/
+		.magazine_navigation{
+			display: none;
+		}
 
 }
 
 @media only screen and (max-width: 767px) {
- 	
+
  	body{
  		min-width:460px;
  	}
 
  	[class*="banner"]{display: none;}
-	
+
 	.container{
 		width: 420px;
 	}
@@ -1010,12 +1129,12 @@
 	.sidebar:before,
   .left_part:before{display: none;}
 
-	
+
 	.post_col_xs1{width: 100%;}
 
 
 	/*header*/
-	
+
 	#header{
 		margin-right: 0;
 		padding-right: 0;
@@ -1148,7 +1267,7 @@
 	.additional_menu>li.current>a{
 		background-color: #f61616;
 	}
-	
+
 	.additional_menu>li.has_submenu>a:before{
 		content: "";
 		display: block;
@@ -1173,7 +1292,7 @@
 		width: auto;
 		border: none;
 	}
-	
+
 	.additional_menu>li:hover>.sub_menu{display: none;}
 
 	.additional_menu .sub_menu:before{
@@ -1190,7 +1309,7 @@
 	.additional_menu .sub_menu a{
 		padding-left: 40px;
 	}
-	
+
 	.post1>img{
 		width: 80px;
 		float: left;
@@ -1199,7 +1318,7 @@
 
 	.post1 figcaption{overflow: hidden;}
 
-	
+
 	.footer_middle{border-bottom: none;}
 
 	.footer_bottom{padding-top: 10px;}
@@ -1211,7 +1330,7 @@
 		width: auto;
 		padding: 0;
 	}
-	
+
 	.list_box>h6{
 		cursor: pointer;
 		position: relative;
@@ -1249,9 +1368,9 @@
 	}
 
 	.list3{display: none;}
-	
+
 	.list3 > li{padding-bottom: 0;}
-	
+
 	.list3 > li > a{
 		display: block;
 		padding: 8px 10px;
@@ -1282,8 +1401,8 @@
 
 	.chench_btn:before{
 		content: attr(data-shot-text);
-	} 
-	
+	}
+
 	.edition_btn{width: 160px;}
 
 	.materials_box>span{display: none;}
@@ -1433,6 +1552,39 @@
 		  width: 390px;
 		}
 
+		.buttons_links{
+			padding: 0 28px 30px;
+		}
+
+		.buttons_links li{
+			width: 100%;
+		}
+
+		/*Code cover*/
+		.code_cover_form{
+			float: none;
+		}
+
+		.code_img img{
+	 		width: 100%;
+	 	}
+
+	 	.code_img{
+			padding: 0 40px;
+		}
+
+		/*banner4*/
+	 	.banner4,
+	 	.banner4_text,
+	 	.banner4_link{
+	 		display: block;
+	 	}
+
+	 	/*post_edition*/
+	 	.post_edition .post_col4{
+	 		width: 100%;
+	 	}
+
 }
 
 @media only screen and (max-width: 479px) {
@@ -1451,7 +1603,7 @@
 	}
 
 	.tabs_comment .tabs_list>li>a>span{display: block;}
-	
+
 	.tabs_comment .tabs_list>li>a{
 		line-height: 16px;
 		padding: 8px 0;
@@ -1577,5 +1729,14 @@
 	.converter_form .jq-selectbox__dropdown {
 	  width: 280px !important;
 	}
+
+	/*Social buttons*/
+	.social_buttons_fsb:before,
+	.social_buttons_vk:before,
+	.social_buttons_tw:before,
+	.social_buttons_gm:before{
+    	content:"Поделится";
+	}
+
 
 }

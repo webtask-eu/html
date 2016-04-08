@@ -1,9 +1,9 @@
 
-/* 
+/*
 -----------------------------------------------------
   Stylesheet Guide
 -----------------------------------------------------
-  
+
   1. Default stylesheets
     1.1. Color Schemes
     1.2. Fonts
@@ -107,7 +107,7 @@
    ::-moz-selection{background: #146eb3;color: #fff;}
 
    ::-webkit-scrollbar{
-    background: #cdcdcd;  
+    background: #cdcdcd;
     width: 10px;
    }
 
@@ -150,7 +150,7 @@
   /* --------------------------------------------
         1.1. Color Schemes
   -------------------------------------------- */
-    
+
     .red_color{
       color: #ff1616;
     }
@@ -168,7 +168,7 @@
     }
 
     /*background*/
-    
+
     .red_bg{
       background-color: #f6e1e1;
     }
@@ -184,7 +184,7 @@
   /* --------------------------------------------
         1.2. Fonts
   -------------------------------------------- */
-    
+
     .PFDlight{font-family: 'pf_dindisplay_prolight';}
     .PFDregular{font-family: 'pf_dindisplay_proregular';}
     .PFDmedium{font-family: 'pf_dindisplay_promedium';}
@@ -229,13 +229,13 @@
 
    .transparent{ opacity:0; }
 
-   .invisible{ 
+   .invisible{
     opacity: 0;
     visibility: hidden;
    }
 
-   .visible{ 
-    opacity:1; 
+   .visible{
+    opacity:1;
     visibility: visible;
    }
 
@@ -275,7 +275,7 @@
     background-color: #fff;
     min-width: 1200px;
   }
-  
+
   .container{
     width: 1103px;
     margin: 0 auto;
@@ -296,7 +296,7 @@
     float: left;
     width: 746px;
     padding-right: 17px;
-    
+
   }
 
   .sidebar{
@@ -372,7 +372,7 @@
   /* --------------------------------------------
         3.1. Page tilte end breadcrumps
   -------------------------------------------- */
-    
+
     .page_title_box{
        padding: 39px 0 43px;
        color: #505050;
@@ -388,7 +388,7 @@
   /* --------------------------------------------
         3.2. Offsets
   -------------------------------------------- */
-    
+
     .section_offset{
        padding: 0 0 30px;
     }
@@ -401,7 +401,7 @@
   /* --------------------------------------------
         3.3. Breadcrumbs
   -------------------------------------------- */
-    
+
     .breadcrumbs{
       margin-bottom: 15px;
     }
@@ -437,11 +437,11 @@
     .breadcrumbs ul li a:hover{
       color: #146eb3;
     }
- 
+
   /* --------------------------------------------
         3.4. Icons
   -------------------------------------------- */
-    
+
     .icon:before{
       content: "";
       display: inline-block;
@@ -485,7 +485,7 @@
       height: 30px;
       background-position: -94px -38px;
     }
-    
+
     .newspaper_icon{/*margin-top: 4px;*/}
 
     .newspaper_icon:before{
@@ -505,7 +505,7 @@
       height: 31px;
       background-position: -130px -46px;
     }
-    
+
     .feather_icon{/*margin-top: 4px;*/}
 
     .feather_icon:before{
@@ -579,25 +579,25 @@
       height: 22px;
       background-position: -182px -43px;
     }
-    
+
     .pencil_icon:before{
       width: 20px;
       height: 20px;
       background-position: -47px -79px;
     }
-    
+
     .files_icon:before{
       width: 35px;
       height: 22px;
       background-position: -45px -273px;
     }
-    
+
     .chart_icon:before{
       width: 25px;
       height: 21px;
       background-position: -101px -277px;
     }
-    
+
     .category_icon:before{
       width: 25px;
       height: 28px;
@@ -626,7 +626,7 @@
     4. Header
 
 ------------------------------------------------ */
-   
+
   #header{
     margin-right: -20px;
     padding-right: 20px;
@@ -649,7 +649,7 @@
   /* --------------------------------------------
         4.1. Header List
   -------------------------------------------- */
-    
+
     .header_top_menu{float: left;}
 
     .header_list li{float: left;}
@@ -746,11 +746,11 @@
     display: table;
     width: 100%;
   }
-  
+
   /* --------------------------------------------
       5.1. Main Navigation
   -------------------------------------------- */
-    
+
     nav{
       display: table-cell;
     }
@@ -817,7 +817,7 @@
       background-color: #242222;
       position: relative;
     }
-    
+
     .sub_menu>li>a:after{
       content: "";
       display: block;
@@ -908,7 +908,7 @@
       background-color: #242222;
       position: relative;
     }
-    
+
     .additional_menu>li>a:after{
       content: "";
       display: block;
@@ -931,16 +931,16 @@
       right: 100%;
       left: auto;
     }
-    
+
 
   /* --------------------------------------------
       5.2. Searchform
   -------------------------------------------- */
-    
+
     .search_box{
       display: table-cell;
     }
-    
+
     .search_form{
       display: block;
       position: relative;
@@ -1040,13 +1040,13 @@
     height: 0;
     border: 10px solid transparent;
   }
-  
+
   .header_info_container{overflow: hidden;}
-  
+
   /* --------------------------------------------
         6.1. Quotes
   -------------------------------------------- */
-    
+
     .quotes_box .header_info_title{
       background-color: #1575bf;
     }
@@ -1068,7 +1068,7 @@
       height: 1px;
       background-color: #403e3e;
     }
-    
+
     .header_info_slider{
       margin-right: 110px;
       width: auto;
@@ -1137,7 +1137,7 @@
       height: 5px;
       background: url(../images/icon.png) -26px -2px no-repeat;
     }
-    
+
 
   /* --------------------------------------------
         6.2. Focus
@@ -1191,7 +1191,7 @@
    /* --------------------------------------------
         7.1. Typography
    -------------------------------------------- */
-  
+
       h1,h2,h3,h4,h5,h6{
          font-weight:normal;
          line-height: 1;
@@ -1349,7 +1349,7 @@
         color: #333030;
         text-transform: uppercase;
       }
-      
+
       .title5{
         font: 21px/25px 'pf_dindisplay_proregular';
         margin-bottom: 10px;
@@ -1424,9 +1424,8 @@
         7.2. Lists
    -------------------------------------------- */
 
-
       .list1{margin-bottom: 8px;}
-      
+
       .list1>li{
         padding: 6px 20px 8px 0;
         border-top: 1px solid #e3e3e3;
@@ -1541,9 +1540,8 @@
         text-decoration: underline;
       }
 
-      
       .list4{text-align: center;}
-      
+
       .list4 > li{
         display: inline-block;
         margin-bottom: 15px;
@@ -1582,7 +1580,7 @@
         margin-left: 4px;
         margin-bottom: 5px;
       }
-      
+
       .share_list li a{
         display: block;
         width: 240px;
@@ -1609,7 +1607,7 @@
       .share_list li a.share_fb:hover{background-position: -244px 100%;}
       .share_list li a.share_vk:hover{background-position: -488px 100%;}
 
-      
+
       .share_list li.like_block{width: 240px;}
 
       .share_list li.like_block a{
@@ -1710,7 +1708,7 @@
       .nav_list li span{
         padding: 0 5px;
       }
-      
+
       .nav_list li a:hover{
         color: #ff1616;
       }
@@ -1719,7 +1717,7 @@
         color: #fff;
         background-color: #ff1616;
       }
-      
+
       .social_list{padding-left: 13px;}
 
       .social_list>li{
@@ -1781,7 +1779,26 @@
         margin-bottom: 30px;
       }
 
-    /***share list quotation***/
+      .list8:not(:last-child){
+        margin-bottom: 38px;
+      }
+
+      .list8 li:first-child{
+        border-top:1px solid #e3e3e3;
+      }
+
+      .list8 li{
+        padding:20px 0;
+        border-bottom:1px solid #e3e3e3;
+      }
+
+      .list8 li a{
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 22px;
+      }
+
+      /***share list quotation***/
       .share_list_quot {
         margin-bottom: 16px;
       }
@@ -1789,7 +1806,7 @@
   /* --------------------------------------------
         7.3. Buttons
   -------------------------------------------- */
-    
+
     .archive_btn{
       display: inline-block;
       width: 172px;
@@ -1884,7 +1901,7 @@
       padding: 10px 35px;
       border-radius: 3px;
     }
-    
+
     .registration_btn:hover{
       background-color: #eb2a2a;
       color: #fff;
@@ -2012,7 +2029,7 @@
       background: url(../images/share_btn.png) 0 0 no-repeat;
       -webkit-transition: none;
        -o-transition: none;
-       transition: none; 
+       transition: none;
     }
 
     .share_btn:hover{
@@ -2078,7 +2095,7 @@
       color: #fff;
       background-color: #ff1616;
     }
-    
+
     .come_back_btn{
       outline: none;
       display: inline-block;
@@ -2097,12 +2114,55 @@
       background-color: #115e99;
     }
 
+    .watch_btn:not(:last-child){
+      margin-right: 2px;
+    }
+
+    .watch_btn{
+      float: left;
+      text-transform: uppercase;
+      width: 230px;
+      height: 56px;
+      color: #fff;
+      line-height: 56px;
+      background: #333030;
+      font-family: 15px 'pf_dindisplay_proregular';
+      display: block;
+      text-align: center;
+    }
+
+    .watch_btn:hover{
+      color: #fff;
+      background: #4d4848;
+    }
+
+    .download_pdf_btn:not(:first-child){
+      margin-left: 2px;
+    }
+
+    .download_pdf_btn{
+      float: left;
+      text-transform: uppercase;
+      text-align: center;
+      display: block;
+      width: 230px;
+      height: 56px;
+      color: #fff;
+      line-height: 56px;
+      font-family: 15px 'pf_dindisplay_proregular';
+      height: 56px;
+      background: #167ac6;
+    }
+
+    .download_pdf_btn:hover{
+      color: #fff;
+      background: #198ae0;
+    }
 
 
   /* --------------------------------------------
         7.4. Banners
   -------------------------------------------- */
-    
 
     .header_banner1{margin: 15px 0;}
 
@@ -2122,7 +2182,7 @@
     [class*="banner"] img{
       max-width: 100%;
     }
-    
+
     .banner3{
       position: relative;
       padding: 0 20px;
@@ -2150,18 +2210,56 @@
       float: left;
       width: 50%;
     }
-    
+
+    .banner4{
+      display: table;
+    }
+
+    .banner4_text{
+      padding: 15px 0 15px 10px;
+      vertical-align: middle;
+      display: table-cell;
+      font-size: 14px;
+      color: #454444;
+      border-left: 3px solid #ff1616;
+      width: 452px;
+      font-weight: 400;
+      background: #f5f5f5;
+    }
+
+    .banner4_text span{
+      font-weight: 700;
+      text-transform: uppercase;
+    }
+
+    .banner4_link{
+      overflow: hidden;
+      float: right;
+    }
+
+    .banner4_link a{
+      width: 277px;
+      padding: 15px 0;
+      text-align: center;
+      background: #ff1616;
+      color: #fff;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      vertical-align: middle;
+      display: table-cell;
+    }
 
   /* --------------------------------------------
         7.5. Dividers
   -------------------------------------------- */
-    
+
     hr{
       border: none;
       border-bottom: 1px solid #e3e3e3;
       margin:0 0 15px;
     }
-    
+
     hr.separator1{
       height: 4px;
       border-top: 1px solid #e3e3e3;
@@ -2221,11 +2319,11 @@
       border: 4px solid transparent;
       border-top: 5px solid #333131;
     }
-    
+
   /* --------------------------------------------
         7.7. Forms
   -------------------------------------------- */
-    
+
     .ask_question{
       position: relative;
       margin-top: 30px;
@@ -2342,7 +2440,6 @@
       border-radius: 3px;
     }
 
-  
   /* --------------------------------------------
         7.8. Tables
   -------------------------------------------- */
@@ -2366,7 +2463,7 @@
       border-top: 4px solid #fff;
       padding-top: 10px;
       padding-bottom: 10px;
-      color: #454242; 
+      color: #454242;
     }
 
     .events_table .event_time{
@@ -2385,8 +2482,6 @@
     }
 
 
-    
-
 /* ------------------------------------------------
 
     8. Widgets and Shortcodes
@@ -2397,12 +2492,12 @@
   /* --------------------------------------------
         8.1. Accordion and Toggles
   -------------------------------------------- */
-    
+
 
   /* --------------------------------------------
         8.2. Tabs and Tour Sections
   -------------------------------------------- */
-    
+
     .tabs_list{
       position: relative;
       margin-bottom: 25px;
@@ -2463,7 +2558,7 @@
       margin-left: -3px;
       z-index: 9;
     }
-    
+
     .tabs_contant>div{display: none;}
     .tabs_contant>div.active{display: block;}
 
@@ -2508,7 +2603,7 @@
   /* --------------------------------------------
         8.3. Turn Box
   -------------------------------------------- */
-    
+
     .nav_buttons{
       padding-top: 7px;
     }
@@ -2540,7 +2635,7 @@
       background-image: url(../images/icon.png);
       background-repeat: no-repeat;
     }
-    
+
 
     .nav_buttons>*.prev_btn:before{background-position: -47px 0;}
 
@@ -2549,11 +2644,11 @@
     .nav_buttons>*.turn_btn:before{background-position: -34px -34px;}
 
     .nav_buttons>*.prev_btn:hover:before{background-position: -68px 0;}
-    
+
     .nav_buttons>*.next_btn:hover:before{background-position: -114px 0;}
 
     .nav_buttons>*.turn_btn:hover:before{background-position: -54px -34px;}
-    
+
     .nav_buttons>*.turn_btn .tooltip:after{
       content: "Свернуть";
     }
@@ -2640,7 +2735,6 @@
       margin-bottom: 15px;
     }
 
-
     .thesis_box{
       margin-bottom: 30px;
     }
@@ -2653,6 +2747,15 @@
       line-height: 27px;
       font-style: italic;
       color: #787272;
+    }
+
+    .thesis2{
+      border-left: 10px solid #d9d9d9;
+      overflow: hidden;
+      padding-left: 15px;
+      color: #333030;
+      font-size: 14px;
+      line-height: 26px;
     }
 
     .thesis_box>img.alignright{
@@ -2724,7 +2827,7 @@
       width: 100%;
       height: auto;
     }
-    
+
     .author_text{overflow: hidden;}
 
     .author_name{
@@ -2736,14 +2839,14 @@
     }
 
     .info_buttons>a{
-      
+
     }
 
 
   /* --------------------------------------------
         8.5. Navigation
   -------------------------------------------- */
-    
+
     .navigation_box .prev,
     .navigation_box .next{
       display: block;
@@ -2792,7 +2895,7 @@
     .navigation_box .next:hover:before{
       background-position: -114px 0;
     }
-  
+
 
 /* ------------------------------------------------
 
@@ -2803,7 +2906,7 @@
   /* --------------------------------------------
         9.1. Vertical
   -------------------------------------------- */
-    
+
 
     .news_slider .news_list>li{
       display: none;
@@ -2851,7 +2954,7 @@
     .news_slider_nav>a.slider_nav_next:before{background-position: -49px -18px;}
 
     .news_slider_nav>a.slider_nav_prev:hover:before{background-position: -114px -18px;}
-    
+
     .news_slider_nav>a.slider_nav_next:hover:before{background-position: -72px -18px;}
 
   /* --------------------------------------------
@@ -2891,7 +2994,7 @@
     10. Beginner
 
 ------------------------------------------------ */
-  
+
   .beginner_left{
     width: 361px;
     float: left;
@@ -2919,12 +3022,12 @@
     height: 0;
     clear: both;
   }
-  
+
   [class*="post_col"]{
     float: left;
     padding: 0 5px;
   }
-  
+
   .post_col2{
     width: 50%;
   }
@@ -2936,11 +3039,11 @@
   .post_col4{
     width: 25%;
   }
-  
+
   /* --------------------------------------------
         11.1. Post
   -------------------------------------------- */
-    
+
     .post{margin-bottom: 20px;}
 
     .post>a img{width: 100%;}
@@ -3003,7 +3106,7 @@
     .post1{margin-bottom: 20px;}
 
     .post1>a img{width: 100%;}
-    
+
     .post1 figcaption{
       padding-top: 10px;
       display: block;
@@ -3017,11 +3120,11 @@
     }
 
     .post1 figcaption>a strong{font-weight: 600;}
-    
+
   /* --------------------------------------------
         11.2. Post small
   -------------------------------------------- */
-    
+
     .post_small{
       overflow: hidden;
       padding-bottom: 15px;
@@ -3055,7 +3158,7 @@
       color: #999999;
       display: block;
     }
-    
+
     .post_small2{
       overflow: hidden;
       margin-bottom: 25px;
@@ -3087,7 +3190,7 @@
   /* --------------------------------------------
         11.3. News Post
   -------------------------------------------- */
-    
+
     .news_post_box{
       margin: 0 -19px 17px;
       position: relative;
@@ -3142,9 +3245,9 @@
   /* --------------------------------------------
         11.4. Books Post
   -------------------------------------------- */
-    
 
-    .book_post{margin-bottom: 20px;} 
+
+    .book_post{margin-bottom: 20px;}
 
     .book_post .book_img{
       width: 100%;
@@ -3156,7 +3259,7 @@
     }
 
     .book_post .book_img img{vertical-align: middle;}
-    
+
     .book_post figcaption{
       display: block;
       font-size: 14px;
@@ -3169,7 +3272,7 @@
   /* --------------------------------------------
         11.5. Brokers Post
   -------------------------------------------- */
-    
+
     .broker_post{
       margin-bottom: 20px;
     }
@@ -3181,13 +3284,13 @@
       line-height: 22px;
       color: #787575;
       padding-right: 5px;
-    }    
+    }
 
 
   /* --------------------------------------------
         11.6. Autor Post
   -------------------------------------------- */
-    
+
     .post_autor{margin-bottom: 30px;}
 
     .post_autor>img{width: 100%;}
@@ -3208,13 +3311,55 @@
     }
 
 
+  /* --------------------------------------------
+        11.7. Post edition
+  -------------------------------------------- */
+
+    .post_edition{
+      margin-top: -30px;
+    }
+
+    .post_edition .post_col4{
+      margin-top: 30px;
+    }
+
+    .post_edition figcaption a{
+      font-size: 15px;
+      margin: 15px 0;
+      display: inline-block;
+    }
+
+    .post_edition figcaption{
+      position: relative;
+    }
+
+    .post_edition figcaption:after{
+      content: '';
+      position: absolute;
+      bottom: 0;
+      width: 175px;
+      -webkit-transform:  translate(-50%,0);
+          -ms-transform:  translate(-50%,0);
+           -o-transform:  translate(-50%,0);
+              transform:  translate(-50%,0);
+      left: 50%;
+      border-bottom:1px solid #e3e3e3;
+    }
+
+    .post_edition{
+      text-align: center;
+    }
+
+    .post_edition img{
+      max-width: 100%;
+    }
 
 /* ------------------------------------------------
 
     12. Сompetition
 
 ------------------------------------------------ */
-  
+
   .competition_box{margin-bottom: 25px;}
 
   .competition_title{
@@ -3242,7 +3387,7 @@
     padding-top: 35px;
     padding-bottom: 11px;
   }
-  
+
   .competition_description_title{display: inline-block;}
 
   .competition_description_title>h5{
@@ -3286,7 +3431,7 @@
     13. Categories
 
 ------------------------------------------------ */
-  
+
   .categories_box{
     margin-right: -2px;
     margin-bottom: 15px;
@@ -3302,12 +3447,12 @@
     14. Site List
 
 ------------------------------------------------ */
-  
+
   .site_list{
     border: 3px solid #e3e3e3;
     margin-bottom: 30px;
   }
-  
+
   .site_list>h5{
     font: 18px/21px 'pf_dindisplay_proregular';
     padding: 13px 10px 13px 12px;
@@ -3344,13 +3489,13 @@
     15. Rates
 
 ------------------------------------------------ */
-  
+
   .rates_box{
     border-top: 1px solid #e3e3e3;
     border-bottom: 1px solid #e3e3e3;
     margin-bottom: 13px;
   }
-  
+
   .rates_title{
     padding: 25px 0 18px;
   }
@@ -3388,7 +3533,7 @@
     16. Comments
 
 ------------------------------------------------ */
-  
+
 
   .comments{
     position: relative;
@@ -3456,7 +3601,7 @@
     17. Comment Tabs
 
 ------------------------------------------------ */
-  
+
   .enter_social_box>h6{
     font: 19px/26px 'pf_dindisplay_proregular';
     color: #333131;
@@ -3468,11 +3613,11 @@
     font: 16px/26px 'pf_dindisplay_proregular';
     color: #8d8d8d;
   }
-  
+
   .enter_social ul.social_list{
     float: left;
   }
-  
+
   .coment_form{
     margin-bottom: 25px;
   }
@@ -3496,7 +3641,7 @@
     18. Category
 
 ------------------------------------------------ */
-  
+
   .category_box{
     margin: 0 -10px;
   }
@@ -3506,7 +3651,7 @@
     width: 50%;
     padding: 0 10px 20px;
   }
-    
+
   .category_link{
     display: block;
     position: relative;
@@ -3600,7 +3745,7 @@
     19. Author Block
 
 ------------------------------------------------ */
-  
+
   .author_box{
     margin-bottom: 10px;
   }
@@ -3621,7 +3766,7 @@
     20. Error
 
 ------------------------------------------------ */
-  
+
   .error_block{
     padding: 20px 0 100px;
     background: url(../images/error_bg.png) 50% 0 no-repeat;
@@ -3668,7 +3813,7 @@
     21. Search
 
 ------------------------------------------------ */
-  
+
 
   .search_result_box{
     margin-bottom: 25px;
@@ -3679,7 +3824,7 @@
     overflow: hidden;
     margin-bottom: 15px;
   }
-  
+
   .search_result .search_img{
     display: table-cell;
   }
@@ -3717,9 +3862,9 @@
 ------------------------------------------------ */
 
   /* --------------------------------------------
-      22.1  Quotes inner 
+      22.1  Quotes inner
   -------------------------------------------- */
-    
+
     .title_box1{
         padding-bottom: 26px;
     }
@@ -4278,7 +4423,7 @@
     .quotes_list1 li a:hover{
         border: 2px solid #b0b0b0;
     }
-    
+
     .overview_list{
         margin-left: -2px;
     }
@@ -4351,9 +4496,9 @@
 
 
   /* --------------------------------------------
-      22.2  Table Quotes 
+      22.2  Table Quotes
   -------------------------------------------- */
-      
+
       .quotes_search_box{
         position: relative;
         margin-bottom: 30px;
@@ -4435,15 +4580,15 @@
       .quotes_search_list li a:hover{
         background-color: #f0f0f0;
       }
-      
+
       /*tabl quotes*/
-      
+
       .tabl_quotes_nav{
         display: none;
         padding: 5px 0 0;
         margin-bottom: 5px;
       }
-      
+
       .tabl_quotes_nav>*{
         display: block;
         outline: none;
@@ -4564,7 +4709,7 @@
         padding: 15px 0;
         text-align: center;
       }
-      
+
       /*options*/
 
       .options_box{
@@ -4645,9 +4790,9 @@
 
 
   /* --------------------------------------------
-      22.3 Graph of Quotes 
+      22.3 Graph of Quotes
   -------------------------------------------- */
-     
+
       .graph_box{
         margin: 10px -5px 0;
       }
@@ -4721,9 +4866,9 @@
       }
 
   /* --------------------------------------------
-      22.4 Ticket Quotes 
+      22.4 Ticket Quotes
   -------------------------------------------- */
-      
+
       .box2{
         padding: 0 17px;
       }
@@ -4733,7 +4878,7 @@
         display: block;
         clear: both;
       }
-      
+
       .change_color{
           position: relative;
           width: 50%;
@@ -4955,7 +5100,7 @@
   /* --------------------------------------------
         23.2. Footer Top
   -------------------------------------------- */
-    
+
 
     .footer_top{
       background-color: #2b2a2a;
@@ -5046,7 +5191,7 @@
   /* --------------------------------------------
         23.2. Footer Middle
   -------------------------------------------- */
-    
+
     .footer_middle{
       padding: 20px 0 10px;
       border-bottom: 1px solid #595656;
@@ -5076,13 +5221,13 @@
       color: #fff;
       text-transform: uppercase;
       /*margin-bottom: 10px;*/
-    }  
+    }
 
 
   /* --------------------------------------------
         23.3. Footer Bottom
   -------------------------------------------- */
-    
+
     .footer_bottom{
       text-align: center;
       font-size: 14px;
@@ -5113,7 +5258,7 @@
       border: 2px solid #e3e3e3;
       z-index: 9;
     }
-    
+
     .table_button:hover:before,
     .table_description .active:before {
        background: url(../images/table_arrow.png) 0 0 no-repeat;
@@ -5148,7 +5293,7 @@
       border: 1px solid #f7f7f7;
       border-bottom: 4px solid #f7f7f7;
       margin-bottom: 20px;
-      
+
     }
     .quotation_table th{
       padding: 11px 0 9px 16px;
@@ -5212,7 +5357,7 @@
       background: url(../images/arrow_down.png);
     }
 
-    
+
 /* ------------------------------------------------
 
     24. Modal Window
@@ -5422,7 +5567,7 @@
     .modal_social li a.google_plus:hover{background-color: #ff553b;}
     .modal_social li a.fb:hover{background-color: #5272d9;}
     .modal_social li a.vk:hover{background-color: #357bcc;}
-  
+
     .modal_social li a i{
       font-size: 16px;
       line-height: 21px;
@@ -5512,7 +5657,7 @@
     }
 
 
-    
+
 /* ------------------------------------------------
 
     add 00.02.16
@@ -5684,12 +5829,12 @@
 
   .search_number .active_option:hover i{
       /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7f6f5+0,e1e0de+100 */
-      background: transparent; 
+      background: transparent;
       color: #5e5d5d;
   }
 
   .search_number .active_option.opened i{
-      background: transparent; 
+      background: transparent;
       color: #5e5d5d;
   }
 
@@ -5789,7 +5934,7 @@
   }
   .table_rating table th>span {
     position: relative;
-    display: block; 
+    display: block;
   }
   .table_rating table tr:hover td {
     background-color: #f6f6f6;
@@ -5862,7 +6007,7 @@
   .country_ico {
     margin-top: 7px;
     display: block;
-    
+
   }
   .table_rating .blue_color {
     font-size: 12px;
@@ -5921,12 +6066,12 @@
 
   .table_rating_select .active_option:hover i{
     /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f7f6f5+0,e1e0de+100 */
-    background: transparent; 
+    background: transparent;
     color: #e6e6e6;
   }
 
   .table_rating_select .active_option.opened i{
-    background: transparent; 
+    background: transparent;
     color: #e6e6e6;
   }
 
@@ -5954,7 +6099,7 @@
   }
 
   .table_rating_select .options_list.opened{
-    
+
     opacity: 1;
     visibility: visible;
     -webkit-transform: translate(0);
@@ -6136,7 +6281,7 @@
     text-transform: uppercase;
     display: inline-block;
     padding-bottom: 6px;
-  } 
+  }
   .social_button {
     margin: 10px 0;
   }
@@ -6632,11 +6777,11 @@
   }
 
   .wrapper_quotes_search_box_2 .quotes_search_box_2 input{
-    padding: 10px 70px 11px 12px;
+    padding: 26px 70px 25px 12px;
   }
 
   .wrapper_quotes_search_box_2 .quotes_search_box_2 .quotes_search_btn{
-    padding: 5px 15px;
+    padding: 19px 15px;
   }
 
   .wrapper_tabs_list > .tabs_list > li{
@@ -6779,7 +6924,7 @@
   background-color: #f1f1f1;
   padding-top: 20px;
   max-height: 220px !important;
-} 
+}
 .exchange_rates_form .jq-selectbox__dropdown {
   width: 362px;
   background-color: #f1f1f1;
@@ -6810,7 +6955,7 @@
 .exchange_rates_form  .jq-selectbox li:hover{
   background-color: #ebebeb !important;
   color: #5e5d5d;
-} 
+}
 /*.exchange_rates_form  .jq-selectbox li::first-letter {
   color: #ccc;
 }*/
@@ -7010,7 +7155,7 @@
   background-color: #f1f1f1;
   padding-top: 20px;
   max-height: 220px !important;
-} 
+}
 .converter_form .jq-selectbox__dropdown {
   width: 330px;
   background-color: #f1f1f1;
@@ -7041,7 +7186,7 @@
 .converter_form  .jq-selectbox li:hover{
   background-color: #ebebeb !important;
   color: #5e5d5d;
-} 
+}
 
 .converter_form {
   width: 80px;
@@ -7196,7 +7341,7 @@
 .popular_currencies_box li a {
   padding-left: 22px;
   display: block;
-  
+
 }
 .popular_currencies_box li img {
   position:  absolute;
@@ -7260,11 +7405,11 @@
 
 /*Buttons 02.03.2016*/
 
-  
+
   .btn_box1:not(:last-child){
     margin-bottom: 10px;
   }
-  
+
   .btn_type1{
     display: block;
     outline: none;
@@ -7299,7 +7444,7 @@
   .btn_box2{
     margin: 0 -15px;
   }
-  
+
   .btn_box2:not(:last-child){
     margin-bottom: 10px;
   }
@@ -7332,4 +7477,332 @@
     background-color: #ebebeb;
     border-color: #ebebeb;
   }
+
+
+
+/* ---------------------------------------------------------
+    Social button
+------------------------------------------------------------ */
+
+
+  .social_buttons{
+    padding:0 0 30px 0;
+    margin:-4px -2px 0 -2px;
+    display: block;
+  }
+
+  .social_buttons li{
+    margin-top: 4px;
+    width: 25%;
+    padding:0 2px;
+    float: left;
+  }
+
+  .social_buttons li a{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 11px;
+    height: 48px;
+    line-height: 48px;
+    display:block;
+    text-align: center;
+    position: relative;
+    margin-right: 12px;
+    padding-right: 22px;
+    -webkit-transition: 0s;
+         -o-transition: 0s;
+            transition: 0s;
+  }
+
+  .social_buttons_icon{
+    position: absolute;
+    right: 0;
+    top: 12px;
+  }
+
+  .social_buttons a:hover{
+    -webkit-transition: 0s;
+    -o-transition: 0s;
+    transition: 0s;
+    background-position: 0 100%;
+  }
+
+  .social_buttons a:hover:after{
+    background-position: 0 100%;
+  }
+
+  /*face book*/
+  .social_buttons_fsb{
+    background: url(../images/social-button/fsb-bg.png) repeat-x;
+    background-position: 0 0;
+  }
+  .social_buttons_fsb:before{
+    content: attr(data-text);
+    background: url(../images/social-button/fsb-bg-before.png) 0 0 no-repeat;
+    position: absolute;
+    padding-left: 10px;
+    white-space: nowrap;
+    height: 48px;
+    width: 2px;
+    left: 0;
+    top: 0;
+  }
+  .social_buttons_fsb:after{
+    content: '';
+    background: url(../images/social-button/fsb-after-bg.png) 0 0 no-repeat;
+    height: 48px;
+    width: 12px;
+    position: absolute;
+    right: -12px;
+    top: 0;
+  }
+
+  /*vk*/
+  .social_buttons_vk{
+    background: url(../images/social-button/vk-bg.png) repeat-x;
+  }
+  .social_buttons_vk:before{
+    content:attr(data-text);
+    background: url(../images/social-button/vk-before-bg.png) 0 0 no-repeat;
+    position: absolute;
+    padding-left: 10px;
+    white-space: nowrap;
+    height: 48px;
+    width: 2px;
+    left: 0;
+    top: 0;
+  }
+  .social_buttons_vk:after{
+    content: '';
+    background: url(../images/social-button/vk-after-bg.png) 0 0 no-repeat;
+    height: 48px;
+    width: 12px;
+    position: absolute;
+    right: -12px;
+    top: 0;
+  }
+
+  /*twiter*/
+  .social_buttons_tw{
+    background: url(../images/social-button/tw-bg.png) repeat-x;
+  }
+  .social_buttons_tw:before{
+    content: attr(data-text);
+    background: url(../images/social-button/tw-before-bg.png) 0 0 no-repeat;
+    position: absolute;
+    padding-left: 10px;
+    white-space: nowrap;
+    height: 48px;
+    width: 2px;
+    left: 0;
+    top: 0;
+  }
+  .social_buttons_tw:after{
+    content: '';
+    background: url(../images/social-button/tw-after-bg.png) 0 0 no-repeat;
+    height: 48px;
+    width: 12px;
+    position: absolute;
+    right: -12px;
+    top: 0;
+  }
+
+  /*gmail*/
+  .social_buttons_gm{
+    background: url(../images/social-button/gm-bg.png) repeat-x;
+  }
+  .social_buttons_gm:before{
+    content: attr(data-text);
+    background: url(../images/social-button/gm-before-bg.png) 0 0 no-repeat;
+    position: absolute;
+    padding-left: 10px;
+    white-space: nowrap;
+    height: 48px;
+    width: 2px;
+    left: 0;
+    top: 0;
+  }
+  .social_buttons_gm:after{
+    content: '';
+    background: url(../images/social-button/gm-after-bg.png) 0 0 no-repeat;
+    height: 48px;
+    width: 12px;
+    position: absolute;
+    right: -12px;
+    top: 0;
+  }
+
+/*------------------------------------------------------
+  Buttons links
+-------------------------------------------------------*/
+  .buttons_links{
+    padding-bottom: 30px;
+    display: block;
+    margin:-4px -2px 0 -2px;
+  }
+
+  .buttons_links li{
+    float: left;
+    width: 33.333%;
+    margin-top: 4px;
+    padding: 0 2px;
+  }
+
+  .buttons_links li a{
+    text-align: center;
+    font-size: 17px;
+    line-height: 50px;
+    color: #fff;
+    height: 50px;
+    display: block;
+    background: #8c8b8b;
+    font-family: "pf_dindisplay_prolight";
+  }
+
+  .buttons_links li a:hover{
+    background: #b3b1b1;
+  }
+
+/*---------------------------------
+  Tabs List
+------------------------------------*/
+[class*="tabs_list_data"]{
+  display: block;
+  font-size: 11px;
+  color: #fff;
+  text-transform: uppercase;
+  height: 26px;
+  line-height: 26px;
+  margin-bottom: 4px;
+  text-align: center;
+  background: #b3b1b1;
+}
+
+.tabs_list_2.active .tabs_list_data2,
+.tabs_list_1.active .tabs_list_data1{
+  background: #89bb50;
+}
+
+.tabs_list_data1{
+
+}
+.tabs_list_data2{
+
+}
+
+
+
+/*-----------------My style-------------------*/
+
+
+   /*Magazine page table*/
+
+    .magazine_page_table table th{
+      text-transform: none;
+      padding: 15px 9px;
+      color: #333131;
+      font-size: 13px;
+      line-height: 18px;
+    }
+
+    .magazine_page_table table th:not(:last-child){
+      text-align: left;
+    }
+
+    .magazine_page_table a{
+      color: #167ac6;
+      font-size: 13px;
+      line-height: 22px;
+    }
+
+    .tabl_quotes.magazine_page_table td{
+      vertical-align: middle;
+      padding: 15px 9px;
+      color: #5e5d5d;
+      font-size: 13px;
+      font-weight: 400;
+      line-height: 18px;
+    }
+
+    .magazine_table_website{
+      width: 210px;
+    }
+
+    .magazine_table_download{
+      width: 100px;
+    }
+
+    .magazine_page_table td:not(:last-child){
+      text-align: left;
+    }
+
+    /*code cover*/
+
+    .code_img{
+      float: right;
+      margin-left: 10px;
+    }
+
+    .code_cover:not(:last-child){
+        margin-bottom: 15px;
+    }
+
+    .code_cover_title{
+      position: absolute;
+      left: 0;
+      top: -50px;
+      font-family: 'Open Sans', sans-serif;
+      text-transform: uppercase;
+      font-weight: bold;
+      display: inline-block;
+    }
+
+    .code_cover_form{
+      float: right;
+    }
+
+    .code_cover_form_text{
+      color: #454444;
+      margin: 15px 15px 0 0;
+      display: inline-block;
+    }
+
+    .code_cover_input{
+      padding: 12px;
+      color: #454444;
+      width: 105px;
+      height: 50px;
+      border: 2px solid #e3e3e3;
+      text-align: center;
+      float: right;
+      overflow: hidden;
+      display: inline-block;
+    }
+
+    .code_cover_input:focus{
+      border: 2px solid #167ac6;
+    }
+
+    .code_script{
+      position: relative;
+      word-break: break-all;
+      border: 1px solid #e3e3e3;
+      width: 465px;
+      background: #f6f6f6;
+      float: left;
+      display: inline-block;
+      white-space: normal;
+      padding: 22px;
+      font-size: 15px;
+      line-height: 26px;
+    }
+
+    .code_script:hover{
+      border: 1px solid #167ac6;
+    }
+
+
+
+
+
 

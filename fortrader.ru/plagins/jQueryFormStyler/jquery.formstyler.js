@@ -708,7 +708,7 @@
 									// если нечетное количество видимых пунктов,
 									// то высоту пункта делим пополам для последующего расчета
 									if ( (ul.innerHeight() / liHeight) % 2 !== 0 ) liHeight = liHeight / 2;
-									ul.scrollTop(ul.scrollTop() + li.filter('.selected').position().top - ul.innerHeight() / 2 + liHeight);
+									ul.scrollTop(ul.scrollTop() + li.filter('.selected').position().top - ul.innerHeight() / 2 + liHeight - liHeight*3 - 50);
 								}
 							}
 

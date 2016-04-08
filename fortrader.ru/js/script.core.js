@@ -46,14 +46,14 @@
 				self.additionalMenuWidth();
 
 			},500);
-			
+
 
 		},
 
 		windowScroll: function(){
 
 			var self = this;
-			
+
 			self.goUp();
 		},
 
@@ -102,9 +102,9 @@
 
 						});
 
-						activeInner.text( 
-							select.children('option[selected]').val() ? 
-							select.children('option[selected]').val() : 
+						activeInner.text(
+							select.children('option[selected]').val() ?
+							select.children('option[selected]').val() :
 							options.eq(0).val()
 						);
 
@@ -199,7 +199,7 @@
 
 
 			$('.additional_menu_box button').on('click',function(){
-		    	
+
 		    	$(this).toggleClass('active');
 		    	$(".additional_menu").toggleClass('active');
 
@@ -224,7 +224,7 @@
 							}
 						);
 
-					} 
+					}
 
 				});
 
@@ -309,7 +309,7 @@
 
 						$this.appendTo(".additional_menu");
 
-					}				
+					}
 
 				});
 
@@ -324,7 +324,7 @@
 			}
 
 		},
-		
+
 		/**
 		**	Tabs
 		**/
@@ -334,7 +334,7 @@
 			$('.tabs_list>li').on('click',function(){
 
 				var $this = $(this),
-					tab = $this.closest('.tabs_box'), 
+					tab = $this.closest('.tabs_box'),
 					index = $this.index();
 
 				$this.addClass('active').siblings().removeClass('active');
@@ -354,7 +354,7 @@
 			if(('.news_slider').length){
 
 				$('.news_slider .news_list>li:nth-child(6),.news_slider .news_list>li:nth-child(2),.news_slider .news_list>li:nth-child(3),.news_slider .news_list>li:nth-child(4),.news_slider .news_list>li:nth-child(5)').addClass('active');
-			
+
 			}
 		},
 
@@ -369,7 +369,7 @@
 				if(firstItem == 0){return false}
 
 				parent.find(".news_list>li.active").eq(4).slideUp(300).removeClass("active");
-				
+
 				showItem.slideDown(300).addClass('active');
 
 			});
@@ -385,7 +385,7 @@
 
 
 				parent.find(".news_list>li.active").eq(0).slideUp(300).removeClass("active");;
-				
+
 				showItem.slideDown(300).addClass('active');
 
 			});
@@ -395,7 +395,7 @@
 
 
 		/**
-		**	Nav Buttons 
+		**	Nav Buttons
 		**/
 
 		buttonSlider : function(){
@@ -426,12 +426,12 @@
 				}
 
 			});
-			
+
 		},
 
 
 		/**
-		**	Header list open on responsive 
+		**	Header list open on responsive
 		**/
 
 		headerList : function(){
@@ -456,7 +456,7 @@
 
 
 		/**
-		**	Site List accordion 
+		**	Site List accordion
 		**/
 
 		siteList : function(){
@@ -483,7 +483,7 @@
 
 
 		/**
-		**	Footer List accordion 
+		**	Footer List accordion
 		**/
 
 		footerList : function(){
@@ -508,7 +508,7 @@
 
 
 		/**
-		**	Header info box tabs 
+		**	Header info box tabs
 		**/
 
 		headerInfo : function(){
@@ -536,7 +536,7 @@
 
 
 		/**
-		**	Go Up button 
+		**	Go Up button
 		**/
 
 
@@ -581,7 +581,7 @@
 
 
 		/**
-		**	Next button hover 
+		**	Next button hover
 		**/
 
 		nextButtonHover : function(){
@@ -600,11 +600,11 @@
 
 
 		/**
-		**	Digital Watch 
+		**	Digital Watch
 		**/
 
 		digitalWatch : function() {
-		    
+
 		    if($("#digital_watch").length){
 
 			    var self = this;
@@ -619,14 +619,14 @@
 			    setTimeout(function(){
 			    	self.digitalWatch();
 			    },1000);
-			    
+
 		    }
-		
+
 		},
 
 
 		/**
-		**	Dropdoun 
+		**	Dropdoun
 		**/
 
 		dropdoun : function(){
@@ -652,7 +652,7 @@
 
 
 		/**
-		**	Dropdoun 
+		**	Dropdoun
 		**/
 
 		optionsBox : function(){
@@ -663,7 +663,7 @@
 					parent = $this.closest(".turn_box");
 
 				$this.toggleClass("active");
-				parent.find('.options_box').toggleClass("opened");				
+				parent.find('.options_box').toggleClass("opened");
 
 			});
 
@@ -682,7 +682,7 @@
 
 
 		/**
-		**	Dropdoun 
+		**	Dropdoun
 		**/
 
 		tablQuotesSlider : {
@@ -690,7 +690,7 @@
 			init: function(){
 
 				var self = this;
-				
+
 				self.ww = $(window);
 				self.table = $('.tabl_quotes table');
 				self.tableNav = $('.tabl_quotes_nav');
@@ -707,7 +707,7 @@
 				$(window).on("resize", function(){
 
 					self.WidthSlideItem();
-				
+
 				});
 
 
@@ -717,7 +717,7 @@
 			WidthSlideItem: function(){
 
 				var self = this,
-					wrapBox = $('.tabl_quotes').width();
+					wrapBox = $('.tabl_quotes').parents('.tabs_contant').length ? $('.tabl_quotes').parents('.tabs_contant').width() : $('.tabl_quotes').width();
 
 				self.itemWidth = wrapBox/self.itemQt;
 
@@ -791,7 +791,7 @@
 						if((nextItem - self.itemWidth) < lastOffset){
 
 							$this.addClass('disable');
-						
+
 						}
 
 					}
@@ -810,7 +810,7 @@
 						if((prevItem + self.itemWidth) > 0 ){
 
 							$this.addClass('disable');
-						
+
 						}
 
 					}
@@ -851,7 +851,7 @@
 					box = $(this).parents('.get_code_box').find('.get_code');
 
 				if(!input.is(':checked')){
-					
+
 					box.slideDown();
 					button.removeClass('disabled');
 
@@ -859,8 +859,8 @@
 				else{
 
 					box.slideUp();
-					button.addClass('disabled');			
-				
+					button.addClass('disabled');
+
 				}
 
 			});
@@ -901,13 +901,13 @@
 	$(window).scroll(function(){
 
 		Core.windowScroll();
-		
+
 	});
 
 	$(window).on("resize",function(){
 
 		Core.windowResize();
-		
+
 	});
 
 
