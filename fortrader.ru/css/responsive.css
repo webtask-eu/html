@@ -169,26 +169,56 @@
 
  	/*btn*/
 
- 	.watch_btn:not(:last-child){
+ 	.magazine_page_box_btn a:not(:last-child){
 		margin-right: 0;
  	}
 
- 	.download_pdf_btn:not(:first-child){
+ 	.magazine_page_box_btn a:not(:first-child){
  		margin-left: 0;
  	}
 
- 	.watch_btn,.download_pdf_btn{
+ 	.magazine_page_box_btn{
  		position: relative;
  		left: 50%;
+ 		display: inline-block;
  		-webkit-transform: translate(-50%, 0);
  			-ms-transform: translate(-50%, 0);
 	 		 -o-transform: translate(-50%, 0);
 		 		transform: translate(-50%, 0);
  	}
 
- 	.watch_btn{
+ 	.magazine_page_box_btn a{
  		margin-bottom: 5px;
  	}
+
+ 	.magazine_inner_btn a{
+      float: none;
+      position: relative;
+      left: 50%;
+      -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+      -o-transform: translate(-50%, 0);
+      transform: translate(-50%, 0);
+    }
+
+    .magazine_inner_btn a:not(:last-child){
+    	margin-right: 0;
+    	margin-bottom: 5px;
+    }
+
+    .magazine_inner_page .counter_box2{
+    	margin: 0;
+    }
+
+    .magazine_inner_page .counter_box2:not(:first-child){
+		float: right;
+    }
+
+    .magazine_inner + div > .button3{
+    	margin-left: 0;
+    	width: 100%;
+    	margin-top: 20px;
+    }
 
 
 }
@@ -1077,11 +1107,6 @@
 	 		width: 100%;
 	 	}
 
-	 	/*Magazine navigation*/
-	 	.magazine_navigation{
-	 		width: 100%;
-	 	}
-
 	 	/*Code script*/
 	 	.code_script{
 	 		width: 100%;
@@ -1100,6 +1125,14 @@
 		.magazine_navigation{
 			display: none;
 		}
+
+		.magazine_page_box_btn a{
+			float: none;
+		}
+
+		.magazine_inner_page .image_box.alignleft{
+			margin: 0 0 20px 0;
+	    }
 
 }
 
