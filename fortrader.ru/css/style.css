@@ -75,7 +75,6 @@
 @import "font-awesome.min.css";
 @import "../fonts/PFDindisplayproRegMedLight/font.css";
 @import "../fonts/PFDindisplayproThinBold/font.css";
-@import "../plagins/jquery.webRating/jquery.rateyo.min.css";
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,cyrillic);
 @import url(https://fonts.googleapis.com/css?family=Roboto:300&subset=latin,cyrillic);
@@ -166,10 +165,6 @@
 
     .blue_color{
       color: #146eb3;
-    }
-
-    .blue_color_hight{
-      color: #167ac6;
     }
 
     /*background*/
@@ -1797,39 +1792,10 @@
         border-bottom:1px solid #e3e3e3;
       }
 
-      .list8 li a,.list8 li span{
+      .list8 li a{
         font-size: 15px;
         font-weight: 400;
         line-height: 22px;
-      }
-
-      /*list9*/
-      .list9{
-        margin-top: -4px;
-      }
-
-      .list9 a{
-        font-size: 15px;
-        line-height: 28px;
-        margin-top: 4px;
-        border-left: 3px solid #167ac6;
-        padding: 25px 12px;
-        background: #f5f5f5;
-        display: block;
-        text-transform: uppercase;
-        color: #454444;
-      }
-
-      .list9 span{
-        text-transform: none;
-        display: block;
-        color: #5e5d5d;
-        font-size: 14px;
-      }
-
-      .list9 a:hover {
-          background: #f2f2f2;
-          color: #146eb3;
       }
 
       /***share list quotation***/
@@ -1906,24 +1872,6 @@
     .button2:hover{
       background-color: #4d4a4a;
       color: #fff;
-    }
-
-    .button3{
-      text-transform: uppercase;
-      width: 175px;
-      height: 80px;
-      text-align: center;
-      line-height: 80px;
-      background: #f1f1f1;
-      display: block;
-       font-family: "pf_dindisplay_proregular";
-       font-size: 16px;
-       color: #333131;
-    }
-
-    .button3:hover{
-      background: #e8e8e8;
-      color: #333131;
     }
 
     .load_btn{
@@ -2060,7 +2008,7 @@
     }
 
     .reply_btn:hover{
-      background: #ff1616;
+      background-color: #ff1616;
       color: #fff;
     }
 
@@ -2171,6 +2119,7 @@
     }
 
     .watch_btn{
+      float: left;
       text-transform: uppercase;
       width: 230px;
       height: 56px;
@@ -2192,6 +2141,7 @@
     }
 
     .download_pdf_btn{
+      float: left;
       text-transform: uppercase;
       text-align: center;
       display: block;
@@ -2208,25 +2158,6 @@
       color: #fff;
       background: #198ae0;
     }
-
-    .question_btn{
-      font-family: 15px 'pf_dindisplay_proregular';
-      text-transform: uppercase;
-      background: #ff1616;
-      text-align: center;
-      line-height: 56px;
-      display: block;
-      width: 230px;
-      height: 56px;
-      color: #fff;
-    }
-
-    .question_btn:hover{
-      background: #ff3d3d;
-      color: #fff;
-    }
-
-
 
 
   /* --------------------------------------------
@@ -7204,6 +7135,8 @@
   background-color: #333030;
 }
 
+
+
 .converter_form .optgroup  {
   display: none !important;
 }
@@ -7491,12 +7424,12 @@
   }
 
   .btn_type1.red{
-    background: #ff1616;
+    background-color: #ff1616;
   }
 
   .btn_type1.red:hover{
     color: #fff;
-    background: #198ae0;
+    background-color: #198ae0;
   }
 
   .btn_type1.grey{
@@ -7758,6 +7691,7 @@
 }
 
 
+
 /*-----------------My style-------------------*/
 
 
@@ -7800,10 +7734,6 @@
 
     .magazine_page_table td:not(:last-child){
       text-align: left;
-    }
-
-    .magazine_page_box_btn a{
-      float: left;
     }
 
     /*code cover*/
@@ -7869,51 +7799,6 @@
 
     .code_script:hover{
       border: 1px solid #167ac6;
-    }
-
-    /*magazine_inner_btn*/
-    .magazine_inner_btn a:not(:last-child){
-      margin-right: 19px;
-    }
-
-    .magazine_inner_btn > .download_pdf_btn:not(:first-child){
-      margin-left: 0;
-    }
-
-    .magazine_inner_btn a{
-      float: left;
-    }
-
-    .magazine_inner.list8{
-      margin-bottom: 12px;
-    }
-
-    /*------Counter box2------*/
-    .counter_box2{
-      font-family: "pf_dindisplay_prolight";
-      border: 4px solid #e3e3e3;
-      width: 140px;
-      height: 80px;
-      font-size: 18px;
-      line-height: 28px;
-      display: block;
-      text-align: center;
-      color: #454444;
-      padding: 7px;
-      float: left;
-    }
-
-    .counter_box2:not(:first-child){
-      margin-left: 5px;
-    }
-
-    .counter_box2 p{
-      margin-bottom: 0;
-    }
-
-    .magazine_inner + div > .button3{
-      margin-left: 5px;
-      float: left;
     }
 
 
