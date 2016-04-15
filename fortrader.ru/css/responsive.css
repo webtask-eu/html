@@ -5,14 +5,14 @@
 		display: none;
 	}
 
-	.tabs_contant{
-		display: none;
-	}
-
 	.tabl_quotes table{
 		width: 100% !important;
 	}
 	.site_list>ul,.list_box>ul{display: block !important;}
+
+	.tabs_contant>div.active{
+		display: block !important;
+	}
 }
 
 @media only screen and (min-width: 768px) {
