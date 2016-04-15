@@ -8174,23 +8174,26 @@
   }
 
   /*inner_contest_page*/
-  .inner_contest_page .box1{
+  .inner_contest_page .box1,
+  .contest_page .box1{
     margin-bottom: 0;
     width: 520px;
     float: left;
     padding: 1px 0px 2px 0;
   }
 
-  .inner_contest_page .competition_btn{
+  .inner_contest_page .competition_btn,
+  .contest_page .competition_btn{
     margin-left: 13px;
+  }
   }
 
   /*Countdown*/
-  #countdown{
+  .countdown_box{
     float: right;
   }
 
-  #countdown div.clock{
+  .countdown_box div.clock{
     position: relative;
     border:2px solid #787777;
     width: 50px;
@@ -8200,11 +8203,11 @@
     display: inline-block;
   }
 
-  #countdown div.clock:not(:last-child){
-    margin-right: 15px;
+  .countdown_box div.clock:not(:last-child){
+    margin-right: 18px;
   }
 
-  #countdown div.clock p{
+  .countdown_box div.clock p{
     font-size: 13px;
     font-weight: 600;
     line-height: 16px;
@@ -8212,7 +8215,7 @@
     margin-bottom: 0;
   }
 
-  #countdown div.clock span{
+  .countdown_box div.clock span{
     font-size: 10px;
     line-height: 16px;
     color: #5e5d5d;
@@ -8238,13 +8241,15 @@
     text-transform: none;
   }
 
-  .inner_contest_page .broker_post{
+  .inner_contest_page .broker_post,
+  .contest_page .broker_post{
     position: relative;
     min-height:245px;
     margin-bottom: 0;
     padding-bottom: 45px;
   }
 
+  .contest_page .broker_post p,
   .inner_contest_page .broker_post p{
     color: #454545;
     font-size: 14px;
@@ -8252,6 +8257,7 @@
     line-height: 24px;
   }
 
+  .contest_page .info_result,
   .inner_contest_page .info_result{
       display: block;
       text-align: center;
@@ -8265,7 +8271,8 @@
       width: 100%;
   }
 
-  .inner_contest_page .info_result.current{
+  .inner_contest_page .info_result.current,
+  .contest_page .info_result.current{
     background-color: #89bb50;
     color: #fff;
   }
@@ -8277,26 +8284,31 @@
     width: auto;
   }
 
-  .inner_contest_page .tabs_rating .tabs_list > li{
+  .inner_contest_page .tabs_rating .tabs_list > li,
+  .contest_page .tabs_rating .tabs_list > li{
     padding: 0 4px;
   }
 
-  .inner_contest_page .quotes_search_box_2 input{
+  .inner_contest_page .quotes_search_box_2 input,
+  .contest_page .quotes_search_box_2 input{
     padding: 11px 48px 11px 15px;
     border: none;
     background: #f1f1f1;
   }
 
-  .inner_contest_page .quotes_search_box_2 input:focus{
+  .inner_contest_page .quotes_search_box_2 input:focus,
+  .contest_page .quotes_search_box_2 input:focus{
     outline: 2px solid #e3e3e3;
   }
 
-  .inner_contest_page .quotes_search_box_2 .quotes_search_btn {
+  .inner_contest_page .quotes_search_box_2 .quotes_search_btn,
+  .contest_page .quotes_search_box_2 .quotes_search_btn{
     padding: 5px 15px;
     background: transparent;
   }
 
-  .inner_contest_page .navigation_box_modal_news{
+  .inner_contest_page .navigation_box_modal_news,
+  .contest_page .navigation_box_modal_news{
     margin-top: 0;
   }
 
@@ -8321,7 +8333,28 @@
     width: 185px;
   }
 
-  .inner_contest_page .competition_tbl_head th{
+  .competition_block_head{
+    background: #b3b1b1;
+    padding: 6px 15px;
+    text-align: left;
+    position: relative;
+  }
+
+  .competition_block_head h4{
+    color: #fff;
+    font-size: 18px;
+    line-height: 19px;
+    text-transform: none;
+    font-weight: bold;
+    padding-right: 30px;
+  }
+
+  .competition_block_head h4>i{
+    color: #fff;
+  }
+
+  .inner_contest_page .competition_tbl_head th,
+  .contest_page .competition_tbl_head th{
       background: #b3b1b1;
       font-size: 19px;
       line-height: 19px;
@@ -8334,7 +8367,8 @@
       position: relative;
   }
 
-  .inner_contest_page .competition_tbl_head th i{
+  .inner_contest_page .competition_tbl_head th i,
+  .contest_page .competition_tbl_head th i{
     position: absolute;
     right: 15px;
     top: 50%;
@@ -8551,6 +8585,115 @@
     .summary_list li:last-child span{
       margin-left: 12px;
     }
+
+    .contest_page .post_contest .post_contest_box2{
+      margin-top: 0;
+    }
+
+    .post_contest_inner_box2{
+      display: inline-block;
+      text-align: center;
+      position: relative;
+      left: 50%;
+      -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+      -o-transform: translate(-50%, 0);
+      transform: translate(-50%, 0);
+    }
+
+    .contest_page .countdown_text{
+      margin-top: 20px;
+    }
+
+    .contest_page .countdown_text p{
+      display: inline-block;
+      vertical-align: baseline;
+      margin-bottom: 20px;
+      font-size: 22px;
+      color: #454444;
+    }
+
+    .contest_page .countdown_text p.big_number{
+      text-transform: none;
+      font-size: 58px;
+      line-height: 33px;
+      font-weight: bold;
+      color: #333131;
+    }
+
+    .contest_page .countdown_text p.big_number>span{
+      text-transform: none;
+      font-size: 24px;
+      line-height: 33px;
+      font-weight: bold;
+      margin-top: 5px;
+      display: inline-block;
+    }
+
+    .contest_page .countdown_box{
+      display: inline-block;
+    }
+
+    .contest_page .competition_table.table2.first table{
+      table-layout: fixed;
+    }
+
+    .contest_page .competition_table.table2.first .bg{
+      background: #f6f6f6;
+    }
+
+    .accordion_title{
+      font-family: "pf_dindisplay_proregular";
+      position: relative;
+      text-align: left;
+      color: #787777;
+      font-size: 16px;
+      border: none;
+      background: #f7f7f7;
+      padding: 16px 15px;
+      margin-bottom: 0;
+    }
+
+    .accordion_title.active{
+      color: #454242;
+    }
+
+    .accordion_title:hover{
+      background: #ededed;
+    }
+
+    .accordion_title:not(:first-child) {
+        border-top: 1px solid #e3e3e3;
+    }
+
+    .accordion_title.active:after{
+      content: '\f106';
+      font: normal normal normal 16px/1 FontAwesome;
+      position: absolute;
+      top: 50%;
+      color: #454242;
+      font-weight: bold;
+      right: 12px;
+      -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+      -o-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+    }
+
+    .accordion_title:after{
+      content: "\f107";
+      font: normal normal normal 16px/1 FontAwesome;
+      position: absolute;
+      top: 50%;
+      color: #454242;
+      font-weight: bold;
+      right: 12px;
+      -webkit-transform: translate(0, -50%);
+      -ms-transform: translate(0, -50%);
+      -o-transform: translate(0, -50%);
+      transform: translate(0, -50%);
+    }
+
 
 
 

@@ -133,18 +133,26 @@
 		/* ------------------------------------------------
 				Сountdown
 		------------------------------------------------ */
-			if($('#countdown').length){
+			if($('.countdown_box').length){
 
-				$('#countdown').countdown('2020/10/10', function(event) {
-			     var $this = $(this).html(event.strftime(
+				$('.countdown_box').each(function(){
 
-			      '<div class="countdown alignright">'
-			      +'<div class="clock"><p>%D</p><span>Дней</span></div>'
-			      +'<div class="clock"><p>%H</p><span>часов</span></div>'
-			      +'<div class="clock"><p>%M</p><span>минут</span></div>'
-			      +'</div>'
-			      ));
-			    });
+					var $this = $(this),
+						date = $this.attr('data-date');
+
+					$($this).countdown(date, function(event) {
+						
+				     var $this = $(this).html(event.strftime(
+
+				      '<div class="countdown alignright">'
+				      +'<div class="clock"><p>%D</p><span>Дней</span></div>'
+				      +'<div class="clock"><p>%H</p><span>часов</span></div>'
+				      +'<div class="clock"><p>%M</p><span>минут</span></div>'
+				      +'</div>'
+				      ));
+				    });
+
+				});
 
 		    }
 

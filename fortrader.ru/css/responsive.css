@@ -1,6 +1,14 @@
 /*==================================RESPONSIVE LAYOUTS===============================================*/
 @media only screen and (min-width: 993px) {
 
+	.competition_block_head{
+		display: none;
+	}
+
+	.tabs_contant{
+		display: none;
+	}
+
 	.tabl_quotes table{
 		width: 100% !important;
 	}
@@ -209,7 +217,8 @@
     }
 
     /*inner contest page*/
-    .inner_contest_page .box1{
+    .inner_contest_page .box1,
+    .contest_page .box1{
     	width: 415px;
     }
 
@@ -252,7 +261,8 @@
 		float: none;
 	}
 
-	.inner_contest_page .download_more{
+	.inner_contest_page .download_more,
+	.contest_page .download_more{
 		width: 480px;
 	}
 
@@ -293,6 +303,26 @@
 	.participant_page .conditions_list_green>li.border_white{
         border-right:0;
     }
+
+    .contest_page .countdown_text p{
+    	display: block;
+    }
+
+    .contest_page #countdown {
+	    float: none;
+	    display: block;
+	    position: relative;
+	    left: 0;
+	     -webkit-transform: translate(0, 0);
+	    -ms-transform: translate(0, 0);
+	    -o-transform: translate(0, 0);
+	     transform: translate(0, 0);
+	     margin-right: 22px;
+	}
+
+	.contest_page .post_contest_inner_box2{
+		margin-top: 20px;
+	}
 
 
 }
@@ -1217,21 +1247,23 @@
 	    .banner5{
 	    	display: block;
 	    	position: relative;
-			margin-bottom: 40px;
+			margin-bottom: 80px;
 	    }
 
 	    .banner5_box2{
 	    	position: absolute;
-			top: 70px;
+			bottom: -70px;
 			right: 0px;
 	    }
 
-	    .inner_contest_page .box1 {
+	    .inner_contest_page .box1,
+	    .contest_page .box1{
 		    width: 100%;
 		    margin-bottom: 15px;
 		}
 
-		.inner_contest_page .competition_btn{
+		.inner_contest_page .competition_btn,
+		.contest_page .competition_btn{
 			width: 100%;
 			margin-left: 0;
 		}
@@ -1427,6 +1459,46 @@
 		    margin:0 0 15px 0;
 		}
 
+		.contest_page .competition_table.table2.first .bg{
+	      background: none;
+	    }
+
+	    .competition_table.table2.first .col_name{
+	    	padding-top: 65px;
+			background: none;
+	    }
+
+	    .competition_table.table2.first table td:first-child:before{
+	        position: absolute;
+	        background: #f6f6f6;
+		    width: 100%;
+		    height: auto;
+		    top: -1px;
+		    border-bottom: 1px solid #e3e3e3;
+		    padding: 14px 0;
+		    left: 50%;
+		    margin-left: 0;
+		    font-size: 14px;
+		    color: #333131;
+		    text-transform: none;
+		    -webkit-transform: translate(-50%, 0);
+		    -ms-transform: translate(-50%, 0);
+		    -o-transform: translate(-50%, 0);
+		    transform: translate(-50%, 0);
+	    }
+
+	    .contest_page .download_more{
+		    display: none;
+		}
+
+		.contest_page .add_btn {
+		    width: 100%;
+		    float: none;
+		}
+
+		.inner_contest_page .tabs_list {
+			display: none;
+		}
 
 }
 
@@ -1840,10 +1912,6 @@
 			width: 100%;
 		}
 
-		.modal_box1{
-			width: 420px;
-		}
-
 		.modal_news_container{
 			height: 260px;
 			overflow: auto;
@@ -1957,6 +2025,37 @@
 	    	font-size: 15px;
 	    }
 
+	    .modal_box1{
+			border-top: 5px solid #ff1616;
+	    }
+
+	    .modal-news-title{
+	    	text-align: center;
+	    }
+
+	    .arcticmodal-container_i2 {
+		    padding: 20px 0 30px;
+		}
+
+		.icon-close-modal-news {
+		    right: -5px;
+		    top: -20px;
+		    font-size: 21px;
+		    color: #454242;
+		}
+
+		 .post_modal_new{
+		    border-bottom:1px solid #e0e0e0;
+		  }
+
+		  .post_modal_new_description{
+		  	border-bottom: none;
+		  }
+
+		  .modal_box1{
+			max-width: 450px;
+		}
+
 }
 
 @media only screen and (max-width: 479px) {
@@ -2055,18 +2154,13 @@
 		width: 100%;
 	}
 
-	.modal_box1{
-		width: 280px;
-	}
-
 	.post_modal_new_img{
-		float: none;
-		margin-right: 0;
 		margin-bottom: 8px;
 	}
 
 	.post_modal_new_img img{
-		width: 100%;
+	    width: 80px;
+	    height: auto;
 	}
 
 	.post_modal_new_description{
@@ -2125,7 +2219,7 @@
 	}
 
 	.inner_contest_page .banner5_box2{
-		top: 95px;
+		bottom: -70px;
 	}
 
 	.participant_page .inside_table td{

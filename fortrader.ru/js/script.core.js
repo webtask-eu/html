@@ -15,7 +15,7 @@
 			self.additionalMenuItem();
 			self.additionalMenuOpen();
 			self.additionalMenuClose();
-			self.tabsBox();
+			self.tabsBox.init();
 			self.firstOpenNewsList();
 			self.newsList();
 			self.buttonSlider();
@@ -329,18 +329,95 @@
 		**	Tabs
 		**/
 
-		tabsBox : function(){
+		tabsBox : {
 
-			$('.tabs_list>li').on('click',function(){
+			init : function(){
 
-				var $this = $(this),
-					tab = $this.closest('.tabs_box'),
-					index = $this.index();
+				var self = this;
 
-				$this.addClass('active').siblings().removeClass('active');
-				tab.find(".tabs_contant>div").eq(index).addClass('active').siblings().removeClass('active');
+				self.indexTab();
+				self.createAccordionTitle();
+				self.events();
+				
+			},
 
-			});
+			indexTab: function(){
+
+				var self = this;
+
+				$('.tabs_box').each(function(){
+
+					var tabsBox = $(this),
+						tabsItem = tabsBox.find('.tabs_contant>div'),
+						tabsListItem = tabsBox.find('.tabs_list>li');
+
+					for (var i = 0; i <= tabsListItem.length -1; i++){
+
+						var id = "tabs_id_" + (i+1);
+
+						$(tabsListItem[i]).attr('data-id', id);
+						$(tabsItem[i]).addClass(id);
+
+					}
+
+				});
+
+			},
+
+			createAccordionTitle: function(){
+
+				var self = this;
+
+				$('.tabs_box.accordion_tabs').each(function(){
+
+					var tabsBox = $(this),
+						tabsList = tabsBox.find('.tabs_list'),
+						tabsContainer = tabsBox.find('.tabs_contant'),
+						tabsContainerItem = tabsContainer.children('div'),
+						tabsListItem = tabsList.find('li');
+
+					for (var i = 0; i <= tabsListItem.length - 1; i++) {
+						
+						var text = $(tabsListItem[i]).text(),
+							id = $(tabsListItem[i]).attr('data-id'),
+							tamplate = "<h6 class='accordion_title'>" + text + "</h6>";
+						
+						tabsContainer.find('.' +id).before(tamplate);
+						
+					}
+
+				});
+
+			},
+
+			events: function(){
+
+				$('.tabs_list>li').on('click',function(){
+
+					var $this = $(this),
+						tab = $this.closest('.tabs_box'),
+						id = $this.attr('data-id');
+
+					$this.addClass('active').siblings().removeClass('active');
+					
+					tab.find('.' +id).addClass('active').show().siblings('div').removeClass('active').hide();
+					
+					tab.find('.' +id)
+						.prev('.accordion_title')
+						.addClass('active')
+						.siblings('.accordion_title')
+						.removeClass('active');
+
+				});
+
+				$('.tabs_box').on('click', '.accordion_title', function(){
+
+					$(this).addClass('active').siblings('.accordion_title').removeClass('active');
+					$(this).next().slideDown().siblings('div').slideUp();
+
+				});
+				
+			},
 
 		},
 
