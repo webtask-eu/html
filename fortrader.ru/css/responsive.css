@@ -10,8 +10,8 @@
 	}
 	.site_list>ul,.list_box>ul{display: block !important;}
 
-	.tabs_contant>div.active{
-		display: block !important;
+	.accordion_title{
+		display: none;
 	}
 }
 

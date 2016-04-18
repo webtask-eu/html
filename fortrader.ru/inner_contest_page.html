@@ -545,7 +545,7 @@
                             <div class="regestration_box_50">
 
                                 <p class="name_input"> Номер счета </p>
-                                <input type="text" class="number_card" required>
+                                <input type="text" class="number_card" required data-inputmask="'mask': '9999-9999-9999-9999'">
 
                             </div>
 
@@ -1086,38 +1086,38 @@
 
                                 <div class="clearfix">
 
-                                    <label for="name" class="box_name">
+                                    <label class="box_name">
                                         Название
                                         <br>
-                                        <input type="text" id="name" class="name"  requierd>
+                                        <input type="text" class="name"  requierd>
                                     </label>
 
-                                    <label for="prize" class="box_prize">
+                                    <label class="box_prize">
                                         Призовые
                                         <br>
-                                        <input type="text" id="prize" class="prize" requierd>
+                                        <input type="text"  class="prize" requierd>
                                     </label>
 
-                                    <label for="date_to" class="box_date_to">
+                                    <label class="box_date_to">
                                         Дата начала
                                         <br>
-                                        <input type="text" id="date_to" class="date_to" requierd>
+                                        <input type="text" class="date_to" requierd data-inputmask="'alias': 'date'">
                                     </label>
 
                                 </div>
 
 
                                 <div class="clearfix">
-                                    <label for="sponsor" class="box_sponsor">
+                                    <label class="box_sponsor">
                                         Cпонсор
                                         <br>
-                                        <input type="text" id="sponsor" class="sponsor" requierd>
+                                        <input type="text"  class="sponsor" requierd>
                                     </label>
 
-                                    <label for="link" class="box_link">
+                                    <label class="box_link">
                                         Ссылка
                                         <br>
-                                        <input type="text" id="link" class="link" requierd>
+                                        <input type="text" class="link" requierd>
                                     </label>
                                 </div>
 
@@ -1986,6 +1986,9 @@
         <script type="text/javascript" src="js/modernizr.js"></script>
         <script type="text/javascript" src="plagins/jquery.countdown.min.js"></script>
         <script type="text/javascript" src="plagins/owlCarousel/js/owl.carousel.js"></script>
+        <script type="text/javascript" src="plagins/inputmask/inputmask.js"></script>
+        <script type="text/javascript" src="plagins/inputmask/inputmask.date.extensions.js"></script>
+        <script type="text/javascript" src="plagins/inputmask/jquery.inputmask.js"></script>
 
         <!-- Theme files
         ============================================ -->
