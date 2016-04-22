@@ -130,6 +130,57 @@
 				End jQueryFormStyler
 		------------------------------------------------ */
 
+		/* ------------------------------------------------
+				Сountdown
+		------------------------------------------------ */
+
+			if($('.countdown_box').length){
+
+				$('.countdown_box').each(function(){
+
+					var $this = $(this),
+						date = $this.attr('data-date');
+
+					$($this).countdown(date, function(event) {
+
+				     var $this = $(this).html(event.strftime(
+
+				      '<div class="countdown alignright">'
+				      +'<div class="clock"><p>%D</p><span>Дней</span></div>'
+				      +'<div class="clock"><p>%H</p><span>часов</span></div>'
+				      +'<div class="clock"><p>%M</p><span>минут</span></div>'
+				      +'</div>'
+				      ));
+				    });
+
+				});
+
+		    }
+
+		/* ------------------------------------------------
+				End of the Countdown
+		------------------------------------------------ */
+
+		/* ------------------------------------------------
+				customSelect
+		------------------------------------------------ */
+
+			if($(".date_to").length){
+
+				$('.date_to').inputmask();
+
+			}
+
+			if($(".number_card").length){
+
+				$('.number_card ').inputmask();
+
+			}
+
+        /* ------------------------------------------------
+				End of customSelect
+		------------------------------------------------ */
+
 
 	});
 
@@ -199,8 +250,7 @@
 			WebRating
 		------------------------------------------------ */
 
-			//Make sure that the dom is ready
-			$(function () {
+			if($('#rateYo').length){
 
 			  $("#rateYo").rateYo({
 			    rating 		: 4,
@@ -209,7 +259,7 @@
 			    ratedFill	:  "#f2ba00"
 			  });
 
-			});
+			}
 
 		/* ------------------------------------------------
 			End of the webRating
