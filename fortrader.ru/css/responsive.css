@@ -2307,11 +2307,11 @@
 	.thesis_text.second{
 		margin-bottom: 30px;
 	}
-	.choose_year{
+	.choose_date{
 		margin-bottom: 25px;
 	}
 
-	.choose_year_btm_item:not(:last-child) {
+	.choose_date_btm_item:not(:last-child) {
 	    margin-right: 40px;
 	}
 	.title_min{

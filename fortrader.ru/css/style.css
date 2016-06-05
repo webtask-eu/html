@@ -8890,60 +8890,89 @@
   margin-bottom: 44px;
 }
 
-.choose_year{
+.choose_date_box{
   margin-bottom: 46px;
 }
-  .choose_year_top{
+
+.choose_date:not(:last-child){
+  margin-bottom: 15px;
+}
+  .choose_date_top{
     margin-bottom: 24px;
   }
-    .choose_year_text{
+    .choose_date_text{
       font-size: 18px;
       line-height: 47px;
       min-height: 47px;
       background-color: #F6F6F6;
       color: #454444;
-      border-left: 3px solid #FF1616;
+      border-left: 3px solid #167ac6;
       width: calc(100% - 102px);
       font-family: "pf_dindisplay_proregular";
       font-weight: inherit;
       padding: 0 11px;
       float: left;
     }
-    .choose_year .navigation_box_2{
+
+    .choose_years .choose_date_text{
+      border-color: #ff1616;
+    }
+
+    .choose_date .navigation_box_2{
       margin-bottom: 0;
     }
-      .choose_year .navigation_box_2 a{
+      .choose_date .navigation_box_2 a{
         width: 47px;
         height: 47px;
       }
-      .choose_year .navigation_box_2 .next:before {
+      .choose_date .navigation_box_2 .next:before {
         background-position: -88px 0;
       }
-      .choose_year .navigation_box_2 .next:hover:before {
+      .choose_date .navigation_box_2 .next:hover:before {
           background-position: -113px 0;
       }
 
-  .choose_year_bottom{
+  .choose_date_bottom{
     overflow: hidden;
     white-space: nowrap;
-    max-height: 17px;
   }
-    .choose_year_btm_item{
+    .choose_date_btm_item{
       display: inline-block;
-      max-height: 17px;
     }
-    .choose_year_btm_item:not(:first-child){
+    .choose_date_btm_item:not(:first-child){
       margin-left: -4px;
     }
-    .choose_year_btm_item:not(:last-child){
+    .choose_date_btm_item:not(:last-child){
       margin-right: 36px;
     }
-      .choose_year_btm_item a{
+      .choose_date_btm_item a{
+        display: block;
         color: #333131;
         font-size: 14px;
         line-height: 16px;
+        padding-bottom: 5px;
+        border-bottom: 3px solid transparent;
         font-family: "pf_dindisplay_proregular";
       }
+
+      .choose_date_btm_item a:hover{
+        color: #167ac6;
+      }
+
+      .choose_date_btm_item.current a{
+        color: #167ac6;
+        border-bottom-color: #167ac6;
+      }
+
+      .choose_years .choose_date_btm_item a:hover{
+        color: #ff1616;
+      }
+
+      .choose_years .choose_date_btm_item.current a{
+        color: #ff1616;
+        border-bottom-color: #ff1616;
+      }
+
 
 .table_currency[data-table="2"] table th{
   background-color: #F6F6F6;
