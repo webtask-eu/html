@@ -988,4 +988,69 @@
 	});
 
 
+	var newBox         = $('.news_top_box'),
+		dropdownNews   = $('.dropdown_news'),
+		linkNewsBtns = $('.link_news_btns'),
+		linkNewsBox  = $('.link_news_box');
+
+	if(newBox.length || linkNewsBtns.length){
+		newBox.on("click", function(){
+			$(this).toggleClass('active').next(dropdownNews).slideToggle();
+		});
+		linkNewsBtns.on("click", function(){
+			$(this).toggleClass('active').next(linkNewsBox).slideToggle();
+		});
+	}
+
+
+
 })(jQuery);
+
+
+
+		/* ------------------------------------------------
+		FILTER ON CLICK AND CHANGE POSITION START
+		------------------------------------------------ */
+
+				//скрипт  считывает сколько ширина скрола / старт
+
+				var scrollWidth;
+				function detectScrollBarWidth(){
+					var div = document.createElement('div');
+					div.className = "detect_scroll_width";
+					document.body.appendChild(div);
+					scrollWidth = div.offsetWidth - div.clientWidth;
+					document.body.removeChild(div);
+				}
+				detectScrollBarWidth();
+
+				//скрипт  считывает сколько ширина скрола / конец
+
+				// скрипт переставляет блок на определенной ширине в другой блок / старт
+				var drop  = $('.dropdown_news'),
+				    share = $('.date_with_share_box');
+
+				function filterPosition(){
+		          var bodyWidth = $(window).width();
+		          if(bodyWidth + scrollWidth <= 479 && $('body').hasClass('filterPosition')){
+		            $('.link_news_container').before($('.btn_red'));
+		            $('body').removeClass('filterPosition');
+		          }
+		          else if(bodyWidth + scrollWidth > 479 && !$('body').hasClass('filterPosition')){
+		            $(".last_news_title").append($('.btn_red'));
+		            $('body').addClass('filterPosition');
+		          }
+		        } 
+		        filterPosition();
+				$(window).on('resize',function(){
+			        setTimeout(function(){
+		            	filterPosition();
+		            },200);
+	            });
+
+				// скрипт переставляет блок на определенной ширине в другой блок / конец
+
+
+		/* ------------------------------------------------
+		FILTER ON CLICK AND CHANGE POSITION END
+		------------------------------------------------ */
