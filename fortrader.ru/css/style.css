@@ -8854,6 +8854,12 @@
       [data-icon="new_icon11"]:hover i{
         background-image: url(../images/new_icon11_hover.png);
       }
+     [data-icon="new_icon12"] i{
+      background-image: url(../images/magazine.png);
+    }
+      [data-icon="new_icon12"]:hover i{
+        background-image: url(../images/magazine_hover.png);
+      }  
     [data-stiker]:after{
       position: absolute;
       content: attr(data-stiker);
