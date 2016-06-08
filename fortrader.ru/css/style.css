@@ -8938,9 +8938,22 @@
           background-position: -113px 0;
       }
 
-  .choose_date_bottom{
+  .choose_date_list_wr{
     overflow: hidden;
+    width: 100%;
+    height: 24px;
     white-space: nowrap;
+  }
+
+  .choose_date_list{
+    overflow: auto;
+    padding-bottom: 20px;
+  }
+
+
+  .choose_date_bottom{
+    display: inline-block;
+    position: relative;
   }
     .choose_date_btm_item{
       display: inline-block;
