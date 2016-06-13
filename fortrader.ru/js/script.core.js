@@ -33,6 +33,8 @@
 			/**  add 00.02.16   **/
 			self.dropdounRequirements();
 
+			self.chooseDate();
+
 		},
 
 		windowLoad: function(){
@@ -959,6 +961,51 @@
 
 		},
 
+
+		/**
+		**	Choose Date
+		**/
+
+		chooseDate: function(){
+
+			$('.choose_date_btm_item').on('click', function(){
+
+				var $this = $(this),
+					parent = $this.closest('.choose_date'),
+					val = $this.find('a').text(), 
+					selection = parent.find('.choose_date_text>span');
+
+				$this.addClass('current').siblings().removeClass('current');
+				selection.text(val);
+
+			});
+
+			$('.choose_date').on('click', '.navigation_box_2>a', function(){
+
+				var $this = $(this),
+					parent = $this.closest('.choose_date'),
+					box = parent.find('.choose_date_list'),
+					boxWidth = box.width(),
+					boxScroll = box.scrollLeft();
+
+				if($this.hasClass('next')){
+
+					box.stop().animate({
+						'scrollLeft': boxScroll+boxWidth/2
+					});
+
+				}
+				else{
+
+					box.stop().animate({
+						'scrollLeft': boxScroll - boxWidth/2
+					});
+
+				}
+
+			});
+
+		},
 
 	}
 
