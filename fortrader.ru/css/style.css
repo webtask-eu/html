@@ -9416,3 +9416,190 @@
       .blue_btn{
         background-color: #198de6;
       }
+
+
+
+
+
+
+      /* add 16.06.16 */
+
+      .last_news2_title{
+        text-transform: uppercase;
+        line-height: 50px;
+        font-size: 24px;
+        margin-bottom: 15px;
+      }
+
+      .btn_back{
+        font-size: 14px;
+        line-height: 21px;
+        padding: 15px 12px;
+        text-transform: uppercase;
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+        display: inline-block;
+        float: right;
+        min-width:145px;
+        text-align: center;
+        color: #454242;
+      }
+
+      .btn_back>.icon-angle{
+        text-align: center;
+        margin-right: 10px;
+        width: 21px;
+        height: 21px;
+        border-radius:50%;
+        border: 1px solid #9c9797;
+        display: inline-block;
+        color: #9c9797;
+        line-height: 20px;
+        font-size: 12px;
+        padding-right: 1px;
+      }
+
+      .btn_back:hover{
+        background: #ebebeb;
+        color: #454242;
+      }
+
+      .news2_col60{
+        width: 58%;
+        float: left;
+        padding-right: 10px;
+        display: inline-block;
+      }
+
+      .news2_col40{
+        width: 42%;
+        float: left;
+        padding-left: 10px;
+        display: inline-block;
+      }
+
+      .news2_col60 .quotes_search_box_2{
+        margin-bottom: 0;
+      }
+
+      .news2_col60 .quotes_search_box_2 input{
+        padding: 10px 70px 11px 12px;
+      }
+
+      .news2_col60 .quotes_search_btn{
+        padding: 6px 18px;
+      }
+
+      .news2_wrap{
+        background-color: #f6f6f6;
+        position: relative;
+      }
+
+      .news2_wrap:not(:last-child){
+        margin-bottom: 4px;
+      }
+
+      .news2_count{
+        float: right;
+        padding: 12px 0 11px;
+        min-width:140px;
+        border: 1px solid #ff1616;
+      }
+
+      .news2_count_txt .news2_result{
+        color: #ff1616;
+      }
+
+      .news2_count_txt{
+        color: #454545;
+        font-size: 14px;
+        text-align: center;
+      }
+
+      .news2_btn_on{
+        font-size: 14px;
+        text-transform: uppercase;
+        text-align: center;
+        color: #fff;
+        float: right;
+        padding: 15px 0 16px;
+        min-width:145px;
+        margin-left: 5px;
+        border: none;
+        background: #167ac6;
+      }
+
+      .news2_link_img{
+        position: absolute;
+        width: 41px;
+        height: 41px;
+        left: 0;
+        top: 0;
+        display: inline-block;
+        background-color: #F1F1F1;
+      }
+
+      .news2_link_img img{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%,-50%);
+        -ms-transform: translate(-50%,-50%);
+        -o-transform: translate(-50%,-50%);
+        transform: translate(-50%,-50%);
+      }
+
+      .news2_link{
+        color: #146eb3;
+        font-size: 13px;
+        line-height: 20px;
+      }
+
+      .news2_link>span{
+        color: #454444;
+      }
+
+      .news2_box_link{
+        margin-left: 55px;
+        padding-top: 10px;
+        float: left;
+        display: inline-block;
+      }
+
+      .box_radio_btn1{
+        display: inline-block;
+        float: right;
+      }
+
+      /* radio */
+      input[type*="radio"]+.on_off{
+        position: relative;
+        width: 70px;
+        height: 40px;
+        float: left;
+        display: inline-block;
+        font-size: 12px;
+        line-height: 40px;
+        color: #fff;
+        text-align: center;
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+      }
+
+      input[type*="radio"]+.on_off:not(:last-child){
+        margin-right: 2px;
+      }
+
+      input[type*="radio"]:not(:checked)+.on_off{;
+        background: #b3b1b2 url() 0 0 no-repeat;
+      }
+
+      input[type*="radio"]:checked+.on_off.blue{
+        background: #167ac6 url() 0 0 no-repeat;
+      }
+
+       input[type*="radio"]:checked+.on_off.red{
+        background: #ff1616 url() 0 0 no-repeat;
+      }
