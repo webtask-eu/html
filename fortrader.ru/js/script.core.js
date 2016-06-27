@@ -34,6 +34,7 @@
 			self.dropdounRequirements();
 
 			self.chooseDate();
+			self.sources.init();
 
 		},
 
@@ -1007,6 +1008,76 @@
 
 		},
 
+
+		/**
+		**	Sources
+		**/
+
+
+		sources: {
+
+			init: function(){
+
+				var self = this;
+
+				self.box = $('.sources_container');
+				self.indicator = $('.sources_indicator');
+				self.enableAll = $('.sources_enable_all');
+
+				self.events();
+				self.checkInput();
+			},
+
+			events: function(){
+
+				var self = this;
+
+				$('.on_off').on('click', function(){
+
+					setTimeout(function(){
+
+						self.checkInput();
+					
+					},100);
+
+				});
+
+				self.enableAll.on('click', function(){
+
+					self.box.find('.sources_on').attr("checked", "checked");
+
+					setTimeout(function(){
+
+						self.checkInput();
+					
+					},100);
+
+				});
+
+			},
+
+			checkInput: function(){
+
+				var self = this;
+				var radio = self.box.find('.sources_off'), 
+					qt = radio.length,
+					val = 0;
+
+				for (var i = 0; i <= qt-1; i++) {
+					
+					if($(radio[i]).prop("checked")){
+
+						val +=1;
+
+					}
+
+				}
+
+				self.indicator.text(val);
+
+			},
+
+		}
 	}
 
 
