@@ -372,6 +372,67 @@
 		float: left;
 	}
 
+	/* add 08.07.16 */
+
+    .contest_page .countdown_text{
+      margin-bottom: 3px;
+      width: 100%;
+      text-align: center;
+      padding: 15px 6px;
+    }
+
+    .contest_page .countdown{
+      float: none;
+    }
+
+    .contest_page .countdown_box{
+      float: none;
+      width: 100%;
+    }
+
+    .contest_page .countdown_box div.clock{
+      width: 33%;
+    }
+
+    .contest_page .post_contest_box2 > .silver_btn{
+      display: block;
+    }
+
+    .list_info_date{
+      display: block;
+    }
+
+    .list_info_date li{
+      display: block;
+      margin-left: 0;
+      text-align: center;
+      border-right: 0;
+      padding-right: 0;
+    }
+
+    .list_info_date li:not(:first-child){
+      margin-left: 0;
+    }
+
+    .list_info_date li:not(:last-child){
+      padding-bottom: 14px;
+      border-bottom:1px solid #e3e3e3;
+    }
+
+    .list_info_date li:not(:first-child){
+      margin-top: 15px;
+    }
+
+    .list_info_date_icon_box{
+      display: block;
+      text-align: center;
+      margin-bottom: 25px;
+    }
+
+    .list_info_date_icon{
+      margin-right: 0;
+      text-align: center;
+    }
 
 
 }
@@ -1574,6 +1635,12 @@
 		    width: calc(100% / 3 - 4px);
 		}
 
+	/* add 08.07.16 */
+
+    .contest_page .countdown_box div.clock{
+      width: 32.799%;
+    }
+
 }
 
 @media only screen and (max-width: 767px) {
@@ -2195,6 +2262,13 @@
 		min-width:40px;
 	}
 
+	/* add 08.07.16 */
+
+    .contest_page .page_title1{
+      font-size: 17px;
+    }
+
+
 }
 
 @media only screen and (max-width: 479px) {
@@ -2483,5 +2557,11 @@
 	    -o-transform: translate(-50%, 60px);
 	    transform: translate(-50%, 60px);
 	}
+
+	/* add 08.07.16 */
+
+	.contest_page .countdown_box div.clock{
+      width: 32.666%;
+    }
 
 }
