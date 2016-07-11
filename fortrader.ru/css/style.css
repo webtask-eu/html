@@ -2332,7 +2332,6 @@
       font-size: 14px;
       line-height: 16px;
       margin-top: 4px;
-      text-align: right;
      }
 
     .competition_btn:hover{
@@ -8191,7 +8190,6 @@
   .contest_page .competition_btn{
     margin-left: 13px;
   }
-  }
 
   /*Countdown*/
   .countdown_box{
@@ -9603,3 +9601,82 @@
        input[type*="radio"]:checked+.on_off.red{
         background: #ff1616 url() 0 0 no-repeat;
       }
+
+
+/* add 08.07.16 */
+  .contest_page .box1{
+    padding: 0;
+  }
+
+  .contest_page .page_title1{
+    margin-bottom: 0;
+    padding: 11px 0;
+  }
+
+  .contest_page .post_contest_box1{
+    margin-bottom: 30px;
+  }
+
+  .contest_page .post_contest_box1,
+  .contest_page .post_contest_box2{
+    float: none;
+    width: 100%;
+  }
+
+  .contest_page .countdown_text{
+    font-size: 16px;
+    border: 2px solid #ff1616;
+    margin: 0;
+    padding: 14px 11px 13px;
+    width: 569px;
+  }
+
+  .contest_page .countdown_box div.clock:not(:last-child){
+    margin-right: 3px;
+  }
+
+  .contest_page .post_contest_box2 > .silver_btn{
+    display: inline-block;
+    margin-top: 0;
+  }
+
+  .silver_btn.red{
+    color: #ff1616;
+  }
+
+
+
+  .list_info_date_icon_box{
+    display: inline-block;
+  }
+
+  .list_info_date_icon{
+    font-size: 40px;
+    margin-right: 14px;
+    color: #b3b3b3;
+  }
+
+  .list_info_date{
+    display: inline-block;
+  }
+
+  .list_info_date li:not(:first-child){
+    margin-left: 14px;
+  }
+
+  .list_info_date li{
+    display: inline-block;
+    font-family: "Open Sans";
+    font-size: 14px;
+    line-height: 20px;
+    color: #333131;
+    font-weight: 600;
+    border-right:1px solid #e3e3e3;
+    padding-right: 18px;
+  }
+
+  .list_info_date li time{
+    display: block;
+    color: #454444;
+    font-weight: 300;
+  }
