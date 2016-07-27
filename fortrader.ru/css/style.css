@@ -70,8 +70,8 @@
     23.3. Footer Bottom
   24. Modal Window
   25. New menu
-  26. Archive Currency Page 
-  27. Inside currency page_add archive table section 
+  26. Archive Currency Page
+  27. Inside currency page_add archive table section
   28. Interest rates of banks page
   29. News page
 =======
@@ -2319,18 +2319,22 @@
       width: 195px;
       font-size: 17px;
       line-height: 16px;
-      padding:9px 16px;
+      padding: 10px 16px;
       color: #333030;
+      display: inline-block;
+    }
+
+    .competition_btn>*{
+      vertical-align: middle;
       display: inline-block;
     }
 
     .competition_btn span{
       font-family: "pf_dindisplay_prolight";
-      display: block;
       text-transform: lowercase;
-      color: #9e9d9d;
+      color: #858383;
       font-size: 14px;
-      line-height: 16px;
+      line-height: 14px;
       margin-top: 4px;
      }
 
@@ -2461,10 +2465,19 @@
       padding: 20px 13px 20px 17px;
     }
 
-    .banner5_box1 p{
+    .banner5_box1{
       font-family: "pf_dindisplay_prolight";
       font-size: 22px;
       color: #333131;
+    }
+
+    .banner5_box1_count{
+      font-size: 16px;
+      line-height: 16px;
+      font-family: "pf_dindisplay_proregular";
+      color: #167ac6;
+      margin-top: 12px;
+      display: table;
     }
 
     [class*="banner5_box"]{
@@ -2676,6 +2689,7 @@
     .regestration_box_50{
       width: 50%;
       float: left;
+      margin-bottom: 20px;
     }
 
     .regestration .regestration_box_50:nth-child(2){
@@ -2715,7 +2729,7 @@
     }
 
     .conditions_checkbox_box{
-      padding-top: 34px;
+      padding-top: 15px;
     }
 
     .conditions_checkbox{
@@ -2735,7 +2749,6 @@
       height: 46px;
       background-color: #5e5d5d;
       border: none;
-      margin-top: 20px;
       color:#fff;
       text-align: center;
       font-size: 19px;
@@ -8700,14 +8713,14 @@
 
 
 
-/*=========================== 
-  25. New menu 
+/*===========================
+  25. New menu
 ===========================*/
 .header_top_btn_box{
   float: left;
   margin-left: 10px;
   margin-top: 9px;
-}  
+}
   .header_top_button{
     min-width: 121px;
     font-size: 13px;
@@ -8755,7 +8768,7 @@
       display: inline-block;
     }
   .new_menu_link:hover{
-      background-color: #333030; 
+      background-color: #333030;
   }
     .new_menu_link:hover span{
       color: #F1F1F1;
@@ -8784,7 +8797,7 @@
       background-repeat: no-repeat;
       background-position: 0 50%;
     }
-    
+
     [data-icon="new_icon1"] i{
       background-image: url(../images/new_icon1.png);
     }
@@ -8857,7 +8870,7 @@
     }
       [data-icon="new_icon12"]:hover i{
         background-image: url(../images/magazine_hover.png);
-      }  
+      }
     [data-stiker]:after{
       position: absolute;
       content: attr(data-stiker);
@@ -8877,11 +8890,11 @@
     }
 
 
-/*=========================== 
-  26. Archive Currency Page 
+/*===========================
+  26. Archive Currency Page
 ===========================*/
 .clip_icon{
-  
+
 }
   .clip_icon:before {
     width: 31px;
@@ -9003,11 +9016,11 @@
 .after_table_text{
   font-size: 14px;
   line-height: 26px;
-  color: #5E5D5D;  
+  color: #5E5D5D;
 }
 
-/*=========================== 
-  27. Inside currency page_add archive table section 
+/*===========================
+  27. Inside currency page_add archive table section
 ===========================*/
 .mb30,
 .load_btn.second.mb30{
@@ -9034,11 +9047,11 @@
 }
 
 
-/*=========================== 
+/*===========================
   28. Interest rates of banks page
 ===========================*/
 .diagrams_container{
-  
+
 }
 .diagrams_box{
   -ms-overflow-x: auto;
@@ -9052,7 +9065,7 @@
   margin-bottom: 42px;
 }
   .diagrams_img{
-    
+
   }
 .thesis_text.second.mb71{margin-bottom: 71px;}
 
@@ -9118,7 +9131,7 @@
   }
 
 
-/*=========================== 
+/*===========================
   29. News page
 ===========================*/
 .btn_red{
@@ -9217,7 +9230,7 @@
         color: #454242;
         font-size: 14px;
         line-height: 16px;
-        padding: 13px 2px; 
+        padding: 13px 2px;
         display: block;
         text-align: center;
         font-family: "pf_dindisplay_proregular";
@@ -9228,13 +9241,13 @@
       }
 
 .last_news_title{
-  
+
 }
 .news_big_list_box{
-  
+
 }
   .news_big_list_item{
-    
+
   }
     .news_top_box{
       min-height: 41px;
@@ -9393,11 +9406,11 @@
         font-family: 'Open Sans', sans-serif;
         font-weight: 700;
         color: #146eb3;
-        text-transform: uppercase; 
+        text-transform: uppercase;
         padding: 0;
       }
       .dropdown_button{
-        
+
       }
       .blue_btn{
         background-color: #167AC6;
@@ -9610,7 +9623,7 @@
 
   .contest_page .page_title1{
     margin-bottom: 0;
-    padding: 11px 0;
+    padding: 12px 0;
   }
 
   .contest_page .post_contest_box1{
@@ -9625,9 +9638,9 @@
 
   .contest_page .countdown_text{
     font-size: 16px;
-    border: 2px solid #ff1616;
+    border: 3px solid #ff1616;
     margin: 0;
-    padding: 14px 11px 13px;
+    padding: 13px 11px 12px;
     width: 569px;
   }
 
@@ -9635,16 +9648,36 @@
     margin-right: 3px;
   }
 
-  .contest_page .post_contest_box2 > .silver_btn{
+  .contest_page .post_contest [class*="post_contest_box"]{
+    float: none;
+  }
+
+  .contest_page .post_contest_box2{}
+  .contest_page .post_contest_box2_list{
+    padding: 0 2px;
+    margin: 0 -2px;
+  }
+  .contest_page .post_contest_box2_list li{
+    padding: 0 2px;
+    width: 33.333%;
     display: inline-block;
+    float: left;
+  }
+
+  .contest_page .post_contest{
+    margin-left: -20px;
+    margin-right: -17px;
+  }
+
+  .contest_page .post_contest_box2 .silver_btn{
+    display: block;
     margin-top: 0;
+    padding: 17px 0;
   }
 
   .silver_btn.red{
     color: #ff1616;
   }
-
-
 
   .list_info_date_icon_box{
     display: inline-block;
@@ -9656,14 +9689,6 @@
     color: #b3b3b3;
   }
 
-  .list_info_date{
-    display: inline-block;
-  }
-
-  .list_info_date li:not(:first-child){
-    margin-left: 14px;
-  }
-
   .list_info_date li{
     display: inline-block;
     font-family: "Open Sans";
@@ -9672,7 +9697,14 @@
     color: #333131;
     font-weight: 600;
     border-right:1px solid #e3e3e3;
-    padding-right: 18px;
+    padding-right: 10px;
+    padding-left: 10px;
+    width: 33.333%;
+    float: left;
+  }
+
+  .list_info_date li span{
+    display: inline-block;
   }
 
   .list_info_date li time{
