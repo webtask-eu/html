@@ -1674,6 +1674,12 @@
 		display: block;
 	}
 
+	/* add informer category page */
+
+	.informer-header i {
+		display: none;
+	}
+
 
 
 }
@@ -2307,6 +2313,32 @@
 	    margin-left: -10px;
 	    margin-right: -10px;
 	  }
+
+
+	/* add informer category page */
+
+	.thesis_text.second.mb71 {
+		margin-bottom: 20px;
+	}
+
+	.informer-header {
+		margin-bottom: 20px;
+	}
+
+  .informer-item {
+  	padding: 0 10px 15px;
+  }
+  
+  .informer-item img {
+  	display: block;
+  	margin: 0 auto;
+  	float: none;
+  }
+
+  .informer-bottom-text {
+  	padding: 10px;
+  }
+
 }
 
 @media only screen and (max-width: 479px) {
@@ -2601,5 +2633,9 @@
 	.contest_page .countdown_box div.clock{
       width: 32.666%;
     }
+
+  /* add informer category page */
+
+
 
 }

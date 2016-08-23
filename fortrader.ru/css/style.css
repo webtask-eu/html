@@ -1442,6 +1442,12 @@
         font-weight: 600;
       }
 
+      .inform-thesis_text {
+        border: none;
+        padding: 0;
+        color: #5e5d5d;
+      }
+
       .thesis_text:not(:last-child){
         margin-bottom: 20px;
       }
@@ -2507,6 +2513,11 @@
       height: 4px;
       border-top: 1px solid #e3e3e3;
       margin: 0 0 25px;
+    }
+
+    hr.inform-separator {
+      margin: 0 0 30px;
+      border-top: none;
     }
 
     hr.separator2{margin-bottom: 0;}
@@ -9711,4 +9722,86 @@
     display: block;
     color: #454444;
     font-weight: 300;
+  }
+
+  /****add informer-category-page****/
+
+  .thesis_text.second.mb71 {
+    margin-bottom: 30px;
+  }
+
+  .informer-header {
+    margin-bottom: 30px;
+  }
+
+  .informer-header h3 {
+    display: inline-block;
+    font-family: 'pf_dindisplay_promedium', sans-serif;
+    font-size: 24px;
+    color: #454444;
+    text-transform: none;
+  }
+
+  .informer-header i {
+    width: 38px;
+    height: 31px;
+    margin-top: 10px;
+    float: right;
+    background: url(../images/inform-graph.png) no-repeat;
+  }
+
+  .informer-item {
+    font-family: 'Open Sans Semi Bold', Arial, Tahoma, sans-serif;
+    width: 100%;
+    min-height: 148px;
+    margin-bottom: 10px;
+    background: #f5f5f5;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+
+  .informer-item:hover {
+    background: #fff;
+    -webkit-box-shadow: 0 0 40px rgba(0,0,0,.3);
+    -moz-box-shadow: 0 0 40px rgba(0,0,0,.3);
+    -ms-box-shadow: 0 0 40px rgba(0,0,0,.3);
+    -o-box-shadow: 0 0 40px rgba(0,0,0,.3);
+    box-shadow: 0 0 40px rgba(0,0,0,.3);
+  }
+
+  .informer-item img {
+    float: left;
+    margin-right: 15px;
+  }
+
+  .informer-item h4 {
+    display: inline-block;
+    font-size: 14px;
+    padding: 15px 0 5px;
+    color: #167ac6;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .informer-item h4:hover {
+    text-decoration: underline;
+  }
+
+  .informer-item p {
+    line-height: 26px;
+    color: #5e5d5d;
+  }
+
+  .informer-bottom-text {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    padding: 25px 10px;
+    margin: 40px 0 40px;
+    color: #454242;
+    background: #f1f1f1;
+    text-transform: uppercase;
   }
