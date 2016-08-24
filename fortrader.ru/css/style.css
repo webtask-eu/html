@@ -9751,7 +9751,7 @@
   }
 
   .informer-item {
-    font-family: 'Open Sans Semi Bold', Arial, Tahoma, sans-serif;
+    font-family: 'Open Sans', Arial, Tahoma, sans-serif;
     width: 100%;
     min-height: 148px;
     margin-bottom: 10px;
@@ -9778,6 +9778,7 @@
   }
 
   .informer-item h4 {
+    font-family: 'Open Sans', Arial, Tahoma, sans-serif;
     display: inline-block;
     font-size: 14px;
     padding: 15px 0 5px;
