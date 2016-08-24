@@ -1680,6 +1680,16 @@
 		display: none;
 	}
 
+	/* add exchange page */
+
+	.exchange-rate span {
+		display: block;
+		margin-bottom: 15px;
+	}
+
+	.exchange-links {
+		width: 100%;
+	}
 
 
 }
@@ -2634,8 +2644,19 @@
       width: 32.666%;
     }
 
-  /* add informer category page */
+  /* add exchange-page.html */
+	
+	.exchange-rate-container {
+		padding: 0 0 0 15px;
+	}
 
+	.exchange-rate span:last-child {
+		margin: 0;
+	}
+
+	.exchange-bottom-text-container h4 {
+		padding-bottom: 20px;
+	}
 
 
 }
