@@ -2660,3 +2660,63 @@
 
 
 }
+ /*add currency_converter_page.html */
+
+@media only screen and (max-width: 320px)
+{
+.new_menu, .sidebar, #footer, .breadcrumbs ul li:nth-child(2n) {
+	display:  none;
+}
+h2 {
+	font-size: 17px;
+	border-bottom: 1px solid #e3e3e3;
+	padding-bottom: 6px; 
+}
+h2>.main_text {
+	display: block;
+	float: left;
+	border-right: 1px solid #e3e3e3;
+	margin-right: 10px;
+	padding-right: 10px;
+}
+h2>.sub_title1 {
+	font-size: 15px;
+	line-height: 17px;
+}
+.converter_icon:before {
+	display: none;
+}
+.tabs_rating .tabs_list>li {
+    width: 100%;
+	padding: 0 0 12px 0;
+}
+.tabs_list>li {
+	float: none;	
+}
+.tabl_quotes_nav {
+    display: block;
+}
+.tabs_rating .tabs_list>li:last-child {
+	padding: 0;
+}
+.tabs_list_2 a {
+    padding: 15px 15px !important;
+}
+.converter_form_inp {
+    width: 215px;
+}
+.converter_form {
+    width: 85px;
+}
+.converter_form .jq-selectbox__select {
+	    padding: 15px 22px 0 22px;
+}
+h3 {
+	font-size: 17px;
+	line-height: 25px;
+	font-weight: normal;	
+}
+.mb30 {
+	margin-bottom: 10px;
+}
+}
