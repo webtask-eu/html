@@ -2712,9 +2712,10 @@ h2>.sub_title1 {
 	    padding: 15px 22px 0 22px;
 }
 h3 {
-	font-size: 17px;
+	font-size: 16px;
 	line-height: 25px;
-	font-weight: normal;	
+	font-weight: bold;
+	padding:20px;
 }
 .mb30 {
 	margin-bottom: 10px;
