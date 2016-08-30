@@ -9936,6 +9936,7 @@ hr.separator3 {
     border-left: 3px solid #e3e3e3;
     background: #f1f1f1;
     transition: all 0.3s;
+    color: #454242;
   }
 
   .exchange-links .exchange-links-header {
