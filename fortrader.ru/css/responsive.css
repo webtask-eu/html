@@ -2480,7 +2480,7 @@
 	/*CURRENCY PAGE*/
 
 	.converter_form_inp {
-	  width: 210px;
+    width: 210px;
 	}
 	.exchange_rates_form .jq-selectbox__dropdown {
 	  width: 280px !important;
@@ -2661,9 +2661,40 @@
 
 }
  /*add currency_converter_page.html */
+ @media only screen and (max-width: 1200px) {
+	 .tabs_list_2 a {
+    padding: 15px 15px !important;
+	 }
+ }
+ @media only screen and (max-width: 479px) {
+	 .tabs_rating .tabs_list>li {
+    width: 100%;
+	padding: 0 0 12px 0;
+	}
+	.tabs_list>li {
+		float: none;	
+	}
+	.tabl_quotes_nav {
+		display: block;
+	}
+	.tabs_rating .tabs_list>li:last-child {
+		padding: 0;
+	}
 
-@media only screen and (max-width: 320px)
-{
+ }
+ @media only screen and (max-width: 380px) {
+	 .new_menu, .sidebar, #footer, .breadcrumbs ul li:nth-child(2n) {
+	display:  none;
+}
+	 h3 {
+	font-size: 16px;
+	line-height: 25px;
+	font-weight: bold;
+	padding-right: 20px;	
+}
+
+ }
+@media only screen and (max-width: 320px) {
 .new_menu, .sidebar, #footer, .breadcrumbs ul li:nth-child(2n) {
 	display:  none;
 }
@@ -2685,22 +2716,6 @@ h2>.sub_title1 {
 }
 .converter_icon:before {
 	display: none;
-}
-.tabs_rating .tabs_list>li {
-    width: 100%;
-	padding: 0 0 12px 0;
-}
-.tabs_list>li {
-	float: none;	
-}
-.tabl_quotes_nav {
-    display: block;
-}
-.tabs_rating .tabs_list>li:last-child {
-	padding: 0;
-}
-.tabs_list_2 a {
-    padding: 15px 15px !important;
 }
 .converter_form_inp {
     width: 215px;
