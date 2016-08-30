@@ -1674,6 +1674,22 @@
 		display: block;
 	}
 
+	/* add informer category page */
+
+	.informer-header i {
+		display: none;
+	}
+
+	/* add exchange page */
+
+	.exchange-rate span {
+		display: block;
+		margin-bottom: 15px;
+	}
+
+	.exchange-links {
+		width: 100%;
+	}
 
 
 }
@@ -2307,6 +2323,32 @@
 	    margin-left: -10px;
 	    margin-right: -10px;
 	  }
+
+
+	/* add informer category page */
+
+	.thesis_text.second.mb71 {
+		margin-bottom: 20px;
+	}
+
+	.informer-header {
+		margin-bottom: 20px;
+	}
+
+  .informer-item {
+  	padding: 0 10px 15px;
+  }
+  
+  .informer-item img {
+  	display: block;
+  	margin: 0 auto;
+  	float: none;
+  }
+
+  .informer-bottom-text {
+  	padding: 10px;
+  }
+
 }
 
 @media only screen and (max-width: 479px) {
@@ -2438,7 +2480,7 @@
 	/*CURRENCY PAGE*/
 
 	.converter_form_inp {
-	  width: 210px;
+    width: 210px;
 	}
 	.exchange_rates_form .jq-selectbox__dropdown {
 	  width: 280px !important;
@@ -2602,4 +2644,97 @@
       width: 32.666%;
     }
 
+  /* add exchange-page.html */
+	
+	.exchange-rate-container {
+		padding: 0 0 0 15px;
+	}
+
+	.exchange-rate span:last-child {
+		margin: 0;
+	}
+
+	.exchange-bottom-text-container h4 {
+		padding-bottom: 20px;
+	}
+
+
 }
+ /*add currency_converter_page.html */
+ @media only screen and (max-width: 1200px) {
+	 .tabs_list_2 a {
+    padding: 15px 15px !important;
+	 }
+ }
+ @media only screen and (max-width: 479px) {
+	 .tabs_rating .tabs_list>li {
+    width: 100%;
+	padding: 0 0 12px 0;
+	}
+	.tabs_list>li {
+		float: none;	
+	}
+	.tabl_quotes_nav {
+		display: block;
+	}
+	.tabs_rating .tabs_list>li:last-child {
+		padding: 0;
+	}
+
+ }
+ @media only screen and (max-width: 380px) {
+	 .new_menu, .sidebar, #footer, .breadcrumbs ul li:nth-child(2n) {
+	display:  none;
+}
+	 h3 {
+	font-size: 16px;
+	line-height: 25px;
+	font-weight: bold;
+	padding-right: 50px;	
+}
+
+ }
+@media only screen and (max-width: 320px) {
+.new_menu, .sidebar, #footer, .breadcrumbs ul li:nth-child(2n) {
+	display:  none;
+}
+h2 {
+	font-size: 17px;
+	border-bottom: 1px solid #e3e3e3;
+	padding-bottom: 6px; 
+}
+h2>.main_text {
+	display: block;
+	float: left;
+	border-right: 1px solid #e3e3e3;
+	margin-right: 10px;
+	padding-right: 10px;
+}
+h2>.sub_title1 {
+	font-size: 15px;
+	line-height: 17px;
+}
+.converter_icon:before {
+	display: none;
+}
+.converter_form_inp {
+    width: 215px;
+}
+.converter_form {
+    width: 85px;
+}
+.converter_form .jq-selectbox__select {
+	    padding: 15px 22px 0 22px;
+}
+h3 {
+	font-size: 16px;
+	line-height: 25px;
+	font-weight: bold;
+	padding-right: 20px;	
+}
+.mb30 {
+	margin-bottom: 10px;
+}
+}
+
+

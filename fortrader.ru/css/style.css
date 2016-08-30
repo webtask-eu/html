@@ -82,7 +82,7 @@
 @import "../fonts/PFDindisplayproThinBold/font.css";
 @import "../plagins/jquery.webRating/jquery.rateyo.min.css";
 
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800&subset=latin,cyrillic);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,300,600,700,800&subset=latin,cyrillic);
 @import url(https://fonts.googleapis.com/css?family=Roboto:300&subset=latin,cyrillic);
 
 /* ------------------------------------------------
@@ -464,7 +464,15 @@
       display: inline-block;
       background: url(../images/icon.png) 0 0 no-repeat;
     }
-
+	.converter-icon:before{
+      content: "";
+      display: inline-block;
+      background: url(../images/converter-icon.png) 0 0 no-repeat;
+	  width: 37px;
+	  height: 33px;
+	  background-position: -41px -118px;
+	  
+    }
     .pdf_icon:before{
       width: 26px;
       height: 32px;
@@ -1440,6 +1448,12 @@
         border-left: 10px solid #d9d9d9;
         color: #333030;
         font-weight: 600;
+      }
+
+      .inform-thesis_text {
+        border: none;
+        padding: 0;
+        color: #5e5d5d;
       }
 
       .thesis_text:not(:last-child){
@@ -2507,6 +2521,11 @@
       height: 4px;
       border-top: 1px solid #e3e3e3;
       margin: 0 0 25px;
+    }
+
+    hr.inform-separator {
+      margin: 0 0 30px;
+      border-top: none;
     }
 
     hr.separator2{margin-bottom: 0;}
@@ -7105,6 +7124,27 @@
    .link_type1:hover .link_type1_icon{
     background-color: #198ae0;
    }
+/* --------------------------------------------
+     Page Currency converter 26.08.16
+-------------------------------------------- */
+.converter_icon:before {
+	width: 38px;
+    height: 36px;
+	background: url(../images/converter_icon.png) 0 0 no-repeat;
+}
+ .arrows_icon:before {
+    width: 31px;
+    height: 31px;
+    background: url(../images/arrows_icon.png) 0 0 no-repeat;
+}
+.converter_arrow: before {
+	width: 43px;
+    height: 33px;
+    background: url(../images/converter_arrow.png) 0 0 no-repeat;
+}
+hr.separator3 {
+    margin: 0 0 25px;
+}
 
 /* --------------------------------------------
      Page Currency 22.02.16
@@ -8871,6 +8911,13 @@
       [data-icon="new_icon12"]:hover i{
         background-image: url(../images/magazine_hover.png);
       }
+	  [data-icon="new_icon13"] i{
+      background-image: url(../images/new_icon13.png);
+    }
+      [data-icon="new_icon11"]:hover i{
+        background-image: url(../images/new_icon11_hover.png);
+      }
+	  
     [data-stiker]:after{
       position: absolute;
       content: attr(data-stiker);
@@ -8893,9 +8940,6 @@
 /*===========================
   26. Archive Currency Page
 ===========================*/
-.clip_icon{
-
-}
   .clip_icon:before {
     width: 31px;
     height: 31px;
@@ -9711,4 +9755,218 @@
     display: block;
     color: #454444;
     font-weight: 300;
+  }
+
+  /****add informer-category-page****/
+
+  .thesis_text.second.mb71 {
+    margin-bottom: 30px;
+  }
+
+  .informer-header {
+    margin-bottom: 30px;
+  }
+
+  .informer-header h3 {
+    display: inline-block;
+    font-family: 'pf_dindisplay_promedium', sans-serif;
+    font-size: 24px;
+    color: #454444;
+    text-transform: none;
+  }
+
+  .informer-header i {
+    width: 38px;
+    height: 31px;
+    margin-top: 10px;
+    float: right;
+    background: url(../images/inform-graph.png) no-repeat;
+  }
+
+  .informer-item {
+    font-family: 'Open Sans', Arial, Tahoma, sans-serif;
+    width: 100%;
+    min-height: 148px;
+    margin-bottom: 10px;
+    background: #f5f5f5;
+    -webkit-transition: all 0.5s;
+    -moz-transition: all 0.5s;
+    -ms-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+  }
+
+  .informer-item:hover {
+    background: #fff;
+    -webkit-box-shadow: 0 0 40px rgba(0,0,0,.3);
+    -moz-box-shadow: 0 0 40px rgba(0,0,0,.3);
+    -ms-box-shadow: 0 0 40px rgba(0,0,0,.3);
+    -o-box-shadow: 0 0 40px rgba(0,0,0,.3);
+    box-shadow: 0 0 40px rgba(0,0,0,.3);
+  }
+
+  .informer-item img {
+    float: left;
+    margin-right: 15px;
+  }
+
+  .informer-item h4 {
+    font-family: 'Open Sans', Arial, Tahoma, sans-serif;
+    display: inline-block;
+    font-size: 14px;
+    padding: 15px 0 5px;
+    color: #167ac6;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+
+  .informer-item h4:hover {
+    text-decoration: underline;
+  }
+
+  .informer-item p {
+    line-height: 26px;
+    color: #5e5d5d;
+  }
+
+  .informer-bottom-text {
+    font-size: 14px;
+    font-weight: 600;
+    text-align: center;
+    padding: 25px 10px;
+    margin: 40px 0 40px;
+    color: #454242;
+    background: #f1f1f1;
+    text-transform: uppercase;
+  }
+
+  /* add exchange_page.html */
+
+  .exchange-rate-container {
+    background: #f6f6f6;
+    padding: 0 20px;
+    border-left: 5px solid #ff1616;
+  }
+
+  .exchange-rate {
+    padding: 30px 0 25px;
+    border-bottom: 1px solid #e3e3e3;
+  }
+
+  .exchange-rate span {
+    font-family: 'Open Sans', Arial, Tahoma, sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    color: #454444;
+    font-size: 26px;
+  }
+
+  .exchange-rate span:last-child {
+    color: #ff1616;
+  }
+
+  .exchange-currency {
+    height: 34px;
+    width: 48px;
+    margin: -6px 5px 0;
+    display: inline-block;
+  }
+
+  .exchange-currency-euro {
+    background: url(../images/table_flag2.jpg) no-repeat;
+  }
+
+  .exchange-currency-rub {
+    background: url(../images/table_flag20.jpg) no-repeat;
+  }
+
+  .exchange-rate-description {
+    font-family: 'Open Sans', Arial, Tahoma, sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    padding: 25px 0 30px;
+    color: #454444;
+  }
+
+  .exchange-rate-description span {
+    color: #5bbc2e;
+  }
+
+  .exchange-graph-container {
+    margin: 40px 0;
+  }
+
+  .exchange-graph-container h3 {
+    padding: 0;
+    font-size: 24px;
+    line-height: 30px;
+    text-transform: none;
+    color: #454444;
+  }
+
+  .exchange-graph-container p {
+    margin: 0;
+    font-size: 14px;
+    color: #787777;
+  }
+
+  .exchange-graph-container img {
+    margin-top: 20px;
+    width: 100%;
+  }
+
+  .exchange-rate-bars-container {
+    margin-bottom: 50px;
+  }
+
+  .exchange-links {
+    width: 49.5%;
+    float: left;
+    margin: 0 5px 10px 0;
+  }
+
+  .exchange-links:last-child {
+    margin-right: 0;
+    float: right;
+  }
+
+  .exchange-links li {
+    padding: 15px;
+    margin-top: 5px;
+    border-left: 3px solid #e3e3e3;
+    background: #f1f1f1;
+    transition: all 0.3s;
+    color: #454242;
+  }
+
+  .exchange-links .exchange-links-header {
+    border-color: #ff1616;
+    margin-top: 0;
+  }
+
+  /* .exchange-links li:hover:not(:first-child) {
+    border-color: #167ac6;
+  } */
+
+  .exchange-links li:hover {
+    border-color: #167ac6;
+  }
+
+  .exchange-links .exchange-links-header:hover {
+    border-color: #ff1616;
+  }
+
+  .exchange-bottom-text-container {
+    font-family: 'Open Sans', Arial, Tahoma, sans-serif;
+    font-size: 14px;
+    line-height: 26px;
+    padding-bottom: 30px;
+    color: #333131;
+  }
+
+  .exchange-bottom-text-container h4 {
+    font-family: 'Open Sans', Arial, Tahoma, sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 0 0 30px 0;
   }
