@@ -84,7 +84,18 @@
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,400,300,600,700,800&subset=latin,cyrillic);
 @import url(https://fonts.googleapis.com/css?family=Roboto:300&subset=latin,cyrillic);
-
+@font-face {
+    font-family: 'OpenSansSemiBold';
+    src: url(../fonts/OpenSansSemiBold.ttf)
+}
+@font-face {
+    font-family: 'PFD_Regular';
+    src: url(../fonts/pfdindisplaypro-regular.ttf);
+}
+@font-face {
+    font-family: 'OpenSansBold';
+    src: url('../fonts/OpenSansBold.ttf');
+}
 /* ------------------------------------------------
 
     1. Default stylesheets
@@ -11675,3 +11686,257 @@ hr.separator3 {
     font-weight: 700;
     padding: 0 0 30px 0;
   }
+
+  /*informetr.html*/
+
+.hrNone hr{
+    border-bottom: transparent;
+}
+
+.change_color_input{
+    width: 25%;
+    float: left;
+    position: relative;
+    margin-bottom: 30px;
+}
+.change_color_input label{
+    display: block;
+    font-size: 18px;
+    color: #454242;
+    font-family: 'PFD_Regular';
+    margin-bottom: 5px;
+    width: 170px;
+}
+.change_color_input input[type=text]{
+    line-height: 45px;
+    padding: 0 10px;
+    border: 1px solid #dedede;
+    color: #454444;
+    font-family: 'OpenSansSemiBold';
+    font-size: 14px;
+    width: 170px;
+}
+.change_color_input .colorSelector{
+    position: absolute;
+    right: 20px;
+    top: 37px;
+}
+
+.box_informer{
+    padding: 0;
+}
+.bigLabel .colorSelector{
+    top:58px;
+}
+
+.colorInformer{
+    font-family: 'PFD_Regular';
+    font-size: 18px;
+    color: #454444;
+    border-left: 3px solid #ff1616;
+}
+
+.columnActive{
+    border: none;
+    background: #333030 !important;
+    color: #ffffff;
+}
+
+.mycolumn li{
+    width: 165px;
+    text-align: center;
+    font-family: 'PFD_Regular';
+    border: 2px solid #e3e3e3;
+    margin-right: 22px;
+    float: left;
+    line-height: 45px;
+    cursor: pointer;
+    font-size: 16px;
+    min-height: 49px;
+}
+
+.mycolumn li:last-child{
+    margin-right: 0;
+}
+.mycolumn{
+    display: block;
+}
+.instrumentMatgin{
+    margin-top:15px;
+}
+.instrumentMatgin1{
+    margin-top:30px;
+}
+.blockCounter{
+    width: 100%;
+    border-bottom: 1px solid #e3e3e3;
+    line-height: 52px;
+    font-family: 'OpenSansSemiBold' !important;
+    font-size: 18px !important;
+    color: #454444 !important;
+}
+
+.numberSquare{
+    text-align: center;
+    background: #f1f1f1;
+    border:1px solid #e3e3e3;
+    border-bottom: transparent;
+    height: 52px;
+    width: 52px;
+    line-height: 52px;
+    font-family: 'OpenSansSemiBold';
+    font-size: 18px;
+    color: #454444;
+    float: left;
+    margin-right: 10px;
+}
+
+.section_offset .buttons_links{
+    margin: 30px -2px 0 -2px;
+}
+.section_offset .buttons_links li a{
+    background: none !important;
+    border: 2px solid #e3e3e3;
+    font-family: 'PFD_Regular';
+    font-size: 16px;
+    color: #5e5d5d;
+}
+.section_offset .buttons_links li a:hover{
+    color: #ffffff;
+    border: transparent;
+    background: #333030 !important;
+}
+.section_offset .buttons_links li a:focus {
+    color: #ffffff;
+    border: transparent;
+    background: #333030 !important;
+}
+
+.informerWidget{
+    background: #f6f6f6;
+    border: 1px solid #dedede;
+}
+.informerWidget .top{
+    color: #5e5d5d;
+    line-height: 70px;
+    text-align: center;
+    font-family: 'PFD_Regular';
+    font-size: 16px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #dedede;
+}
+.informerWidget .left{
+    border-right: 1px solid #dedede;
+    width: 165px;
+    height: 230px;
+    float: left;
+}
+.informerWidget .right{
+    border-left: 1px solid #dedede;
+    width: 100px;
+    height: 230px;
+    float: right;
+}
+.informerWidget .left img{
+    border: 1px solid #fd2222;
+}
+
+.col6 select,
+.col4 select{
+    width: 230px;
+    height: 45px;
+    line-height: 45px;
+    -webkit-appearance: none;
+    background-image: url('../images/arrowforSelect.png');
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    /* for FF */
+    -moz-appearance: none;
+    text-indent: 0.01px;
+    text-overflow: '';
+    /* for IE */
+    -ms-appearance: none;
+    appearance: none!important;
+    font-family: 'OpenSansSemiBold';
+    color: #454444;
+    font-size: 14px;
+    padding-left: 10px;
+}
+.col6{
+    width: 50%;
+    float: left;
+}
+
+.colorInformer{
+   background-image: url("../images/imgforTitleInformer.png");
+    background-repeat: no-repeat;
+    background-position: right center;
+    cursor: pointer;
+}
+
+.col4{
+    width: 33.333%;
+    float: left;
+}
+.col8{
+    width: 66.666%;
+    float: right;
+}
+
+.myText{
+    padding: 10px 0;
+    font-size: 13px;
+    font-family: 'OpenSans';
+    color: #5e5d5d;
+    line-height: 1;
+}
+
+.myInformer1{
+    margin: 40px auto 15px auto;
+    transform: translateX(50%);
+    text-align: center;
+}
+
+.codeForInsert {
+    font-family: 'OpenSans';
+    font-size: 15px;
+    color: #454444;
+    height: 150px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.codeForInsert textarea{
+    background-color: #fff;
+    border: 1px solid #dddddd;
+    border-radius: 2px;
+    resize: none;
+    width: 100%;
+    padding: 10px 17px;
+}
+
+.copyCode{
+    text-align: center;
+    text-transform: uppercase;
+    line-height: 60px;
+    background: #f1f1f1;
+    font-family: 'OpenSansSemiBold';
+    font-size: 14px;
+    color: #454242;
+    cursor: pointer;
+    margin-top: 50px;
+}
+.desc{
+    margin-top: 30px;
+    font-size: 18px;
+    color: #333131;
+}
+.desc h4{
+    font-family: 'OpenSansBold';
+    margin-bottom: 15px;
+}
+.desc p{
+    font-family: OpenSans;
+}
+

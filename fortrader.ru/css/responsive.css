@@ -13,6 +13,7 @@
 	.accordion_title{
 		display: none;
 	}
+
 }
 
 @media only screen and (min-width: 768px) {
@@ -462,7 +463,58 @@
 }
 
 @media only screen and (max-width: 992px) {
+	/*Begin informer Responsive*/
+	.imgResponive img{
+		width: 100% !important;
+	}
+	.col6{
+		float: none;
+		margin-bottom: 15px;
+	}
+	.change_color_input{
+		width: 50%;
+	}
+	.change_color_input .colorSelector{
+		right: 45px;
+	}
+	.colorInformer{
+		font-size: 16px;
+		padding-right: 60px;
+		background-size: contain;
+	}
+	.mycolumn li{
+		margin: 10px 20px 10px 20px !important;
+	}
+	.instrumentMatgin{
+		margin-top: 0;
+	}
+	.col4{
+		float: none;
+		margin-bottom: 15px;
+	}
+	.col8{
+		float: none;
+	}
+	.copyCode{
+		font-size: 13px;
+	}
+	.informerWidget .top{
+		line-height: normal;
+		padding: 20px 10px;
+	}
+	.informerWidget .left{
+		width: 70px;
+		height: 130px;
+	}
+	.informerWidget .right{
+		width: 40px;
+		height: 130px;
+	}
+	.informerWidget .left img{
+		width: 100%;
 
+	}
+	/*End informer Responsive*/
 	body{
 		min-width:768px;
 		font-size: 13px;
@@ -1695,7 +1747,37 @@
 }
 
 @media only screen and (max-width: 767px) {
-
+	/*informer responsive*/
+	.col6,.col4{
+		width: 100%;
+	}
+	.col6 select, .col4 select{
+		width: 100%;
+	}
+	.myInformer{
+		text-align: center;
+	}
+	.change_color_input input[type=text]{
+		width: 190px;
+	}
+	.change_color_input .colorSelector{
+		right: 20px;
+	}
+	.mycolumn li {
+		width: 190px;
+		margin: 2px !important;
+	}
+	.myInformer1{
+		transform: none;
+	}
+	.blockCounter{
+		font-size: 17px !important;
+	}
+	.copyCode{
+		line-height: normal;
+		padding: 15px;
+	}
+	/*end informer responsive*/
  	body{
  		min-width:460px;
  	}
@@ -2737,4 +2819,58 @@ h3 {
 }
 }
 
+@media (max-width: 410px) {
+	h2, .page_title1 {
+		font-family: 'pf_dindisplay_promedium';
+		font-size: 17px;
+		line-height: 22px;
+		margin-bottom: 10px;
+		text-transform: uppercase;
+	}
+	.change_color_input input[type=text] {
+		width: 147px;
+	}
+	.change_color_input .colorSelector {
+		right: 10px;
+	}
+	.labelXs label{
+		width: 147px;
+		font-size: 18px;
+		min-height: 42px;
+	}
+
+	.labelXs .colorSelector {
+		right: 10px;
+		top: 56px !important;
+	}
+	.fone{
+		position: relative;
+	}
+	.fone .colorSelector{
+		position: absolute;
+		right: 10px;
+		top:10px;
+	}
+	.textChange{
+		position: relative;
+	}
+	.textChange .colorSelector{
+		right: 10px;
+		top:78px !important;
+	}
+	.copyCode{
+		margin-top: 60px;
+	}
+}
+
+@media (min-width: 320px) and (max-width: 409px) {
+	.mycolumn li {
+		width: 146px;
+		margin: 2px !important;
+	}
+	.xsCode{
+		line-height: normal;
+		height: 52px;
+	}
+}
 
