@@ -11886,8 +11886,8 @@ hr.separator3 {
 
 .myText{
     padding: 10px 0;
-    font-size: 13px;
-    font-family: 'OpenSans';
+    font-size: 14px;
+    font-family: 'Open Sans'
     color: #5e5d5d;
     line-height: 1;
 }
@@ -11899,7 +11899,7 @@ hr.separator3 {
 }
 
 .codeForInsert {
-    font-family: 'OpenSans';
+    font-family: 'Open Sans';
     font-size: 15px;
     color: #454444;
     height: 150px;
@@ -11937,6 +11937,8 @@ hr.separator3 {
     margin-bottom: 15px;
 }
 .desc p{
-    font-family: OpenSans;
+    font-family: 'Open Sans';
+    line-height: 1.7;
+    font-size: 14px;
 }
 
