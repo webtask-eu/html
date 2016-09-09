@@ -2822,6 +2822,1711 @@
       border-left-color: #333131;
     }
 
+  /* --------------------------------------------
+        7.9. Informer Tables
+  -------------------------------------------- */
+
+    /*! basic ==================================================*/
+
+      .informer_box:not(:last-child){
+        margin-bottom: 50px;
+      }
+
+      .informer_box_example .informer_table_small:not(:last-child){
+        margin-right: 20px;
+      }
+
+      .informer_box_example .informer_table_middle:not(:last-child){
+        margin-right: 10px;
+      }
+
+      .informer_box_example .informer_table_marquee:not(:last-child){
+        margin-right: 30px;
+      }
+
+      .informer_box_example .informer_table:not(:last-child){
+        margin-right: 20px;
+      }
+
+      .informer_box_example .informer_table,.informer_table_middle,.informer_box_example .informer_table_small,.informer_box_example .informer_table_marquee{
+        margin-bottom: 20px;
+      }
+
+      .informer_table tfoot td,.informer_table_middle tfoot td,.informer_table_small tfoot td{
+        padding: 11px 5px;
+      }
+
+      .informer_table_small th,.informer_table_small td,
+      .informer_table_middle th,.informer_table_middle td,
+      .informer_table th, .informer_table td{
+        color: #454545;
+      }
+
+      .informer_table_middle{
+        max-width: 243px;
+        width: 100%;
+        text-align: center;
+        background: #fff;
+        color: #454545;
+        font-family: "Open Sans";
+        font-size: 13px;
+        table-layout: fixed;
+        float: left;
+      }
+
+      .informer_table_small{
+        max-width: 183px;
+        width: 100%;
+        text-align: center;
+        background: #fff;
+        color: #454545;
+        font-family: "Open Sans";
+        font-size: 13px;
+        table-layout: fixed;
+        float: left;
+      }
+
+      .informer_table_marquee{
+        max-width: 295px;
+        width: 100%;
+        text-align: center;
+        background: #fff;
+        color: #454545;
+        font-family: "Open Sans";
+        font-size: 13px;
+        table-layout: fixed;
+        float: left;
+      }
+
+    /*======= stylesheet =======*/
+
+      /* icon */
+        .informer_table [class*="icon_amount"]{
+          position: relative;
+          padding-left: 55px;
+          text-align: left;
+        }
+
+        .informer_table [class*="icon_amount"]:before{
+          content: "";
+          position: absolute;
+          left: 25px;
+          top: 50%;
+          display: inline-block;
+          width: 12px;
+          height: 15px;
+          -webkit-transform: translate(0,-50%);
+          -ms-transform: translate(0,-50%);
+          -o-transform: translate(0,-50%);
+          transform: translate(0,-50%);
+          font-weight: bold;
+          font-size: 20px;
+        }
+
+      /* amount =============================*/
+        .informer_table .icon_amount_euro:before{
+          background: url(../images/informer/arrow_down_red.png) 0 0 no-repeat;
+        }
+
+        .informer_table .icon_amount_dollar:before{
+          background: url(../images/informer/arrow_up_green.png) 0 0 no-repeat;
+        }
+
+        [class*="euro_l"]:before,[class*="dollar_l"]:before{
+          content: "";
+          width: 36px;
+          height: 36px;
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 10px;
+        }
+
+        .dollar_l_silver_square:before{
+          background: url(../images/informer/icon-usd-silver-square.png) 0 0 no-repeat;
+        }
+
+        .euro_l_silver_square:before{
+          background: url(../images/informer/icon-eur-silver-square.png) 0 0 no-repeat;
+        }
+
+        .dollar_l_dark_silver_square:before{
+          background: url(../images/informer/icon-usd-dark-silver-square.png) 0 0 no-repeat;
+        }
+
+        .euro_l_dark_silver_square:before{
+          background: url(../images/informer/icon-eur-dark-silver-square.png) 0 0 no-repeat;
+        }
+
+        .dollar_l_black_square:before{
+          background: url(../images/informer/icon-usd-black-square.png) 0 0 no-repeat;
+        }
+
+        .euro_l_black_square:before{
+          background: url(../images/informer/icon-eur-black-square.png) 0 0 no-repeat;
+        }
+
+        .dollar_l_blue_square:before{
+          background: url(../images/informer/icon-usd-blue-square.png) 0 0 no-repeat;
+        }
+
+        .euro_l_blue_square:before{
+          background: url(../images/informer/icon-eur-blue-square.png) 0 0 no-repeat;
+        }
+
+        .dollar_l_orange_square:before{
+          background: url(../images/informer/icon-usd-orange-square.png) 0 0 no-repeat;
+        }
+
+        .euro_l_orange_square:before{
+          background: url(../images/informer/icon-eur-orange-square.png) 0 0 no-repeat;
+        }
+
+        .dollar_l_pink_circle:before{
+          background: url(../images/informer/icon-usd-pink-circle.png) 0 0 no-repeat;
+        }
+
+        .euro_l_pink_circle:before{
+          background: url(../images/informer/icon-eur-pink-circle.png) 0 0 no-repeat;
+        }
+
+        .dollar_l_gold_circle:before{
+          background: url(../images/informer/icon-usd-gold-circle.png) 0 0 no-repeat;
+        }
+
+        .euro_l_gold_circle:before{
+          background: url(../images/informer/icon-eur-gold-circle.png) 0 0 no-repeat;
+        }
+
+        .simbol_dollar_l_icon:before{
+          width: 10px;
+          height: 18px;
+          background: url(../images/informer/icon-usd.png) 0 0 no-repeat;
+        }
+
+        .simbol_euro_l_icon:before{
+          width: 14px;
+           height: 16px;
+          background: url(../images/informer/icon-eur.png) 0 0 no-repeat;
+        }
+
+      /* link =============================*/
+
+        .informer_table_marquee .instal_link,
+        .informer_table .instal_link{
+          position: relative;
+        }
+
+        .informer_table_marquee .instal_link:before,
+        .informer_table .instal_link:before{
+          content: "\f013";
+          font: normal normal normal 18px/1 FontAwesome;
+          position: absolute;
+          color: #5e5e5e;
+          top: 50%;
+          left: -30px;
+          -webkit-transform: translate(0,-50%);
+          -ms-transform: translate(0,-50%);
+          -o-transform: translate(0,-50%);
+          transform: translate(0,-50%);
+        }
+
+        .informer_table_marquee .instal_link:before{
+          left: -41px;
+        }
+
+        [class*="informer_table"] .instal_link{
+          -webkit-transition: 0.5s;
+          -o-transition: 0.5s;
+          transition: 0.5s;
+        }
+
+        [class*="informer_table"] .instal_link:hover{
+          color: #000;
+          opacity: 0.7;
+        }
+
+
+        .informer_table_marquee .amount,
+        .informer_table_small .amount,
+        .informer_table_middle .amount,
+        .informer_table .amount{
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+
+        .informer_table_marquee .amount_big,
+        .informer_table_small .amount_big,
+        .informer_table_middle .amount_big,
+        .informer_table .amount_big{
+          font-size: 18px;
+          font-weight: bold;
+          text-transform: uppercase;
+        }
+
+        .informer_table_marquee .amount_middle,
+        .informer_table_small .amount_middle,
+        .informer_table_middle .amount_middle,
+        .informer_table .amount_middle{
+          color: #444;
+          font-size: 17px;
+          font-weight: bold;
+          display: inline-block;
+        }
+
+      /* flug ============================*/
+
+        .flug_eur_small:before{
+          content: "";
+          width: 16px;
+          height: 13px;
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 10px;
+          background: url(../images/flags/flag_eur.png) 0 0 no-repeat;
+        }
+
+        .flug_usd_small:before{
+          content: "";
+          width: 16px;
+          height: 13px;
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 10px;
+          background: url(../images/flags/flag_usd.png) 0 0 no-repeat;
+        }
+
+        .flug_eur_big:before{
+          content: "";
+          width: 48px;
+          height: 36px;
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 10px;
+          background: url(../images/table_flag2.jpg) 0 0 no-repeat;
+        }
+
+        .flug_usd_big:before{
+          content: "";
+          width: 48px;
+          height: 36px;
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 10px;
+          background: url(../images/table_flag1.jpg) 0 0 no-repeat;
+        }
+
+      /* arrow =====================*/
+
+        .arrow_l_d:before{
+          content: "";
+          width: 12px;
+          height: 15px;
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 10px;
+          background: url(../images/informer/arrow_down_red.png) 0 0 no-repeat;
+        }
+
+        .arrow_r_d:after{
+          content: "";
+          width: 12px;
+          height: 15px;
+          display: inline-block;
+          vertical-align: middle;
+          margin-left: 10px;
+          background: url(../images/informer/arrow_down_red.png) 0 0 no-repeat;
+        }
+
+        .arrow_l_up:before{
+          content: "";
+          width: 12px;
+          height: 15px;
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 10px;
+          background: url(../images/informer/arrow_up_green.png) 0 0 no-repeat;
+        }
+
+        .arrow_r_up:after{
+          content: "";
+          width: 12px;
+          height: 15px;
+          display: inline-block;
+          vertical-align: middle;
+          margin-left: 10px;
+          background: url(../images/informer/arrow_up_green.png) 0 0 no-repeat;
+        }
+
+      /* anlgle ========================*/
+
+        .angle_l_top_red:before{
+          content: "";
+          border: 3px solid transparent;
+          border-bottom: 4px solid #ff1616;
+          width: 0;
+          height: 0;
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 5px;
+          margin-top: -3px;
+        }
+
+        .angle_l_bottom_red:before{
+          content: "";
+          border: 3px solid transparent;
+          border-top: 4px solid #ff1616;
+          width: 0;
+          height: 0;
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 5px;
+        }
+
+        .angle_l_bottom_green:before{
+          content: "";
+          border: 3px solid transparent;
+          border-top: 4px solid #89bb50;
+          width: 0;
+          height: 0;
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 5px;
+        }
+
+        .angle_l_top_green:before{
+          content: "";
+          border: 3px solid transparent;
+          border-bottom: 4px solid #89bb50;
+          width: 0;
+          height: 0;
+          display: inline-block;
+          vertical-align: middle;
+          margin-right: 5px;
+        }
+
+        .angle_l_top_red,
+        .angle_l_bottom_red{
+          display: block;
+          color: #ff1616;
+          font-size: 13px;
+          line-height: 13px;
+          font-weight: 400;
+        }
+
+        .angle_l_bottom_green,
+        .angle_l_top_green{
+          display: block;
+          color: #89bb50;
+          font-size: 13px;
+          line-height: 13px;
+          font-weight: 400;
+        }
+
+        .informer_table thead time{
+          font-weight: 400;
+        }
+
+       .informer_table td.red{
+          color: #ff1616;
+        }
+
+        .informer_table td.green{
+          color: #89bb50;
+        }
+
+    /*! Informer Table Default =================================*/
+
+      .informer_table{
+        text-align: center;
+        width: 100%;
+        max-width: 320px;
+        background: #fff;
+        color: #454545;
+        font-family: "Open Sans";
+        font-size: 13px;
+        table-layout: fixed;
+        float: left;
+      }
+
+      .informer_table_marquee .col4 td,
+      .informer_table_small .col4 td,
+      .informer_table_middle .col4 td,
+      .informer_table .col4 td{
+        border-bottom: 1px solid #f1f1f1;
+      }
+
+      .informer_table_marquee th,
+      .informer_table_small th,
+      .informer_table_middle th,
+      .informer_table th{
+        text-transform: uppercase;
+      }
+
+      .informer_table_marquee th,.informer_table_marquee td,
+      .informer_table_small th,.informer_table_small td,
+      .informer_table_middle th,.informer_table_middle td,
+      .informer_table th,.informer_table td{
+        vertical-align: middle;
+        border: 1px solid #e8e8e8;
+        padding: 9px 5px 9px;
+      }
+
+      .informer_table_marquee thead th,
+      .informer_table_small thead th,
+      .informer_table_middle thead th,
+      .informer_table thead th{
+        font-size: 12px;
+        padding: 14px 5px 13px;
+      }
+
+      .informer_table time,.informer_table_small time,.informer_table_middle time,.informer_table_marquee time{
+        color: #787878;
+      }
+
+      /* tfoot */
+      .informer_table tfoot td,.informer_table_middle tfoot td,.informer_table_marquee tfoot td{
+        background: #f1f1f1;
+        padding: 11px 5px;
+        border: 1px solid #f1f1f1;
+      }
+
+    /*! Informer Table Silver ==================================*/
+
+      .informer_table.silver{
+        background: #f6f6f6;
+      }
+
+      .informer_table.silver thead th{
+        border-top-color: #f6f6f6;
+        border-left-color: #f6f6f6;
+        border-right-color: #f6f6f6;
+      }
+
+      .informer_table.silver tfoot td{
+        background: #fff;
+        border: 1px solid #f1f1f1;
+      }
+
+      .informer_table.silver tfoot td{
+        background: #fff;
+        border: 1px solid #f1f1f1;
+      }
+
+      .informer_table.silver tbody [class*="col"] th:not(:last-child),
+      .informer_table.silver tbody [class*="col"] td:not(:last-child){
+        border-left-color: #f6f6f6;
+      }
+      .informer_table.silver tbody [class*="col"] th:not(:first-child),
+      .informer_table.silver tbody [class*="col"] td:not(:first-child){
+        border-right-color: #f6f6f6;
+      }
+      .informer_table.silver tbody .col4 td{
+        border-left-color: #f6f6f6;
+        border-right-color: #f6f6f6;
+      }
+
+     .informer_table.silver tbody .col2 td {
+          border-bottom-color: transparent;
+      }
+
+    /*! Informer Table light_dark_silver =======================*/
+
+      .informer_table.light_dark_silver tfoot td,
+      .informer_table.light_dark_silver thead th{
+        background: #b3b1b1;
+        color: #fff;
+      }
+
+      .informer_table.light_dark_silver tbody{
+        border-left: 1px solid #e8e8e8;
+        border-right: 1px solid #e8e8e8;
+      }
+
+      .informer_table.light_dark_silver tfoot td,
+      .informer_table.light_dark_silver thead th{
+        border-color: #b3b1b1;
+      }
+
+      .informer_table.light_dark_silver tbody .col1 th{
+        border-color: #f1f1f1;
+      }
+
+      .informer_table.light_dark_silver tbody .col4 td{
+        border-color: #f1f1f1;
+        border-right: 1px solid #e8e8e8;
+        border-left: 1px solid #e8e8e8;
+      }
+
+      .informer_table.light_dark_silver .col1 th:not(:first-child){
+        border-right: 1px solid #e8e8e8;
+      }
+
+      .informer_table.light_dark_silver .col1 th:not(:last-child){
+        border-left: 1px solid #e8e8e8;
+      }
+
+      .informer_table.light_dark_silver .col4 td,
+      .informer_table.light_dark_silver .col1 th{
+        background: #f1f1f1;
+      }
+
+      .informer_table.light_dark_silver .col2 td{
+        border-top: none;
+      }
+
+      .informer_table.light_dark_silver .col3 td{
+        border-bottom: none;
+      }
+
+      .informer_table.light_dark_silver .instal_link,
+      .informer_table.light_dark_silver .instal_link:before{
+        color: #fff;
+      }
+
+    /*! Informer Table Dark ====================================*/
+
+      .informer_table.dark tfoot td,
+      .informer_table.dark thead{
+        background: #4d4d4d;
+      }
+
+      .informer_table.dark tfoot td,
+      .informer_table.dark thead th{
+        border-color: #4d4d4d;
+      }
+
+      .informer_table.dark tbody td:not(:first-child){
+        border-right-color: #333;
+      }
+
+      .informer_table.dark tbody td:not(:last-child){
+        border-left-color: #333;
+      }
+
+      .informer_table.dark tfoot .instal_link:before,
+      .informer_table.dark tfoot .instal_link{
+        color: #e6e6e6;
+      }
+
+      .informer_table.dark thead th{
+        color: #fff;
+      }
+
+      .informer_table.dark tbody th,
+      .informer_table.dark tbody td{
+        border-color: #4d4d4d;
+      }
+
+      .informer_table.dark tbody{
+        background: #333;
+        color: #e6e6e6;
+      }
+
+      .informer_table.dark tbody .col1 th{
+        border-top: 1px solid #333;
+        color: #e6e6e6;
+      }
+
+      .informer_table.dark tbody .col1 th:not(:first-child){
+        border-right: 1px solid #333;
+      }
+
+      .informer_table.dark tbody .col1 th:not(:last-child){
+        border-left: 1px solid #333;
+        border-top: 1px solid #333;
+      }
+
+      .informer_table.dark tbody .col4 time{
+        color: #e6e6e6;
+      }
+
+      .informer_table.dark .col4 td{
+        border-color: #333;
+      }
+
+    /*! Informer Table blue ====================================*/
+
+      .informer_table.blue{
+        color: #fff;
+      }
+
+      .informer_table.blue tfoot td,
+      .informer_table.blue thead th{
+        background: #136bad;
+        color: #fff;
+      }
+
+      .informer_table.blue tfoot td,
+      .informer_table.blue thead th{
+        border-color: #136bad;
+      }
+
+      .informer_table.blue tfoot .instal_link:before,
+      .informer_table.blue tfoot .instal_link{
+        color: #fff;
+      }
+
+      /* amount */
+      .informer_table.blue .icon_amount_euro:before{
+        background: url(../images/informer/arrow_down_white.png) 0 0 no-repeat;
+      }
+
+      .informer_table.blue .icon_amount_dollar:before{
+        background: url(../images/informer/arrow_up_white.png) 0 0 no-repeat;
+      }
+
+      .informer_table.blue tbody th,
+      .informer_table.blue tbody td{
+        border-color: #136bad;
+        color: #fff;
+      }
+
+      .informer_table.blue tbody{
+        background: #167ac6;
+      }
+
+      .informer_table.blue tbody .col1 th{
+        border-top: 1px solid #333;
+      }
+
+      .informer_table.blue tbody  td:not(:first-child),
+      .informer_table.blue tbody .col1 th:not(:first-child){
+        border-right: 1px solid #167ac6;
+      }
+
+      .informer_table.blue tbody  td:not(:last-child),
+      .informer_table.blue tbody .col1 th:not(:last-child){
+        border-left: 1px solid #167ac6;
+      }
+
+      .informer_table.blue tbody .col4 time{
+        color: #fff;
+      }
+
+      .informer_table.blue .col4 td{
+        border-color: #167ac6;
+      }
+
+    /*! Informer Table purple ==================================*/
+
+      .informer_table.purple{
+        color: #fff;
+      }
+
+      .informer_table.purple tfoot td,
+      .informer_table.purple thead th{
+        background: #615f8c;
+        color: #fff;
+      }
+
+      .informer_table.purple tfoot td,
+      .informer_table.purple thead th{
+        border-color: #615f8c;
+      }
+
+      .informer_table.purple tfoot .instal_link:before,
+      .informer_table.purple tfoot .instal_link{
+        color: #fff;
+      }
+
+      /* amount */
+      .informer_table.purple .icon_amount_euro:before{
+        background: url(../images/informer/arrow_down_white.png) 0 0 no-repeat;
+      }
+
+      .informer_table.purple .icon_amount_dollar:before{
+        background: url(../images/informer/arrow_up_white.png) 0 0 no-repeat;
+      }
+
+      .informer_table.purple tbody th,
+      .informer_table.purple tbody td{
+        border-color: #615f8c;
+        color: #fff;
+      }
+
+      .informer_table.purple tbody{
+        background: #7371a6;
+      }
+
+      .informer_table.purple tbody .col1 th{
+        border-top: 1px solid #615f8c;
+      }
+
+      .informer_table.purple tbody  td:not(:first-child),
+      .informer_table.purple tbody .col1 th:not(:first-child){
+        border-right: 1px solid #7371a6;
+      }
+
+      .informer_table.purple tbody  td:not(:last-child),
+      .informer_table.purple tbody .col1 th:not(:last-child){
+        border-left: 1px solid #7371a6;
+      }
+
+      .informer_table.purple tbody .col4 time{
+        color: #fff;
+      }
+
+      .informer_table.purple .col4 td{
+        border-color: #7371a6;
+      }
+
+    /*! Informer Table border bold ==============================*/
+
+      .informer_table.bold_bd th,
+      .informer_table.bold_bd td{
+        border-width: 2px;
+      }
+
+      .informer_table.bold_bd td{
+        padding: 9px 5px 8px;
+      }
+
+      .informer_table.bold_bd thead th{
+        padding: 12px 5px;
+      }
+
+      .informer_table.bold_bd .col4 td{
+        border-bottom: 2px solid #e8e8e8;
+      }
+
+    /*! Informer Table type1 ====================================*/
+
+     .informer_table.type1 tbody .col2 td {
+          border-bottom-color: transparent;
+      }
+
+    /*! Informer Table  white ====================================*/
+
+      .informer_table.white td,
+      .informer_table.white th{
+        background: #fff;
+        border: 2px solid #e3e3e3;
+      }
+
+     .informer_table.white thead th{
+        text-transform: none;
+        font-size: 14px;
+     }
+
+     .informer_table.white.tt_upr thead th{
+        text-transform: uppercase;
+        font-size: 14px;
+     }
+
+     .informer_table.white tbody td{
+        padding: 11px 5px 10px;
+        font-size: 18px;
+        font-weight: bold;
+     }
+
+     .informer_table.white tbody .col1 td {
+          border-bottom-color: transparent;
+      }
+
+    /*! Informer Table  bd orange ================================*/
+
+      .informer_table.bd_orange td,
+      .informer_table.bd_orange th{
+        background: #fff;
+        border: 1px solid #ff1616;
+      }
+
+     .informer_table.bd_orange thead th{
+        text-transform: none;
+        font-size: 14px;
+     }
+
+     .informer_table.bd_orange.tt_upr thead th{
+        text-transform: uppercase;
+        font-size: 14px;
+     }
+
+     .informer_table.bd_orange tbody td{
+        padding: 11px 5px 10px;
+        font-size: 18px;
+        font-weight: bold;
+     }
+
+     .informer_table.bd_orange tbody .col1 td {
+          border-bottom-color: transparent;
+      }
+
+    /*! Informer Table Dark Silver 2 =============================*/
+
+      .informer_table.dark_silver_2.tt_upr thead th{
+        text-transform: uppercase;
+        font-size: 14px;
+      }
+
+      .informer_table.dark_silver_2{
+        background-color: #f1f1f1;
+      }
+
+      .informer_table.dark_silver_2 thead th{
+        border: 1px solid #ccc;
+        font-size: 14px;
+        text-transform: none;
+      }
+
+      .informer_table.dark_silver_2 tfoot td{
+        border: 1px solid #ccc;
+        background: none;
+      }
+
+      .informer_table.dark_silver_2 tbody td:not(:first-child){
+        border: 1px solid #ccc;
+      }
+
+      .informer_table.dark_silver_2 tbody td:not(:last-child){
+        border: 1px solid #ccc;
+      }
+
+      .informer_table.dark_silver_2 tbody td{
+        font-weight: bold;
+        font-size: 18px;
+        padding: 11px 5px 10px;
+      }
+
+      .informer_table.dark_silver_2 tbody .col1 td {
+          border-bottom-color: transparent;
+      }
+
+    /*! Informer Table Orange Head ===============================*/
+
+      .informer_table.orange_head thead time,
+      .informer_table.orange_head thead th{
+        background: #ff660a;
+        color: #fff;
+        border-color: #ff660a;
+        font-size: 14px;
+        text-transform: none;
+      }
+
+      .informer_table.orange_head tfoot td{
+        border: 1px solid #ff660a;
+        background: none;
+      }
+
+      .informer_table.orange_head tbody td:not(:first-child){
+        border-right: 1px solid #ff660a;
+      }
+
+      .informer_table.orange_head tbody td:not(:last-child){
+        border-left: 1px solid #ff660a;
+      }
+
+      .informer_table.orange_head tbody td{
+        font-weight: bold;
+        font-size: 18px;
+        padding: 11px 5px 11px;
+      }
+
+      .informer_table.orange_head tbody .col1 td {
+          border-bottom-color: transparent;
+      }
+
+    /*! Informer Table type2 ======================================*/
+
+      .informer_table.type2 thead th{
+        background: #f1f1f1;
+        border-color: #f1f1f1;
+      }
+
+      .informer_table.type2 .col4 td {
+          border-bottom: 1px solid #e8e8e8;
+      }
+
+      .informer_table.type2 tbody .col2 td {
+          border-bottom-color: transparent;
+      }
+
+    /* Middle */
+    /*! Informer Table moddle white ===============================*/
+
+      .informer_table_middle.white.bold_bd td,
+      .informer_table_middle.white.bold_bd th{
+        border: 2px solid #e3e3e3;
+      }
+
+      .informer_table_middle.white.tt_upr thead th{
+        text-transform: uppercase;
+        font-size: 14px;
+      }
+
+      .informer_table_middle.white thead th{
+        font-size: 14px;
+        text-transform: none;
+      }
+
+      .informer_table_middle.white tfoot td{
+        background: none;
+      }
+
+      .informer_table_middle.white tbody td{
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      .informer_table_middle.white .col1 td:not(:first-child){
+        border-left-color: transparent;
+      }
+
+      .informer_table_middle.white .col1 td:not(:last-child){
+        border-right-color: transparent;
+      }
+
+      .informer_table_middle.white .instal_link{
+        font-size: 12px;
+      }
+
+      .informer_table_middle.white .instal_link:before{
+        display: none;
+      }
+
+    /*! Informer Table mddle hight_silver =========================*/
+
+      .informer_table_middle.hight_silver td,
+      .informer_table_middle.hight_silver th{
+        background: #f1f1f1;
+        border: 1px solid #ccc;
+      }
+
+      .informer_table_middle.hight_silver.tt_upr thead th{
+        text-transform: uppercase;
+        font-size: 14px;
+      }
+
+      .informer_table_middle.hight_silver thead th{
+        font-size: 14px;
+        text-transform: none;
+      }
+
+      .informer_table_middle.hight_silver .col1 td:not(:first-child){
+        border-left-color: transparent;
+      }
+
+      .informer_table_middle.hight_silver .col1 td:not(:last-child){
+        border-right-color: transparent;
+      }
+
+
+      .informer_table_middle.hight_silver .instal_link{
+        font-size: 12px;
+      }
+
+      .informer_table_middle.hight_silver .instal_link:before{
+        display: none;
+      }
+
+    /*! Informer Table middle hight silver black ===================*/
+
+      .informer_table_middle.hight_silver_black td,
+      .informer_table_middle.hight_silver_black th{
+        background: #f1f1f1;
+        border: 1px solid #ccc;
+      }
+
+      .informer_table_middle.hight_silver_black.tt_upr thead th{
+        text-transform: uppercase;
+        font-size: 14px;
+        background-color: #545454;
+        color: #fff;
+      }
+
+      .informer_table_middle.hight_silver_black thead th{
+        font-size: 14px;
+        text-transform: none;
+      }
+
+      .informer_table_middle.hight_silver_black tbody td{
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      .informer_table_middle.hight_silver_black .col1 td:not(:first-child){
+        border-left-color: transparent;
+      }
+
+      .informer_table_middle.hight_silver_black .col1 td:not(:last-child){
+          border-right-color: transparent;
+      }
+
+      .informer_table_middle.hight_silver_black .instal_link{
+        font-size: 12px;
+      }
+
+      .informer_table_middle.hight_silver_black .instal_link:before{
+        display: none;
+      }
+
+    /*! Informer Table middle hight orange ==========================*/
+
+      .informer_table_middle.hight_orange td,
+      .informer_table_middle.hight_orange th{
+        background: #f1f1f1;
+        border: 1px solid #ff660a;
+      }
+
+      .informer_table_middle.hight_orange.tt_upr thead th{
+        text-transform: uppercase;
+        font-size: 14px;
+        background: #ff660a;
+        border-color: #ff660a;
+        color: #fff;
+      }
+
+      .informer_table_middle.hight_orange thead th{
+        font-size: 14px;
+        text-transform: none;
+      }
+
+      .informer_table_middle.hight_orange tbody td{
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      .informer_table_middle.hight_orange .col1 td{
+        border-bottom: 1px solid #ccc;
+      }
+
+      .informer_table_middle.hight_orange .col1 td:not(:first-child){
+        border-left-color: transparent;
+      }
+
+      .informer_table_middle.hight_orange .col1 td:not(:last-child){
+          border-right-color: transparent;
+      }
+
+      .informer_table_middle.hight_orange .instal_link{
+        font-size: 12px;
+      }
+
+      .informer_table_middle.hight_orange .instal_link:before{
+        display: none;
+      }
+
+    /*! Informer Table middle hight_gold ============================*/
+
+      .informer_table_middle.hight_gold td,
+      .informer_table_middle.hight_gold th{
+        background: #f1f1f1;
+        border: 1px solid #897939;
+      }
+
+      .informer_table_middle.hight_gold thead th time{
+        color: #fff;
+      }
+
+      .informer_table_middle.hight_gold thead th{
+        font-size: 14px;
+        background-color: #897939;
+        border-color: #897939;
+        color: #fff;
+        text-transform: none;
+      }
+
+      .informer_table_middle.hight_gold tbody td{
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      .informer_table_middle.hight_gold .col1 td{
+        border-bottom: 1px solid #897939;
+      }
+
+      .informer_table_middle.hight_gold .col1 td:not(:first-child){
+        border-left-color: transparent;
+      }
+
+      .informer_table_middle.hight_gold .col1 td:not(:last-child){
+          border-right-color: transparent;
+      }
+
+      .informer_table_middle.hight_gold .instal_link{
+        font-size: 12px;
+        color: #574d24;
+      }
+
+      .informer_table_middle.hight_gold .instal_link:before{
+        display: none;
+      }
+
+    /*! Informer Table middle pink_orange ===========================*/
+
+      .informer_table_middle.pink_orange td,
+      .informer_table_middle.pink_orange th{
+        background: #ffece5;
+        border: 1px solid #ff7e65;
+      }
+
+      .informer_table_middle.pink_orange thead th time{
+        color: #fff;
+      }
+
+      .informer_table_middle.pink_orange thead th{
+        font-size: 14px;
+        background: #ff7e65;
+        border-color: #ff7e65;
+        color: #fff;
+        text-transform: none;
+      }
+
+      .informer_table_middle.pink_orange tbody td{
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      .informer_table_middle.pink_orange .col1 td{
+        border-bottom: 1px solid #ff7e65;
+      }
+
+      .informer_table_middle.pink_orange .col1 td:not(:first-child){
+        border-left-color: transparent;
+      }
+
+      .informer_table_middle.pink_orange .col1 td:not(:last-child){
+          border-right-color: transparent;
+      }
+
+      .informer_table_middle.pink_orange .instal_link{
+        font-size: 12px;
+        color: #574d24;
+      }
+
+      .informer_table_middle.pink_orange .instal_link:before{
+        display: none;
+      }
+
+    /*! Informer Table middle hight blue ===========================*/
+
+      .informer_table_middle.hight_blue td,
+      .informer_table_middle.hight_blue th{
+        border: 1px solid #167ac6;
+        background: #167ac6;
+        color: #fff;
+      }
+
+      .informer_table_middle.hight_blue thead th time,
+      .informer_table_middle.hight_blue span,
+      .informer_table_middle.hight_blue .amount_middle{
+        color: #fff;
+      }
+
+
+      .informer_table_middle.hight_blue .angle_l_top_red:before{
+        border-bottom-color: #fff;
+      }
+
+      .informer_table_middle.hight_blue .angle_l_bottom_green:before{
+        border-top-color: #fff;
+      }
+
+      .informer_table_middle.hight_blue thead th{
+        font-size: 14px;
+        background: #115e99;
+        border-color: #115e99;
+        text-transform: none;
+      }
+
+      .informer_table_middle.hight_blue tbody td{
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      .informer_table_middle.hight_blue .col1 td{
+        border-bottom: 1px solid #115e99;
+      }
+
+      .informer_table_middle.hight_blue .col1 td:not(:first-child){
+        border-left-color: transparent;
+      }
+
+      .informer_table_middle.hight_blue .col1 td:not(:last-child){
+        border-right-color: transparent;
+      }
+
+      .informer_table_middle.hight_blue .instal_link{
+        font-size: 12px;
+        color: #fff;
+      }
+
+      .informer_table_middle.hight_blue .instal_link:before{
+        display: none;
+      }
+
+    /*! Informer Table middle hight blue ============================*/
+
+      .informer_table_middle.hight_silver_dark td,
+      .informer_table_middle.hight_silver_dark th{
+        border: 1px solid #b3b1b1;
+        background-color: #f1f1f1;
+        color: #fff;
+      }
+
+      .informer_table_middle.hight_silver_dark thead th time{
+        color: #fff;
+      }
+
+      .informer_table_middle.hight_silver_dark thead th{
+        font-size: 14px;
+        background: #b3b1b1;
+        border-color: #b3b1b1;
+        text-transform: none;
+      }
+
+      .informer_table_middle.hight_silver_dark tbody td{
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      .informer_table_middle.hight_silver_dark .col1 td{
+        border-bottom: 1px solid #115e99;
+      }
+
+      .informer_table_middle.hight_silver_dark .col1 td:not(:first-child){
+        border-left-color: transparent;
+      }
+
+      .informer_table_middle.hight_silver_dark .col1 td:not(:last-child){
+        border-right-color: transparent;
+      }
+
+      .informer_table_middle.hight_silver_dark .instal_link{
+        font-size: 12px;
+      }
+
+
+      /* small */
+
+    /*! Informer table small default ================================*/
+
+      .informer_table_small.default span2{
+        vertical-align: middle;
+      }
+
+      .informer_table_small.default td,
+      .informer_table_small.default th{
+        border: 1px solid #ccc;
+        padding: 10px 5px 9px;
+      }
+
+      .informer_table_small.default .angle_l_bottom_red,
+      .informer_table_small.default .angle_l_top_green{
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .informer_table_small.default .amount_middle{
+        vertical-align: middle;
+        font-size: 13px;
+        line-height: 1;
+      }
+
+      .informer_table_small.default thead time,
+      .informer_table_small.default thead th{
+        text-transform: none;
+        color: #434343;
+      }
+
+      .informer_table_small.default tbody td{
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      .informer_table_small.default .col1 td{
+        border-bottom: 1px solid #115e99;
+      }
+
+      .informer_table_small.default .col1 td:not(:first-child){
+        border-left-color: transparent;
+      }
+
+      .informer_table_small.default .col1 td:not(:last-child){
+        border-right-color: transparent;
+      }
+
+      .informer_table_small.default .instal_link{
+        font-size: 10px;
+      }
+
+    /*! Informer table small silver_dark =============================*/
+
+      .informer_table_small.silver_dark span2{
+        vertical-align: middle;
+      }
+
+      .informer_table_small.silver_dark td,
+      .informer_table_small.silver_dark th{
+        border: 1px solid #ccc;
+        padding: 10px 5px 9px;
+      }
+
+      .informer_table_small.silver_dark .angle_l_bottom_red,
+      .informer_table_small.silver_dark .angle_l_top_green{
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .informer_table_small.silver_dark .amount_middle{
+        vertical-align: middle;
+        font-size: 13px;
+        line-height: 1;
+      }
+
+      .informer_table_small.silver_dark tbody td,
+      .informer_table_small.silver_dark tfoot td{
+        background-color: #f1f1f1;
+        border: 1px solid #ccc;
+      }
+
+      .informer_table_small.silver_dark thead th{
+        background: #b3b1b1;
+        border-color: #b3b1b1;
+      }
+
+      .informer_table_small.silver_dark thead time,
+      .informer_table_small.silver_dark thead th{
+        text-transform: none;
+        color: #fff;
+      }
+
+      .informer_table_small.silver_dark tbody td{
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      .informer_table_small.silver_dark .col1 td:not(:first-child){
+        border-left-color: transparent;
+      }
+
+      .informer_table_small.silver_dark .col1 td:not(:last-child){
+        border-right-color: transparent;
+      }
+
+      .informer_table_small.silver_dark .instal_link{
+        font-size: 10px;
+      }
+
+    /*! Informer table small orange ===================================*/
+
+      .informer_table_small.orange span2{
+        vertical-align: middle;
+      }
+
+      .informer_table_small.orange td,
+      .informer_table_small.orange th{
+        border: 1px solid #ccc;
+        padding: 10px 5px 9px;
+      }
+
+      .informer_table_small.orange .angle_l_bottom_red,
+      .informer_table_small.orange .angle_l_top_green{
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .informer_table_small.orange .amount_middle{
+        vertical-align: middle;
+        font-size: 13px;
+        line-height: 1;
+      }
+
+      .informer_table_small.orange tbody td,
+      .informer_table_small.orange tfoot td{
+        background-color: #f1f1f1;
+        border: 1px solid #ccc;
+      }
+
+      .informer_table_small.orange tfoot td{
+        border-left-color: #ff660a;
+        border-right-color: #ff660a;
+        border-bottom-color: #ff660a;
+      }
+
+      .informer_table_small.orange thead th{
+        background: #ff660a;
+        border-color: #ff660a;
+      }
+
+      .informer_table_small.orange thead time,
+      .informer_table_small.orange thead th{
+        text-transform: none;
+        color: #fff;
+      }
+
+      .informer_table_small.orange tbody td{
+        font-weight: bold;
+        font-size: 18px;
+        border-left-color: #ff660a;
+        border-right-color: #ff660a;
+      }
+
+      .informer_table_small.orange .col1 td:not(:first-child){
+        border-left-color: transparent;
+      }
+
+      .informer_table_small.orange .col1 td:not(:last-child){
+        border-right-color: transparent;
+      }
+
+      .informer_table_small.orange .instal_link{
+        font-size: 10px;
+      }
+
+    /*! Informer table small pink =====================================*/
+
+      .informer_table_small.pink span2{
+        vertical-align: middle;
+      }
+
+      .informer_table_small.pink td,
+      .informer_table_small.pink th{
+        border: 1px solid #ccc;
+        padding: 10px 5px 9px;
+      }
+
+      .informer_table_small.pink .angle_l_bottom_red,
+      .informer_table_small.pink .angle_l_top_green{
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .informer_table_small.pink .amount_middle{
+        vertical-align: middle;
+        font-size: 13px;
+        line-height: 1;
+      }
+
+      .informer_table_small.pink tbody td,
+      .informer_table_small.pink tfoot td{
+        background-color: #ffece5;
+        border: 1px solid #ff7e65;
+      }
+
+      .informer_table_small.pink thead th{
+        background: #ff7e65;
+        border-color: #ff7e65;
+      }
+
+      .informer_table_small.pink thead time,
+      .informer_table_small.pink thead th{
+        text-transform: none;
+        color: #fff;
+      }
+
+      .informer_table_small.pink tbody td{
+        font-weight: bold;
+        font-size: 18px;
+      }
+
+      .informer_table_small.pink .col1 td:not(:first-child){
+        border-left-color: transparent;
+      }
+
+      .informer_table_small.pink .col1 td:not(:last-child){
+        border-right-color: transparent;
+      }
+
+      .informer_table_small.pink .instal_link{
+        font-size: 10px;
+      }
+
+    /*! Informer table small silver_dark ==============================*/
+
+      .informer_table_small.silver_dark2 span2{
+        vertical-align: middle;
+      }
+
+      .informer_table_small.silver_dark2 td,
+      .informer_table_small.silver_dark2 th{
+        border: 1px solid #ccc;
+        padding: 10px 5px 9px;
+      }
+
+      .informer_table_small.silver_dark2 .angle_l_bottom_red,
+      .informer_table_small.silver_dark2 .angle_l_top_green{
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .informer_table_small.silver_dark2 .amount_middle{
+        vertical-align: middle;
+        font-size: 19px;
+        margin-left: 10px;
+        line-height: 1;
+      }
+
+      .informer_table_small.silver_dark2 tbody td,
+      .informer_table_small.silver_dark2 tfoot td{
+        background-color: #f1f1f1;
+        border: 1px solid #ccc;
+      }
+
+      .informer_table_small.silver_dark2 thead th{
+        background: #b3b1b1;
+        border-color: #b3b1b1;
+      }
+
+      .informer_table_small.silver_dark2 thead time,
+      .informer_table_small.silver_dark2 thead th{
+        text-transform: none;
+        color: #fff;
+      }
+
+      .informer_table_small.silver_dark2 tbody span{
+        font-size: 11px;
+        color: #454545;
+        line-height: 1;
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .informer_table_small.silver_dark2 .col1 td{
+        border-bottom-color: transparent;
+      }
+
+      .informer_table_small.silver_dark2 .col2 td{
+        border-top-color: transparent;
+      }
+
+      .informer_table_small.silver_dark2 .instal_link{
+        font-size: 10px;
+      }
+
+    /* marquee */
+    /*! Informer marquee  blue =========================================*/
+
+      .informer_table_marquee.blue span{
+        vertical-align: middle;
+      }
+
+      .informer_table_marquee.blue td,
+      .informer_table_marquee.blue th{
+        padding: 10px 5px 9px;
+      }
+
+      .informer_table_marquee.blue .angle_l_bottom_red,
+      .informer_table_marquee.blue .angle_l_top_green{
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .informer_table_marquee.blue .amount_middle.blue{
+        color: #167ac6;
+        font-size: 19px;
+      }
+
+      .informer_table_marquee.blue .amount_middle{
+        vertical-align: middle;
+        font-size: 18px;
+        margin-left: 10px;
+        margin-right: 10px;
+        line-height: 1;
+      }
+
+      .informer_table_marquee.blue tfoot td{
+        padding: 8px 5px 8px;
+      }
+
+      .informer_table_marquee.blue tbody td,
+      .informer_table_marquee.blue tfoot td{
+        background: #f6f6f6;
+        border: 1px solid #167ac6;
+      }
+
+      .informer_table_marquee.blue thead th{
+        background-color: #167ac6;
+        border-color: #167ac6;
+      }
+
+      .informer_table_marquee.blue thead time,
+      .informer_table_marquee.blue thead th{
+        text-transform: none;
+        color: #fff;
+      }
+
+      .informer_table_marquee.blue tbody td{
+        padding: 15px 5px 14px;
+      }
+
+      .informer_table_marquee.blue tbody span{
+        font-size: 14px;
+        color: #454545;
+        line-height: 1;
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .informer_table_marquee.blue .instal_link{
+        font-size: 12px;
+      }
+
+    /*! Informer marquee  silver dark ==================================*/
+
+      .informer_table_marquee.silver_dark span{
+        vertical-align: middle;
+      }
+
+      .informer_table_marquee.silver_dark td,
+      .informer_table_marquee.silver_dark th{
+        padding: 10px 5px 9px;
+      }
+
+      .informer_table_marquee.silver_dark .angle_l_top_red,
+      .informer_table_marquee.silver_dark .angle_l_bottom_green{
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .informer_table_marquee.silver_dark .amount_middle.silver_dark{
+        color: #167ac6;
+        font-size: 19px;
+      }
+
+      .informer_table_marquee.silver_dark .amount_middle{
+        vertical-align: middle;
+        font-size: 18px;
+        margin-left: 10px;
+        margin-right: 10px;
+        line-height: 1;
+      }
+
+      .informer_table_marquee.silver_dark tfoot td{
+        padding: 8px 5px 8px;
+      }
+
+      .informer_table_marquee.silver_dark tbody td,
+      .informer_table_marquee.silver_dark tfoot td{
+        background-color: #f6f6f6;
+        border: 1px solid #b3b1b1;
+      }
+
+      .informer_table_marquee.silver_dark thead th{
+        background-color: #b3b1b1;
+        border-color: #b3b1b1;
+      }
+
+      .informer_table_marquee.silver_dark thead time,
+      .informer_table_marquee.silver_dark thead th{
+        text-transform: none;
+        color: #fff;
+      }
+
+      .informer_table_marquee.silver_dark tbody td{
+        padding: 15px 5px 14px;
+      }
+
+      .informer_table_marquee.silver_dark tbody span{
+        font-size: 18px;
+        line-height: 1;
+        display: inline-block;
+        vertical-align: middle;
+      }
+
+      .informer_table_marquee.silver_dark .instal_link{
+        font-size: 12px;
+      }
+
 /* ------------------------------------------------
 
     8. Widgets and Shortcodes
