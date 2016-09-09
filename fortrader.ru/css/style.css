@@ -2838,6 +2838,11 @@
   -------------------------------------------- */
 
     /*! basic ==================================================*/
+      
+      [class*='informer_box'] [class*='col']{
+        float: none;
+        width: auto;
+      }
 
       .informer_box:not(:last-child){
         margin-bottom: 50px;
