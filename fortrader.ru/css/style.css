@@ -2948,83 +2948,6 @@
           background: url(../images/informer/arrow_up_green.png) 0 0 no-repeat;
         }
 
-        [class*="euro_l"]:before,[class*="dollar_l"]:before{
-          content: "";
-          width: 36px;
-          height: 36px;
-          display: inline-block;
-          vertical-align: middle;
-          margin-right: 10px;
-        }
-
-        .dollar_l_silver_square:before{
-          background: url(../images/informer/icon-usd-silver-square.png) 0 0 no-repeat;
-        }
-
-        .euro_l_silver_square:before{
-          background: url(../images/informer/icon-eur-silver-square.png) 0 0 no-repeat;
-        }
-
-        .dollar_l_dark_silver_square:before{
-          background: url(../images/informer/icon-usd-dark-silver-square.png) 0 0 no-repeat;
-        }
-
-        .euro_l_dark_silver_square:before{
-          background: url(../images/informer/icon-eur-dark-silver-square.png) 0 0 no-repeat;
-        }
-
-        .dollar_l_black_square:before{
-          background: url(../images/informer/icon-usd-black-square.png) 0 0 no-repeat;
-        }
-
-        .euro_l_black_square:before{
-          background: url(../images/informer/icon-eur-black-square.png) 0 0 no-repeat;
-        }
-
-        .dollar_l_blue_square:before{
-          background: url(../images/informer/icon-usd-blue-square.png) 0 0 no-repeat;
-        }
-
-        .euro_l_blue_square:before{
-          background: url(../images/informer/icon-eur-blue-square.png) 0 0 no-repeat;
-        }
-
-        .dollar_l_orange_square:before{
-          background: url(../images/informer/icon-usd-orange-square.png) 0 0 no-repeat;
-        }
-
-        .euro_l_orange_square:before{
-          background: url(../images/informer/icon-eur-orange-square.png) 0 0 no-repeat;
-        }
-
-        .dollar_l_pink_circle:before{
-          background: url(../images/informer/icon-usd-pink-circle.png) 0 0 no-repeat;
-        }
-
-        .euro_l_pink_circle:before{
-          background: url(../images/informer/icon-eur-pink-circle.png) 0 0 no-repeat;
-        }
-
-        .dollar_l_gold_circle:before{
-          background: url(../images/informer/icon-usd-gold-circle.png) 0 0 no-repeat;
-        }
-
-        .euro_l_gold_circle:before{
-          background: url(../images/informer/icon-eur-gold-circle.png) 0 0 no-repeat;
-        }
-
-        .simbol_dollar_l_icon:before{
-          width: 10px;
-          height: 18px;
-          background: url(../images/informer/icon-usd.png) 0 0 no-repeat;
-        }
-
-        .simbol_euro_l_icon:before{
-          width: 14px;
-           height: 16px;
-          background: url(../images/informer/icon-eur.png) 0 0 no-repeat;
-        }
-
       /* link =============================*/
 
         .informer_table_marquee .instal_link,
@@ -3089,47 +3012,6 @@
           display: inline-block;
         }
 
-      /* flug ============================*/
-
-        .flug_eur_small:before{
-          content: "";
-          width: 16px;
-          height: 13px;
-          display: inline-block;
-          vertical-align: middle;
-          margin-right: 10px;
-          background: url(../images/flags/flag_eur.png) 0 0 no-repeat;
-        }
-
-        .flug_usd_small:before{
-          content: "";
-          width: 16px;
-          height: 13px;
-          display: inline-block;
-          vertical-align: middle;
-          margin-right: 10px;
-          background: url(../images/flags/flag_usd.png) 0 0 no-repeat;
-        }
-
-        .flug_eur_big:before{
-          content: "";
-          width: 48px;
-          height: 36px;
-          display: inline-block;
-          vertical-align: middle;
-          margin-right: 10px;
-          background: url(../images/table_flag2.jpg) 0 0 no-repeat;
-        }
-
-        .flug_usd_big:before{
-          content: "";
-          width: 48px;
-          height: 36px;
-          display: inline-block;
-          vertical-align: middle;
-          margin-right: 10px;
-          background: url(../images/table_flag1.jpg) 0 0 no-repeat;
-        }
 
       /* arrow =====================*/
 
@@ -4134,10 +4016,6 @@
         font-size: 18px;
       }
 
-      .informer_table_middle.hight_silver_dark .col1 td{
-        border-bottom: 1px solid #115e99;
-      }
-
       .informer_table_middle.hight_silver_dark .col1 td:not(:first-child){
         border-left-color: transparent;
       }
@@ -4186,10 +4064,6 @@
       .informer_table_small.default tbody td{
         font-weight: bold;
         font-size: 18px;
-      }
-
-      .informer_table_small.default .col1 td{
-        border-bottom: 1px solid #115e99;
       }
 
       .informer_table_small.default .col1 td:not(:first-child){

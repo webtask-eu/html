@@ -482,7 +482,7 @@
 	  width: 37px;
 	  height: 33px;
 	  background-position: -41px -118px;
-	  
+
     }
     .pdf_icon:before{
       width: 26px;
@@ -2838,7 +2838,7 @@
   -------------------------------------------- */
 
     /*! basic ==================================================*/
-      
+
       [class*='informer_box'] [class*='col']{
         float: none;
         width: auto;
@@ -3425,7 +3425,7 @@
       }
 
       .informer_table.dark thead th{
-        color: #fff;
+        color: #e6e6e6;
       }
 
       .informer_table.dark tbody th,
@@ -3455,6 +3455,8 @@
       .informer_table.dark tbody .col4 time{
         color: #e6e6e6;
       }
+
+      .informer_table.dark td:not(:last-child){color: #e6e6e6;}
 
       .informer_table.dark .col4 td{
         border-color: #333;
@@ -3630,10 +3632,19 @@
      }
 
      .informer_table.white tbody td{
-        padding: 11px 5px 10px;
         font-size: 18px;
         font-weight: bold;
      }
+
+      .informer_table.white .col1 td{
+        border-bottom-color: transparent;
+        padding: 18px 5px 6px;
+      }
+
+      .informer_table.white .col2 td{
+        border-top-color: transparent;
+        padding: 6px 5px 18px;
+      }
 
      .informer_table.white tbody .col1 td {
           border-bottom-color: transparent;
@@ -3658,10 +3669,19 @@
      }
 
      .informer_table.bd_orange tbody td{
-        padding: 11px 5px 10px;
         font-size: 18px;
         font-weight: bold;
      }
+
+      .informer_table.bd_orange .col1 td{
+        border-bottom-color: transparent;
+        padding: 18px 5px 6px;
+      }
+
+      .informer_table.bd_orange .col2 td{
+        border-top-color: transparent;
+        padding: 6px 5px 18px;
+      }
 
      .informer_table.bd_orange tbody .col1 td {
           border-bottom-color: transparent;
@@ -3700,7 +3720,16 @@
       .informer_table.dark_silver_2 tbody td{
         font-weight: bold;
         font-size: 18px;
-        padding: 11px 5px 10px;
+      }
+
+      .informer_table.dark_silver_2 .col1 td{
+        border-bottom-color: transparent;
+        padding: 18px 5px 6px;
+      }
+
+      .informer_table.dark_silver_2 .col2 td{
+        border-top-color: transparent;
+        padding: 6px 5px 18px;
       }
 
       .informer_table.dark_silver_2 tbody .col1 td {
@@ -3734,8 +3763,18 @@
       .informer_table.orange_head tbody td{
         font-weight: bold;
         font-size: 18px;
-        padding: 11px 5px 11px;
       }
+
+      .informer_table.orange_head .col1 td{
+        border-bottom-color: transparent;
+        padding: 18px 5px 6px;
+      }
+
+      .informer_table.orange_head .col2 td{
+        border-top-color: transparent;
+        padding: 6px 5px 18px;
+      }
+
 
       .informer_table.orange_head tbody .col1 td {
           border-bottom-color: transparent;
@@ -4356,7 +4395,6 @@
       .informer_table_small.silver_dark2 td,
       .informer_table_small.silver_dark2 th{
         border: 1px solid #ccc;
-        padding: 10px 5px 9px;
       }
 
       .informer_table_small.silver_dark2 .angle_l_bottom_red,
@@ -4381,6 +4419,7 @@
       .informer_table_small.silver_dark2 thead th{
         background: #b3b1b1;
         border-color: #b3b1b1;
+        padding: 9px 5px 8px;
       }
 
       .informer_table_small.silver_dark2 thead time,
@@ -4399,10 +4438,12 @@
 
       .informer_table_small.silver_dark2 .col1 td{
         border-bottom-color: transparent;
+        padding: 11px 5px 6px;
       }
 
       .informer_table_small.silver_dark2 .col2 td{
         border-top-color: transparent;
+        padding: 6px 5px 11px;
       }
 
       .informer_table_small.silver_dark2 .instal_link{
@@ -10638,7 +10679,7 @@ hr.separator3 {
       [data-icon="new_icon11"]:hover i{
         background-image: url(../images/new_icon11_hover.png);
       }
-	  
+
     [data-stiker]:after{
       position: absolute;
       content: attr(data-stiker);
