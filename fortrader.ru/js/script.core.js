@@ -35,6 +35,7 @@
 
 			self.chooseDate();
 			self.sources.init();
+			self.languageDropdown();
 
 		},
 
@@ -1077,7 +1078,31 @@
 
 			},
 
-		}
+		},
+
+
+		/**
+		**	Language Dropdown
+		**/
+
+
+		languageDropdown: function(){
+
+			$('.language_dropdown_label').on("click", function(){
+
+				$(this).closest('.language_dropdown').toggleClass('opened');
+
+			});
+
+			$(document).on('click', function(event){
+
+				if(!$(event.target).closest('.language_dropdown').length){
+					$('.language_dropdown').removeClass('opened');
+				}
+	
+			});
+
+		},
 	}
 
 

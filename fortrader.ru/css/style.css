@@ -656,6 +656,65 @@
 
     }
 
+  /* --------------------------------------------
+        3.5. Grids
+  -------------------------------------------- */
+
+    .row{
+      margin-left: -10px;
+      margin-right: -10px;
+    }
+
+    .row:after{
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    [class*='grid_']{
+      float: left;
+      min-height: 1px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+
+    .grid_12 {
+      width: 100%;
+    }
+    .grid_11 {
+      width: 91.66666667%;
+    }
+    .grid_10 {
+      width: 83.33333333%;
+    }
+    .grid_9 {
+      width: 75%;
+    }
+    .grid_8 {
+      width: 66.66666667%;
+    }
+    .grid_7 {
+      width: 58.33333333%;
+    }
+    .grid_6 {
+      width: 50%;
+    }
+    .grid_5 {
+      width: 41.66666667%;
+    }
+    .grid_4 {
+      width: 33.33333333%;
+    }
+    .grid_3 {
+      width: 25%;
+    }
+    .grid_2 {
+      width: 16.66666667%;
+    }
+    .grid_1 {
+      width: 8.33333333%;
+    }
+
 /* ------------------------------------------------
 
     4. Header
@@ -767,6 +826,99 @@
     .enter_box a:hover{
       background-color: #f0f0f0;
     }
+
+    /* --------------------------------------------
+          4.2.1 Language Dropdown
+    -------------------------------------------- */
+
+      .language_dropdown{
+        float: left;
+        position: relative;
+      }
+
+      .language_dropdown_label{
+        display: block;
+        position: relative;
+        font-size: 14px;
+        line-height: 17px;
+        padding: 21px 22px 23px 10px;
+        font-weight: 400;
+        border-left: 1px solid #e8e8e8;
+        color: #454141;
+        cursor: pointer;
+      }
+
+      .language_dropdown_label:before{
+        content: '';
+        display: block;
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        margin-top: -3px;
+        width: 0;
+        height: 0;
+        border: 3px solid transparent;
+        border-top: 4px solid #5f5f5f; 
+      }
+
+      .language_dropdown_label img{
+        margin-right: 5px;
+      }
+
+      .language_dropdown_label:hover{
+        background-color: #f0f0f0;
+      }
+
+      .language_dropdown_list{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        z-index: 999;
+        background-color: #fff;
+        width: 100%;
+        -webkit-box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+        box-shadow: 0 3px 10px rgba(0,0,0,0.3);
+        opacity: 0;
+        visibility: hidden;
+        -webkit-transform: translate(0, 30px);
+        -ms-transform: translate(0, 30px);
+        -o-transform: translate(0, 30px);
+        transform: translate(0, 30px);
+        -webkit-transition: all 0.5s;
+        -o-transition: all 0.5s;
+        transition: all 0.5s;
+      }
+
+      .language_dropdown_list a{
+        border: none;
+        float: none;
+        text-align: left;
+        padding: 8px 0 8px 10px;
+        display: block;
+        float: none;
+      }
+
+      .language_dropdown_list a img{
+        margin-right: 5px;
+      }
+
+      .language_dropdown.opened .language_dropdown_label:before{
+        border: 3px solid transparent;
+        border-bottom: 4px solid #5f5f5f;
+        margin-top: -6px;
+      }
+
+      .language_dropdown.opened .language_dropdown_list{
+        opacity: 1;
+        visibility: visible;
+        -webkit-transform: translate(0);
+        -ms-transform: translate(0);
+        -o-transform: translate(0);
+        transform: translate(0);
+        -webkit-transition: all 0.3s;
+        -o-transition: all 0.3s;
+        transition: all 0.3s;
+      }
 
 /* ------------------------------------------------
 
@@ -11614,39 +11766,68 @@ hr.separator3 {
 }
 
 .change_color_input{
-    width: 25%;
-    float: left;
+    /*width: 25%;
+    float: left;*/
     position: relative;
-    margin-bottom: 30px;
+    margin-top: 30px;
 }
-.change_color_input label{
+
+.informer_setings{
+  position: relative;
+  margin-top: 30px;
+}
+
+.change_color_input label,
+.informer_setings label{
     display: block;
     font-size: 18px;
     color: #454242;
     font-family: 'PFD_Regular';
     margin-bottom: 5px;
-    width: 170px;
 }
-.change_color_input input[type=text]{
+.change_color_input input[type=text],
+.informer_setings input[type=text]{
     line-height: 45px;
     padding: 0 10px;
     border: 1px solid #dedede;
     color: #454444;
     font-family: 'OpenSansSemiBold';
     font-size: 14px;
-    width: 170px;
+    width: 100%;
 }
-.change_color_input .colorSelector{
+.change_color_input .colorSelector,
+.informer_setings .colorSelector{
     position: absolute;
     right: 20px;
     top: 37px;
 }
 
+.informer_setings.not_label{
+  padding-top: 22px;
+}
+
 .box_informer{
     padding: 0;
+    /*margin-top: -30px;*/
 }
 .bigLabel .colorSelector{
     top:58px;
+}
+
+.informer_setings_default{
+  display: block;
+  width: 100%;
+  outline: none;
+  border: none;
+  font: 14px/17px 'OpenSansSemiBold',sans-serif;
+  text-align: center;
+  color: #fff;
+  padding: 15px 10px;
+}
+
+.informer_setings_default:hover{
+  color: #fff;
+  background-color: #9c9a9a;
 }
 
 .colorInformer{
@@ -11783,6 +11964,68 @@ hr.separator3 {
     font-size: 14px;
     padding-left: 10px;
 }
+
+/*select add 21.09.2016*/
+
+.select_type1.jq-selectbox{
+  display: block;
+  width: 100%;
+}
+
+.select_type1 .jq-selectbox__select{
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  font-family: 'OpenSansSemiBold';
+  color: #454444;
+  font-size: 14px;
+  padding-left: 10px;
+  background: #fff;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: 1px solid #dedede;
+  border-radius: 0;
+}
+
+.select_type1 .jq-selectbox__trigger{
+  border-left: 1px solid #dedede;
+  background-color: #f0f0f0;
+}
+
+.select_type1 .jq-selectbox__trigger-arrow{
+  top: 18px;
+}
+
+.jq-selectbox li.lang,
+.lang .jq-selectbox__select-text{
+  padding-left: 32px;
+  background-position: 10px 50%;
+  background-repeat: no-repeat;
+}
+
+.lang .jq-selectbox__select-text{
+  padding-left: 22px;
+  background-position: 0 50%;
+}
+
+.lang.fr, .lang.fr .jq-selectbox__select-text{
+  background-image: url(../images/flags/16/France.png);
+}
+
+.lang.en, .lang.en .jq-selectbox__select-text{
+  background-image: url(../images/flags/16/United-Kingdom.png);
+}
+
+.lang.ru, .lang.ru .jq-selectbox__select-text{
+  background-image: url(../images/flags/16/Russia.png);
+}
+
+
+
+
+/*end of select add 21.09.2016*/
+
+
 .col6{
     width: 50%;
     float: left;
