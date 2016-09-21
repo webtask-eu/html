@@ -11766,10 +11766,12 @@ hr.separator3 {
 }
 
 .change_color_input{
-    /*width: 25%;
-    float: left;*/
+    width: 25%;
+    float: left;
     position: relative;
     margin-top: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .informer_setings{
@@ -11799,7 +11801,7 @@ hr.separator3 {
 .informer_setings .colorSelector{
     position: absolute;
     right: 20px;
-    top: 37px;
+    bottom: 10px;
 }
 
 .informer_setings.not_label{
@@ -11811,7 +11813,7 @@ hr.separator3 {
     /*margin-top: -30px;*/
 }
 .bigLabel .colorSelector{
-    top:58px;
+    /*top:58px;*/
 }
 
 .informer_setings_default{
