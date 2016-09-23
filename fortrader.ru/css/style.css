@@ -12327,6 +12327,18 @@ hr.separator3 {
     text-transform: uppercase;
   }
 
+  .info_box_title>a{
+    color: inherit;
+  }
+
+  .info_box_title>a:hover{
+    color: #146eb3;
+  }
+
   .info_box_img{
     margin-bottom: 20px;
+  }
+
+  .info_box_img img{
+    width: 100%;
   }
