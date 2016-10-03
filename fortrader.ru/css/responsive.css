@@ -460,6 +460,10 @@
 		display: block;
 	}
 
+	.change_color_input{
+		width: 33.333333%;
+	}
+
 }
 
 @media only screen and (max-width: 992px) {
@@ -474,9 +478,7 @@
 	.change_color_input{
 		width: 50%;
 	}
-	.change_color_input .colorSelector{
-		right: 45px;
-	}
+
 	.colorInformer{
 		font-size: 16px;
 		padding-right: 60px;
@@ -1743,6 +1745,48 @@
 		width: 100%;
 	}
 
+  /* --------------------------------------------
+        Grids
+  -------------------------------------------- */
+
+    .grid_md_12 {
+      width: 100%;
+    }
+    .grid_md_11 {
+      width: 91.66666667%;
+    }
+    .grid_md_10 {
+      width: 83.33333333%;
+    }
+    .grid_md_9 {
+      width: 75%;
+    }
+    .grid_md_8 {
+      width: 66.66666667%;
+    }
+    .grid_md_7 {
+      width: 58.33333333%;
+    }
+    .grid_md_6 {
+      width: 50%;
+    }
+    .grid_md_5 {
+      width: 41.66666667%;
+    }
+    .grid_md_4 {
+      width: 33.33333333%;
+    }
+    .grid_md_3 {
+      width: 25%;
+    }
+    .grid_md_2 {
+      width: 16.66666667%;
+    }
+    .grid_md_1 {
+      width: 8.33333333%;
+    }
+
+
 
 }
 
@@ -1756,9 +1800,6 @@
 	}
 	.myInformer{
 		text-align: center;
-	}
-	.change_color_input input[type=text]{
-		width: 190px;
 	}
 	.change_color_input .colorSelector{
 		right: 20px;
@@ -1819,7 +1860,7 @@
 		margin: 0 -15px;
 		padding: 0 15px;
 		text-align: center;
-		height: 61px;
+		/*height: 61px;*/
 		border-bottom: 1px solid #e8e8e8;
 		/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f2f2f2+100 */
 		background: #ffffff; /* Old browsers */
@@ -1833,6 +1874,14 @@
 	}
 
 	.enter_box a{float: right;}
+
+	.language_dropdown_list a{
+		float: none;
+	}
+
+	.language_dropdown_label{
+		border-right: 1px solid #e8e8e8;
+	}
 
 	.header_top_menu{
 		float: right;
@@ -2431,6 +2480,54 @@
   	padding: 10px;
   }
 
+  .change_color_input{
+  	width: 100%;
+  }
+
+
+
+  /* --------------------------------------------
+        Grids
+  -------------------------------------------- */
+
+    .grid_sm_12 {
+      width: 100%;
+    }
+    .grid_sm_11 {
+      width: 91.66666667%;
+    }
+    .grid_sm_10 {
+      width: 83.33333333%;
+    }
+    .grid_sm_9 {
+      width: 75%;
+    }
+    .grid_sm_8 {
+      width: 66.66666667%;
+    }
+    .grid_sm_7 {
+      width: 58.33333333%;
+    }
+    .grid_sm_6 {
+      width: 50%;
+    }
+    .grid_sm_5 {
+      width: 41.66666667%;
+    }
+    .grid_sm_4 {
+      width: 33.33333333%;
+    }
+    .grid_sm_3 {
+      width: 25%;
+    }
+    .grid_sm_2 {
+      width: 16.66666667%;
+    }
+    .grid_sm_1 {
+      width: 8.33333333%;
+    }
+
+
 }
 
 @media only screen and (max-width: 479px) {
@@ -2740,6 +2837,13 @@
 		padding-bottom: 20px;
 	}
 
+	.enter_box>span{
+		padding: 10px;
+		border-bottom: 1px solid #e8e8e8;
+		float: none;
+	}
+
+
 
 }
  /*add currency_converter_page.html */
@@ -2827,36 +2931,18 @@ h3 {
 		margin-bottom: 10px;
 		text-transform: uppercase;
 	}
-	.change_color_input input[type=text] {
-		width: 147px;
-	}
 	.change_color_input .colorSelector {
-		right: 10px;
+		right: 20px;
 	}
 	.labelXs label{
-		width: 147px;
 		font-size: 18px;
-		min-height: 42px;
 	}
 
-	.labelXs .colorSelector {
-		right: 10px;
-		top: 56px !important;
-	}
 	.fone{
 		position: relative;
 	}
-	.fone .colorSelector{
-		position: absolute;
-		right: 10px;
-		top:10px;
-	}
 	.textChange{
 		position: relative;
-	}
-	.textChange .colorSelector{
-		right: 10px;
-		top:78px !important;
 	}
 	.copyCode{
 		margin-top: 60px;

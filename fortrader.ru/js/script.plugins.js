@@ -126,6 +126,12 @@
 
 			}
 
+			if($('.select_type1').length){
+
+				$('.select_type1').styler();
+
+			}
+
         /* ------------------------------------------------
 				End jQueryFormStyler
 		------------------------------------------------ */
@@ -214,7 +220,8 @@
 
 				$(".colorSelector").each(function(){
 					var $this = $(this),
-						color = $this.attr('data-bg');
+						color = $this.attr('data-bg'),
+						inputShow = $this.closest('.informer_setings').find('input[type="text"]');
 
 					$this.css({
 						"background-color": color
@@ -228,6 +235,13 @@
 							});
 							$(el).next().val('#'+hex);
 							$(el).ColorPickerHide();
+
+							if($(el).closest('.informer_setings').length){
+
+								inputShow.val(hex);
+								// $(el).next().val('#'+hex);
+
+							}
 						},
 						onShow: function(colpkr){
 							$(colpkr).fadeIn(500);
@@ -238,9 +252,22 @@
 							return false;
 						},
 					});
+				
 				});
 
 			}
+
+			$('.informer_setings input[type="text"]').on('change', function(){
+
+				var inputVal = $(this).val(),
+					ColorPicker = $(this).closest('.informer_setings').find('.colorSelector');
+
+				ColorPicker.ColorPickerSetColor(inputVal);
+				ColorPicker.css({
+								"background-color": "#"+inputVal
+							});
+
+			});
 
         /* ------------------------------------------------
 				End of Color Picker
