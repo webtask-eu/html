@@ -132,7 +132,9 @@
 
 			}
 
-			$(".currency_filter_change_value").styler();
+			if($('.currency_filter_change_value').length){
+				$('.currency_filter_change_value').styler();
+			}
 
         /* ------------------------------------------------
 				End jQueryFormStyler
