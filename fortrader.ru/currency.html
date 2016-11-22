@@ -270,7 +270,11 @@
                             <div class="author_box clearfix">
 
                                 <p>
-                                    Информация о курсах обмена валюты, установленных Центральным Банком Российской Федерации. Курсы иностранных валют по к рублю по ЦБ – евро, доллара, на сегодня
+                                    <strong>Курсы валют ЦБ на сегодня</strong> определяющие официальную позицию Банка России по обмену основных валют, выходят на портале по рабочим дням недели. Эти котировки не несут обязательств, а являются ориентиром для коммерческих банков по назначению собственных валютных цен. 
+                                </p>
+
+                                <p>
+                                    <strong>Актуальный курс ЦБ РФ</strong> для основных валют по отношению к рублю, рассчитан по результатам дневных биржевых торгов на Московской бирже ММВБ-РТС. Публикуемый официальный курс ЦБ на сегодня действителен до выхода следующих котировок Банка России. На графиках портала представлен курс доллара на сегодня и динамика его изменений за прошедший период.
                                 </p>
 
                             </div><!--/ .author_box -->
@@ -286,7 +290,21 @@
 
                             <div class="tabs_box tabs_rating">
                                 <div class="clearfix">
-                                    <div class="wrapper_quotes_search_box_2">
+                                    <div class="wrapper_currency_filter_box">
+                                        <a href="#" class="currency_filter_item currency_filter_cbrf">Курсы валют ЦБ РФ</a>
+                                    </div>
+                                    <div class="wrapper_currency_filter_box">
+                                        <a href="#" class="currency_filter_item currency_filter_ecb">Курсы валют ЕЦБ</a>
+                                    </div>
+                                    <div class="wrapper_currency_filter_box">
+                                        <select class="currency_filter_change_value">
+                                            <option>Выбор валюты</option>
+                                            <option>EUR</option>
+                                            <option>USD</option>
+                                            <option>RUB</option>
+                                        </select>
+                                    </div>
+                                    <div class="wrapper_quotes_search_box_2 wrapper_currency_filter_search">
                                         <div class="quotes_search_box_2">
                                             <form>
 
@@ -307,17 +325,15 @@
                                         </div>
                                     </div>
                                     <!-- - - - - - - - - - - - - - Tabs List - - - - - - - - - - - - - - - - -->
-                                    <div class="wrapper_tabs_list">
+                                    <div class="wrapper_tabs_list currency_change_tabs_list">
                                         <ul class="tabs_list clearfix PFDregular">
 
                                             <li class="active tabs_list_1">
-                                                <span class="tabs_list_data1">Сегодня 4 Апреля 2016</span>
-                                                <a href="javascript:;">На сегодня</a>
+                                                <a href="javascript:;" class="currency_change_tabs_link">На сегодня, 7 Ноября 2016</a>
                                             </li>
 
                                             <li class="tabs_list_2">
-                                                <span class="tabs_list_data2">Завтра 5 Апреля 2016</span>
-                                                <a href="javascript:;">На завтра</a>
+                                                <a href="javascript:;" class="currency_change_tabs_link">На завтра, 8 Ноября 2016</a>
                                             </li>
                                         </ul>
                                     </div>
@@ -1133,6 +1149,7 @@
         <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
         <script type="text/javascript" src="js/modernizr.js"></script>
         <script type="text/javascript" src="plagins/arcticmodal/jquery.arcticmodal-0.3.min.js"></script>
+        <script type="text/javascript" src="plagins/jQueryFormStyler/jquery.formstyler.min.js"></script>
 
         <!-- Theme files
         ============================================ -->
