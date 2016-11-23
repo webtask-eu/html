@@ -4654,14 +4654,14 @@
       font-size: 17px;
       line-height: 19px;
       padding: 11px 15px;
-      border: 2px solid #e3e3e3;
+      border: 2px solid rgba(227,227,227,.3);
       position: relative;
     }
 
     .tabs_list>li>a:hover,
     .tabs_list>li.active>a{
-      background-color: #f1f1f1;
-      color: #454242;
+      background-color: #89bb50;
+      color: #fff;
     }
 
     .tabs_list>li.active>a{cursor: default;}
@@ -4673,16 +4673,16 @@
       position: absolute;
       width: 0;
       height: 0;
-      border: 4px solid transparent;
-      border-top: 8px solid #e3e3e3;
+      border: 10px solid transparent;
+      border-top: 7px solid rgba(227,227,227,.3);
       top: 100%;
       left: 50%;
-      margin-left: -4px;
+      margin-left: -5px;
     }
 
     .tabs_list>li.active>a:before{
-      border: 3px solid transparent;
-      border-top: 6px solid #f1f1f1;
+      border: 8px solid transparent;
+      border-top: 6px solid #89bb50;
       margin-left: -3px;
       z-index: 9;
     }
@@ -4724,7 +4724,62 @@
     .tabs_comment .tabs_list>li.active>a:before{
       border: 6px solid transparent;
       border-top: 5px solid #333131;
+    }
 
+
+    /*-------------------------------------------
+        change currency pages
+    ---------------------------------------------*/
+    
+    .wrapper_currency_filter_box {
+      float: left;
+      width: 25%;
+      padding-right: 4px;
+      margin-bottom: 20px;
+    }
+
+    .currency_filter_item {
+      display: block;
+      width: 100%;
+      font-family: "OpenSansSemiBold", Arial, Tahoma, sans-serif;
+      font-size: 13px;
+      padding: 11px 0;
+      color: #454444;
+      text-align: center;
+      text-transform: uppercase;
+      border: 2px solid rgba(227,227,227,.3);
+      background: #f0f0f0;
+    }
+
+    .currency_filter_item:hover {
+      color: #fff;
+      background: #89bb50;
+    }
+
+    .currency_filter_change_value {
+      width: 100%;
+      display: block;
+      height: 48px;
+    }
+
+    .currency_filter_change_value .jq-selectbox__select-text {
+      line-height: 48px;
+    }
+
+    .currency_filter_change_value .jq-selectbox__select {
+      height: 100%;
+      border: 1px solid #e3e3e3;
+      border-radius: 0;
+      background: #fff;
+      box-shadow: none;
+    }
+
+    .currency_filter_change_value .jq-selectbox__trigger-arrow {
+      top: 22px;
+    }
+
+    .currency_filter_change_value .jq-selectbox__trigger {
+      background: #f0f0f0;
     }
 
 
@@ -7850,6 +7905,7 @@
 
   .quotes_search_box_2 input{
     width: 100%;
+    height: 48px;
     outline: none;
     font-size: 18px;
     line-height: 22px;
@@ -7863,14 +7919,13 @@
   .quotes_search_box_2 input:focus{
     padding: 14px 70px 14px 12px;
     border: none;
-    border: 3px solid #b0b0b0;
-
+    border: 2px solid #b0b0b0;
   }
 
   .quotes_search_box_2 .quotes_search_btn{
     position: absolute;
-    top: 3px;
-    right: 3px;
+    top: 2px;
+    right: 2px;
     outline: none;
     border: none;
     cursor: pointer;
@@ -8938,8 +8993,8 @@ hr.separator3 {
      Page Currency 22.02.16
 -------------------------------------------- */
   .wrapper_quotes_search_box_2{
-    width: 50%;
-    float: right;
+    width: 25%;
+    float: left;
   }
 
   .wrapper_tabs_list{
@@ -8948,11 +9003,11 @@ hr.separator3 {
   }
 
   .wrapper_quotes_search_box_2 .quotes_search_box_2 input{
-    padding: 26px 70px 25px 12px;
+    /* padding: 26px 70px 25px 12px; */
   }
 
   .wrapper_quotes_search_box_2 .quotes_search_box_2 .quotes_search_btn{
-    padding: 19px 15px;
+    padding: 7px 15px;
   }
 
   .wrapper_tabs_list > .tabs_list > li{
@@ -8961,7 +9016,7 @@ hr.separator3 {
 
   .wrapper_tabs_list > .tabs_list > li:last-child{
     padding-left: 4px;
-    padding-right: 4px;
+    /* padding-right: 4px; */
   }
 
   .wrapper_tabs_list > .tabs_list > li > a{
@@ -12342,3 +12397,13 @@ hr.separator3 {
   .info_box_img img{
     width: 100%;
   }
+
+  /*********Change currency page**********/
+
+  .currency_change_tabs_list {
+    width: 100%;
+  }
+  
+  
+
+  /*********Change currency page**********/

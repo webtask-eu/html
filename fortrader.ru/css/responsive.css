@@ -464,6 +464,18 @@
 		width: 33.333333%;
 	}
 
+	/*-------change currency page--------*/
+
+	.quotes_search_box_2 input {
+		padding-right: 25px;
+	}
+	.currency_filter_item {
+		font-size: 12px;
+	}
+	.currency_filter_change_value {
+		font-size: 12px;
+	}
+
 }
 
 @media only screen and (max-width: 992px) {
@@ -1787,6 +1799,18 @@
     }
 
 
+    /*-------------change currency page------------------*/
+    .wrapper_currency_filter_box {
+    	width: 50%;
+    }
+    .wrapper_tabs_list, .wrapper_quotes_search_box_2 {
+    	float: left;
+    }
+    .wrapper_currency_filter_search {
+    	width: 50%;
+    }
+
+
 
 }
 
@@ -2526,6 +2550,7 @@
     .grid_sm_1 {
       width: 8.33333333%;
     }
+
 
 
 }
