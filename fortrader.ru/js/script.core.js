@@ -37,6 +37,11 @@
 			self.sources.init();
 			self.languageDropdown();
 
+			// add 18.12.16
+
+			self.calendarCheckbox();
+			self.calendarFilter();
+
 		},
 
 		windowLoad: function(){
@@ -1103,6 +1108,34 @@
 			});
 
 		},
+		
+		calendarCheckbox: function () {
+
+		        $('.country_btn.check').click(function() {
+
+                    $(':checkbox').attr('checked',true);
+
+                });
+
+                $('.country_btn.reset').click(function() {
+
+                    $(':checkbox').attr('checked',false);
+
+                });
+		},
+
+		calendarFilter: function () {
+
+            $('.filter_btn').click(function(){
+
+            	$('.country_wrapp').slideToggle();
+            	$('.turn_box').slideToggle();
+            	$(this).toggleClass('active')
+
+            });
+
+        },
+
 	}
 
 
