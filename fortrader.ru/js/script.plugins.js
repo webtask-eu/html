@@ -131,6 +131,12 @@
 				$('.select_type1').styler();
 
 			}
+			
+			if($('.select_type2').length){
+
+				$('.select_type2').styler();
+
+			}
 
 			if($('.currency_filter_change_value').length){
 				$('.currency_filter_change_value').styler();
@@ -189,6 +195,38 @@
 
         /* ------------------------------------------------
 				End of customSelect
+		------------------------------------------------ */
+		/* ------------------------------------------------
+				ionRangeSlider
+		------------------------------------------------ */
+
+		if($(".range_slider1").length){
+
+			$(".range_slider1").ionRangeSlider({
+				 type: "single",
+				  grid: true,
+			    values: [" ", " ", " ", " "]
+			});
+		}
+		/* ------------------------------------------------
+				End of ionRangeSlider
+		------------------------------------------------ */
+
+		/* ------------------------------------------------
+				End of ionRangeSlider
+		------------------------------------------------ */
+		if($(".clock2").length){
+            var i = new Date().getTime() + 36000000; //in seconds 1s = 1000
+            $('.clock2').countdown(i, {elapse: false})
+                .on('update.countdown', function(event) {
+                  var $this = $(this);
+
+                $this.html(event.strftime('<p class="event_waiting_txt1">%H:%M<span class="seconds">:%S</span></p>'));
+
+            });
+		}
+		/* ------------------------------------------------
+				End of ionRangeSlider
 		------------------------------------------------ */
 
 
