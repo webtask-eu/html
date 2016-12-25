@@ -870,7 +870,7 @@
         width: 0;
         height: 0;
         border: 3px solid transparent;
-        border-top: 4px solid #5f5f5f; 
+        border-top: 4px solid #5f5f5f;
       }
 
       .language_dropdown_label img{
@@ -1641,6 +1641,7 @@
       }
 
       .bold_txt1{
+        font-family: 'OpenSansSemiBold';
         font-size: 15px;
         line-height: 26px;
         color: #333030;
@@ -4758,7 +4759,7 @@
     /*-------------------------------------------
         change currency pages
     ---------------------------------------------*/
-    
+
     .wrapper_currency_filter_box {
       float: left;
       width: 25%;
@@ -12204,7 +12205,7 @@ hr.separator3 {
   [data-converter-color="dark"]{
    background-color: #333333;
    border: 1px solid #333333;
-   color: #FFF; 
+   color: #FFF;
   }
   [data-converter-color="white_bd"]{
     background-color: #fff;
@@ -12213,7 +12214,7 @@ hr.separator3 {
     .converter_title{
       font-size: 15px;
       line-height: 17px;
-      color: #454545; 
+      color: #454545;
       font-family: 'OpenSansSemiBold';
       padding: 0;
       margin-bottom: 14px;
@@ -12302,7 +12303,7 @@ hr.separator3 {
               -ms-transform: translateX(-50%) translateY(-50%);
                -o-transform: translateX(-50%) translateY(-50%);
                   transform: translateX(-50%) translateY(-50%);
-          background: url(../images/converter_arrow.png) left 0 no-repeat;  
+          background: url(../images/converter_arrow.png) left 0 no-repeat;
         }
       .converter_box.horizontal .convert_arrows{
         width: 64px;
@@ -12311,7 +12312,7 @@ hr.separator3 {
       .converter_box.vertical .convert_arrows{
         width: 93px;
         min-height: 48px;
-      } 
+      }
         .converter_box.horizontal .convert_arrows:before{
           -webkit-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
              -moz-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
@@ -12326,7 +12327,7 @@ hr.separator3 {
           background-position: right 0;
         }
 
-      
+
         .form_input{
           width: 100%;
           height: 40px;
@@ -12347,7 +12348,7 @@ hr.separator3 {
           margin-top: 8px;
         }
 
-    
+
     .converter_box.vertical .convert_footer{
       margin: 0 -5px;
     }
@@ -12416,8 +12417,8 @@ hr.separator3 {
   .currency_change_tabs_list {
     width: 100%;
   }
-  
-  
+
+
 
   /*********Change currency page**********/
 
@@ -12515,12 +12516,12 @@ hr.separator3 {
     text-align: center;
     line-height: 18px;
     color: #454444;
-  font-size: 14px;
-  font-weight: 400;
+    font-size: 14px;
+    font-weight: 400;
     height: 48px;
     display: table;
-  background: #f1f1f1;
-    font-family: "pf_dindisplay_prolight";
+    background: #f1f1f1;
+    font-family: "Open Sans", sans-serif;
   }
 
   .buttons_links2 li a>span{
@@ -12541,20 +12542,26 @@ hr.separator3 {
   .table_calendar table th.table_calendar_title{
     width: 250px;
   }
+
   .table_calendar table th{
+    font-family: 'OpenSansSemiBold';
     color: #fff;
     font-size: 11px;
     font-weight: bold;
     text-transform: uppercase;
   }
 
+  .table_calendar table .tabl_quotes_item td.semibold{
+    font-weight: 600;
+  }
+
   .table_calendar table td{
     position: relative;
     color: #454444;
     font-size: 13px;
-    font-weight: bold;
     /* text-transform: uppercase; */
     padding: 25px 9px 24px;
+    font-weight: 400;
   }
 
   .table_calendar .calendar_event{
@@ -12598,7 +12605,7 @@ hr.separator3 {
     display: inline-block;
     padding: 14px 6px 13px 6px;
     font-size: 12px;
-    font-weight: bold;
+    font-weight: 600;
     line-height: 1.3;
   }
 
@@ -12652,7 +12659,7 @@ hr.separator3 {
     background-color: #737272;
     border-radius: 3px;
     color: #fff;
-    padding: 10px 8px;
+    padding: 4px 8px;
     font-size: 13px;
     line-height: 1.3;
     font-weight: bold;
@@ -12826,7 +12833,7 @@ hr.separator3 {
     text-transform: none;
     background-color: #b3b1b1;
     color: #fff;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'OpenSansSemiBold';
     font-size: 14px;
     line-height: 1.3;
     font-weight: bold;
@@ -12834,6 +12841,7 @@ hr.separator3 {
 
     /* add 18.12.16 */
     .yellow_btn{
+      font-family: 'OpenSansSemiBold';
       display: inline-block;
       min-width: 229px;
       padding: 14px 18px;
@@ -12857,6 +12865,7 @@ hr.separator3 {
     }
 
     .btn_date{
+      font-family: 'OpenSansSemiBold';
       width: 100%;
       height: 44px;
       background-color: #ededed;
@@ -12920,11 +12929,12 @@ hr.separator3 {
     }
 
     .select_type2 .jq-selectbox__select{
+      font-family: 'OpenSansSemiBold';
       border-radius: 0;
       height: 48px;
       background: #f1f1f1;
       border: 2px solid #e3e3e3;
-      padding: 6px 30px 6px 5px;
+      padding: 6px 15px 6px 5px;
     }
 
     .select_type2 option span{
@@ -12958,6 +12968,7 @@ hr.separator3 {
 
     /* calendar btn */
     .calendar_form .filter_btn{
+      font-family: 'OpenSansSemiBold';
       width: 100%;
       background-color: #f1f1f1;
       border: 2px solid #e3e3e3;
@@ -13074,7 +13085,7 @@ hr.separator3 {
     text-align: center;
     background-color: #fff;
     border: 4px solid #e3e3e3;
-    padding: 10px 5px 5px;
+    padding: 16px 5px 5px;
     min-height: 110px;
   }
 
@@ -13095,15 +13106,15 @@ hr.separator3 {
   }
 
   .event_waiting_txt1{
-    font-family: 'pf_dindisplay_promedium';
+    font-family: 'pf_dindisplay_probold', sans-serif;
     font-size: 39px;
     line-height: 1;
     font-weight: bold;
     text-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
   }
 
-  .event_waiting_txt1:not(:last-child){
-    margin-bottom: 12px;
+  .event_waiting_box .clock2, .event_waiting_txt1:not(:last-child){
+    margin-bottom: 5px;
   }
 
   .event_waiting_txt1.green{color: #5bbc2e;}
@@ -13117,6 +13128,7 @@ hr.separator3 {
     font-size: 28px;
     line-height: 39px;
     font-weight: normal;
+    font-family: 'pf_dindisplay_proregular';
   }
 
   .event_waiting_txt2{
@@ -13132,7 +13144,7 @@ hr.separator3 {
   }
 
   .event_waiting_icon{
-    font: normal normal normal 14px/1 FontAwesome;
+    font: normal normal normal 23px/1 FontAwesome;
     position: absolute;
     bottom: 6px;
     right: 6px;
@@ -13141,7 +13153,6 @@ hr.separator3 {
 
   .event_waiting_check{
     font: normal normal normal 18px/1 FontAwesome;
-    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.8);
     color: #5bbc2e;
   }
 
@@ -13364,6 +13375,7 @@ hr.separator3 {
   }
 
   .calendar.exchange-links .exchange-time{
+    font-family: 'OpenSansSemiBold';
     float: right;
     font-weight: bold;
     color: #454444;
