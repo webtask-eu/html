@@ -509,15 +509,15 @@
 
 	.event_waiting_txt1.green2{
 		font-size: 26px;
-		line-height: 24px;
+		line-height: 36px;
 	}
 
 	.event_waiting_box{
-		padding: 10px 5px 5px;
+		padding: 15px 5px 5px;
 	}
 
 	.event_waiting_txt1:not(:last-child){
-		margin-bottom: 7px;
+		margin-bottom: 5px;
 	}
 
 	.quote_marker{
@@ -531,6 +531,10 @@
 
 	.event_waiting_txt2{
 		line-height: 1.3;
+	}
+
+	.select_type2 .jq-selectbox__select-text{
+		font-size: 11px;
 	}
 
 }
@@ -2084,6 +2088,10 @@
 		right: 13px;
 	}
 
+	.select_type2 .jq-selectbox__select-text{
+		font-size: 14px;
+	}
+
 
 }
 
@@ -2766,7 +2774,7 @@
   .informer-item {
   	padding: 0 10px 15px;
   }
-  
+
   .informer-item img {
   	display: block;
   	margin: 0 auto;
@@ -3151,7 +3159,7 @@
     }
 
   /* add exchange-page.html */
-	
+
 	.exchange-rate-container {
 		padding: 0 0 0 15px;
 	}
@@ -3185,7 +3193,7 @@
 	padding: 0 0 12px 0;
 	}
 	.tabs_list>li {
-		float: none;	
+		float: none;
 	}
 	.tabl_quotes_nav {
 		display: block;
@@ -3203,7 +3211,7 @@
 	font-size: 16px;
 	line-height: 25px;
 	font-weight: bold;
-	padding-right: 50px;	
+	padding-right: 50px;
 }
 
  }
@@ -3214,7 +3222,7 @@
 h2 {
 	font-size: 17px;
 	border-bottom: 1px solid #e3e3e3;
-	padding-bottom: 6px; 
+	padding-bottom: 6px;
 }
 h2>.main_text {
 	display: block;
@@ -3243,7 +3251,7 @@ h3 {
 	font-size: 16px;
 	line-height: 25px;
 	font-weight: bold;
-	padding-right: 20px;	
+	padding-right: 20px;
 }
 .mb30 {
 	margin-bottom: 10px;

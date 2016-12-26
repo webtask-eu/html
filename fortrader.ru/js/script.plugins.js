@@ -221,7 +221,7 @@
                 .on('update.countdown', function(event) {
                   var $this = $(this);
 
-                $this.html(event.strftime('<p class="event_waiting_txt1">%H:%M<span class="seconds">:%S</span></p>'));
+                $this.html(event.strftime('<p class="event_waiting_txt1 black">%H:%M<span class="seconds">:%S</span></p>'));
 
             });
 		}
