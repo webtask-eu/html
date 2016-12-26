@@ -1645,7 +1645,7 @@
         font-size: 15px;
         line-height: 26px;
         color: #333030;
-        font-weight: bold;
+        /*font-weight: bold;*/
       }
 
    /* --------------------------------------------
@@ -12547,7 +12547,7 @@ hr.separator3 {
     font-family: 'OpenSansSemiBold';
     color: #fff;
     font-size: 11px;
-    font-weight: bold;
+    font-weight: normal;
     text-transform: uppercase;
   }
 
@@ -12836,7 +12836,7 @@ hr.separator3 {
     font-family: 'OpenSansSemiBold';
     font-size: 14px;
     line-height: 1.3;
-    font-weight: bold;
+    /*font-weight: bold;*/
   }
 
     /* add 18.12.16 */
@@ -12851,7 +12851,7 @@ hr.separator3 {
       color: #454444;
       font-size: 13px;
       line-height: 1.3;
-      font-weight: bold;
+     /* font-weight: bold;*/
       text-transform: uppercase;
       text-align: center;
       -webkit-transition: all 0.3s;
@@ -12872,7 +12872,7 @@ hr.separator3 {
       color: #454545;
       font-size: 14px;
       line-height: 1.3;
-      font-weight: bold;
+      /*font-weight: bold;*/
       border: none;
       padding: 13px 10px;
       -webkit-transition: 0.5s;
@@ -12972,7 +12972,7 @@ hr.separator3 {
       background-color: #f1f1f1;
       border: 2px solid #e3e3e3;
       font-size: 14px;
-      font-weight: bold;
+      /*font-weight: bold;*/
       text-align: center;
       color: #454444;
       padding: 11px 10px;
@@ -13376,7 +13376,7 @@ hr.separator3 {
   .calendar.exchange-links .exchange-time{
     font-family: 'OpenSansSemiBold';
     float: right;
-    font-weight: bold;
+    /*font-weight: bold;*/
     color: #454444;
   }
 
