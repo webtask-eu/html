@@ -13578,3 +13578,83 @@ hr.separator3 {
     color: #fff;
     background-color: #454444;
 }
+
+.box_monitoring .quotes_search:after{
+  display: table;
+  clear: both;
+  content: '';
+  } 
+.box_monitoring  .quotes_search .quotes_search_input{
+  float: left;
+  width: calc(75% - 3px);
+}
+.box_monitoring  .quotes_search .quotes_search_btn{
+  float: right;
+  width: calc(25% - 3px);
+  height: 30px;
+  background: #f7d05b;
+  height: 47px;
+  color: #454444;
+  border:1px solid #edc858;
+  font: 14px/45px 'OpenSans', sans-serif;
+
+}
+.box_monitoring .select_type1 .jq-selectbox__select{
+  height: 47px;
+}
+.box_monitoring .negativ_filter {
+  margin: 36px 0;
+}
+.box_monitoring .negativ_filter label{
+  font: 15px/18px 'OpenSans', sans-serif;
+  color: #333030;
+}
+
+/*Tabs*/
+.box_monitoring .tabs_header {
+  margin-bottom: 5px;
+}
+.box_monitoring .monitoring_tabs_list{
+    float: left;
+    width: 75%;
+}
+.box_monitoring .tabs_filter{
+    float: right;
+    width: 25%;
+    margin: 0;
+}
+
+.box_monitoring .tabs_list {
+  margin-bottom: 0;
+}
+
+.box_monitoring .monitoring_tabs_list li{
+    display: block;
+    float: left;
+    width: 33.3333%;
+    padding-right: 5px;
+}
+
+.box_monitoring .monitoring_tabs_list li a{
+    display: block;
+    text-align: center;
+    font: 14px/46px 'OpenSans', sans-serif;
+    color: #454444;
+    background: #f6f6f6;
+    border:none;
+    border-top:1px solid #f6f6f6;
+    padding: 0;
+}
+
+.box_monitoring .monitoring_tabs_list li a:before,
+.box_monitoring .monitoring_tabs_list li a:after{
+    display: none;
+}
+
+.box_monitoring .monitoring_tabs_list .active a,
+.box_monitoring .monitoring_tabs_list li a:hover{
+    text-decoration: none;
+    color: #167ac6;
+    background: #ebf2f7;
+    border-top:1px solid #167ac6;
+}
