@@ -74,6 +74,7 @@
   27. Inside currency page_add archive table section
   28. Interest rates of banks page
   29. News page
+  29. Account-chart page
 =======
 */
 @import "reset.css";
@@ -1583,7 +1584,6 @@
         padding: 10px 14px;
         margin-bottom: 25px;
       }
-
 
       p:not(:last-child){margin-bottom: 15px;}
 
@@ -13392,3 +13392,154 @@ hr.separator3 {
   .calendar.exchange-links .exchange-img>img{
     vertical-align: middle;
   }
+
+/*---------------------------------------------
+    Account chart
+---------------------------------------------- */
+.account-chart img{
+    max-width:100%;
+}
+.account-chart .account-chart_title {
+      font: 24px/30px 'pf_dindisplay_prolight';
+      background-color: #fff;
+      color: #454444;
+      margin-bottom: 30px;
+  }
+
+.account-chart .account-chart_title:after{
+    display: block;
+    content: '';
+    width:22px;
+    height: 20px;
+    background: url(../images/arrow-sprite.png) no-repeat;
+    background-position: 0 0;
+    float: right;
+    cursor: pointer;
+    margin: 10px 5px 0 0;
+}
+/*Tabs*/
+.account-chart .account-chart_tabs_list{
+    float: left;
+    margin: 0 0 0 52px;
+}
+
+.account-chart .account-chart_tabs_list li{
+    display: inline-block;
+}
+
+.account-chart .account-chart_tabs_list li a{
+    display: inline-block;
+    margin-left: -4px;
+    width:82px;
+    text-align: center;
+    font-family: 'OpenSansSemiBold';
+    font-size:14px;
+    line-height:40px;
+    color: #454444;
+    background: #f6f6f6;
+    border:none;
+    border-top:1px solid #f6f6f6;
+    padding: 0;
+}
+
+.account-chart .account-chart_tabs_list li a:before,
+.account-chart .account-chart_tabs_list li a:after{
+    display: none;
+}
+
+.account-chart .account-chart_tabs_list .active a,
+.account-chart .account-chart_tabs_list li a:hover{
+    text-decoration: none;
+    color: #167ac6;
+    background: #ebf2f7;
+    border-top:1px solid #167ac6;
+}
+
+/*Doropdown*/
+.account-chart .dropdowns-wrapp{
+    float: right;
+}
+
+.account-chart  .dropdown {
+    position: relative;
+    display: inline-block;
+    margin-left: 12px;
+    padding-top: 10px;
+}
+
+.account-chart  .dropdown .dropbtn {
+    font-family:'OpenSansBold';
+    color: #454444;
+    padding: 0 30px 0 0;
+    text-transform: uppercase;
+    font-size: 12px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    background-color: transparent;
+    position: relative;
+    outline: none;
+}
+
+.account-chart  .dropdown .dropbtn:after{
+    position: absolute;
+    top: 5px;
+    right: 4px;
+    display: block;
+    content: '';
+    width: 12px;
+    height: 8px;
+    background: url(../images/arrow-sprite.png) no-repeat;
+    background-position: -28px -3px;
+}
+
+.account-chart  .dropdown .dropdown-content {
+    display: none;
+    position: absolute;
+    right: 0;
+    min-width: 146px;
+    -webkit-box-shadow: 0px 0px 30px 0px rgba(0, 0, 0, 0.13);
+    -moz-box-shadow:    0px 0px 30px 0px rgba(0, 0, 0, 0.13);
+    box-shadow:         0px 0px 30px 0px rgba(0, 0, 0, 0.13);
+    border:1px solid #ebebeb;
+    z-index: 100;
+    background: #fff;
+    padding: 10px 0;
+}
+
+.account-chart  .dropdown .dropdown-content:after{
+    position: absolute;
+    top: -5px;
+    right: 10px;
+    display: block;
+    content: '';
+    width: 12px;
+    height: 8px;
+    background: url(../images/arrow-sprite.png) no-repeat;
+    background-position: -58px -3px;
+}
+
+.account-chart  .dropdown .dropdown-content a {
+    font-family: 'OpenSansSemiBold';
+    color: #5e5e5e;
+    padding: 10px 16px;
+    text-decoration: none;
+    display: block;
+    font-size: 13px;
+    transition: all 0.5s ease;
+}
+
+.account-chart  .dropdown .dropdown-content a:hover {
+    color: #167ac6;
+}
+
+.account-chart  .dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.account-chart  .dropdown:hover .dropbtn {
+    color: #454545;
+}
+.account-chart  .dropdown:hover .dropbtn:after {
+    background-position: -45px -3px;
+}
