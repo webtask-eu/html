@@ -3296,6 +3296,24 @@ h3 {
 }
 
 /*add monitoring1.html */
+@media (max-width: 1200px) {
+	.account-chart {
+		overflow-x: scroll;
+	}
+	.account-chart::-webkit-scrollbar {
+		background: #ededed;
+		width: 10px;
+	}
+	.account-chart::-webkit-scrollbar-thumb {
+		background: #a8a8a8;
+	}
+
+
+	.account-chart .account-chart_tabs{
+		width: 729px;
+	}
+}
+
 @media (max-width: 992px) {
 	.box_monitoring .not_label {
 		padding-top:0;
@@ -3333,4 +3351,7 @@ h3 {
 	.box_monitoring .monitoring_tabs_list li:nth-child(2n+1){
 		padding-right: 5px;
 	}
+
+	/*Monitoring2*/
+
 }

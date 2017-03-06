@@ -13397,17 +13397,19 @@ hr.separator3 {
 /*---------------------------------------------
     Account chart
 ---------------------------------------------- */
+
+
 .account-chart img{
     max-width:100%;
 }
-.account-chart .account-chart_title {
+.toggle_btn{
       font: 24px/30px 'pf_dindisplay_prolight';
       background-color: #fff;
       color: #454444;
       margin-bottom: 30px;
   }
 
-.account-chart .account-chart_title:after{
+.toggle_btn:after{
     display: block;
     content: '';
     width:22px;
@@ -13419,6 +13421,10 @@ hr.separator3 {
     margin: 10px 5px 0 0;
 }
 /*Tabs*/
+.account-chart .account-chart_tabs{
+    padding-bottom: 15px;
+}
+
 .account-chart .account-chart_tabs_list{
     float: left;
     margin: 0 0 0 52px;

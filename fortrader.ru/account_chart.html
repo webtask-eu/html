@@ -416,7 +416,7 @@
 
                 <section class="section_offset account-chart">
 
-                    <h4 class="account-chart_title">График счета</h4>
+                    <h4 class="account-chart_title toggle_btn">График счета</h4>
 
                     <div class="box2 box_informer">
                         <!-- - - - - - - - - - - - - - Tabs - - - - - - - - - - - - - - - - -->
@@ -969,7 +969,7 @@
 <script src="js/script.plugins.js"></script>
 <script>
     $(document).ready(function () {
-        $('.account-chart_title').click(function(){
+        $('.toggle_btn').click(function(){
             $(this).parent('.section_offset').find('.box2').slideToggle('slow');
         })
     });
