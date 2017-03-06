@@ -3295,3 +3295,42 @@ h3 {
 	}
 }
 
+/*add monitoring1.html */
+@media (max-width: 992px) {
+	.box_monitoring .not_label {
+		padding-top:0;
+	}
+	.box_monitoring .informer_setings {
+		margin-top:20px;
+	}
+
+	.box_monitoring .monitoring_tabs_list{
+		float: none;
+		width: 100%;
+	}
+	.box_monitoring .tabs_filter{
+		float: right;
+		width: 50%;
+		margin: 0;
+	}
+
+	.box_monitoring .tabs_list {
+		margin-bottom: 0;
+	}
+
+	.box_monitoring .tabs_list:before {
+		display: none;
+	}
+
+	.box_monitoring .monitoring_tabs_list li{
+		display: block;
+		float: left;
+		width: 50%;
+		padding-right: 0;
+		margin-bottom:6px;
+	}
+
+	.box_monitoring .monitoring_tabs_list li:nth-child(2n+1){
+		padding-right: 5px;
+	}
+}

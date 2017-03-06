@@ -13658,3 +13658,48 @@ hr.separator3 {
     background: #ebf2f7;
     border-top:1px solid #167ac6;
 }
+
+/*Table*/
+.box_monitoring .table_monitoring thead th {
+    color: #fff;
+    font: 12px 'OpenSansSemibold', sans-serif;
+    line-height: 16px;
+    background: #b3b1b1;
+    vertical-align: middle;
+}
+
+.box_monitoring .table_monitoring table td {
+    text-align: center;
+    vertical-align: middle;
+    padding: 0 10px;
+    font: 13px/16px 'OpenSansSemibold', sans-serif;
+    position: relative;
+    height:68px;
+}
+
+.box_monitoring .table_monitoring .red_color {
+    color: #ff7e65;
+}
+
+.box_monitoring .load_btn {
+    display: block;
+    text-align: center;
+    border: none;
+    background-color: #ededed;
+    font: 14px/16px 'OpenSansSemibold', sans-serif;
+    color: #454545;
+    padding: 16px 0;
+    text-transform: none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.box_monitoring .monitoring_label_red{
+    position: absolute;
+    top:5px;
+    right:5px;
+    text-transform: uppercase;
+    color: #ff7e65;
+    font: 10px/16px 'OpenSansSemibold', sans-serif;
+    padding: 0;
+}
