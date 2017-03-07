@@ -3372,7 +3372,7 @@ h3 {
 	.table_monitoring.tabl_quotes table td:first-child:before {
 		width: 100%;
 		height: auto;
-		font:15px/19px 'OpenSansBold', sans-serif;
+		font:12px/19px 'OpenSansBold', sans-serif;
 		color: #454444;
 		text-transform: uppercase;
 	}

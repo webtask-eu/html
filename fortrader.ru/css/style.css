@@ -13408,6 +13408,8 @@ hr.separator3 {
       background-color: #fff;
       color: #454444;
       margin-bottom: 30px;
+      position: relative;
+      padding-right: 30px;
   }
 
 .toggle_btn:after{
@@ -13419,7 +13421,9 @@ hr.separator3 {
     background-position: 0 0;
     float: right;
     cursor: pointer;
-    margin: 10px 5px 0 0;
+    position: absolute;
+    top: 22px;
+    right: 0;
 }
 /*Tabs*/
 .account-chart .account-chart_tabs{
@@ -13714,7 +13718,7 @@ hr.separator3 {
 }
 
 /*---------------------------------------------
-    Monitoring1 Page
+    Monitoring2 Page
 ---------------------------------------------- */
 .section_title {
     margin: 0 0 30px;
@@ -13732,6 +13736,7 @@ hr.separator3 {
 .modify_date{
     font:13px/36px 'OpenSans', sans-serif;
     color: #858585;
+    display: inline-block;
 }
 
 .monitoring_info {
@@ -13777,4 +13782,57 @@ hr.separator3 {
     display: inline-block;
     width:49%;
 }
+
+/*Progress bar*/
+.progress-wrap {
+  height: 36px;
+  background: #f1f1f1;
+  margin: 20px 0;
+  overflow: hidden;
+  position: relative;
+}
+
+.progress-wrap:after{
+  display: table;
+  clear: both;
+  content: '';
+}
+
+.progress-wrap .progress-title{
+  float: left;
+  font: 14px/36px 'OpenSansSemibold', sans-serif;
+  color: #333333;
+  padding-left: 18px;
+  position: relative;
+  z-index: 5; 
+}
+
+.progress-wrap .progress-value {
+  float: right;
+  font: 18px/36px 'OpenSans', sans-serif;
+  color: #454545;
+  padding-right: 18px;
+  position: relative;
+  z-index: 5;
+}
+
+.progress-wrap .progress-bar {
+  height: 36px;
+  left: 0;
+  position: absolute;
+  top: 0;
+}
+.progress-wrap .progress-bar.low_color {
+  background: #b6d96c;
+}
+.progress-wrap .progress-bar.mid_color {
+  background: #eedd75;
+}
+.progress-wrap .progress-bar.high_color {
+  background: #f5b049;
+}
+.progress-wrap .progress-bar.tout_color {
+  background: #ff8661;
+}
+
 
