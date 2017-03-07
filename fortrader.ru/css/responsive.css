@@ -3354,4 +3354,26 @@ h3 {
 
 	/*Monitoring2*/
 
+	.monitoring_info .info_item .title,
+	.monitoring_info .info_item .text{
+		display: inline-block;
+		width:auto;
+	}
+
+	.table_monitoring.tabl_quotes:before {
+		display: none;
+	}
+
+	.table_monitoring.tabl_quotes table td{
+		height:60px;
+	}
+
+	.table_monitoring.tabl_quotes table td:before,
+	.table_monitoring.tabl_quotes table td:first-child:before {
+		width: 100%;
+		height: auto;
+		font:15px/19px 'OpenSansBold', sans-serif;
+		color: #454444;
+		text-transform: uppercase;
+	}
 }

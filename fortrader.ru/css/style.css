@@ -13724,3 +13724,57 @@ hr.separator3 {
     text-transform: uppercase;
 }
 
+.toggle_btn.blue_color_hight{
+    color: #167ac6;
+    margin-bottom: 20px;
+}
+
+.modify_date{
+    font:13px/36px 'OpenSans', sans-serif;
+    color: #858585;
+}
+
+.monitoring_info {
+    border-bottom: 1px solid #e3e3e3;
+    margin-bottom: 30px;
+}
+.monitoring_info .info_item{
+    margin-bottom:14px;
+}
+.monitoring_info .info_item:last-child{
+    margin-bottom:0;
+}
+.monitoring_info .info_item .title{
+    font:15px/18px 'OpenSansSemiBold', sans-serif;
+    color: #454545;
+}
+.monitoring_info .info_item .text{
+    font:15px/19px 'OpenSans', sans-serif;
+    color: #454545;
+}
+.monitoring_info .info_item .text.red_color {
+    color: #ff7e65;
+}
+
+.monitoring_info .info_item .text.green_color {
+    color: #5bbc2e;
+}
+
+.monitoring_info .info_item .text .label_green {
+    background-color: #5bbc2e;
+    color: #fff;
+    border-radius: 0;
+    display: inline-block;
+    padding: 7px;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-top: -4px;
+}
+
+.monitoring_info .info_item .title,
+.monitoring_info .info_item .text{
+    display: inline-block;
+    width:49%;
+}
+
