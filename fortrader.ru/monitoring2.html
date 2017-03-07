@@ -330,7 +330,7 @@
 
                     <h4 class="toggle_btn">Информация о счете</h4>
 
-                    <div class="box2 box_informer">
+                    <div class="toggle_content box2 box_informer">
 
 
                     </div>
@@ -346,7 +346,7 @@
 
                     <h4 class="toggle_btn">Показатели</h4>
 
-                    <div class="box2 box_informer">
+                    <div class="toggle_content box2 box_informer">
 
 
                     </div>
@@ -362,9 +362,58 @@
 
                     <h4 class="toggle_btn">Прибыльность счета</h4>
 
-                    <div class="box2 box_informer">
+                    <div class="toggle_content tabl_quotes table_monitoring ">
+                        <table data-item='2'>
+                            <thead>
+                            <tr>
+                                <th>
+                                    <span>Дневная</span>
+                                </th>
+                                <th>
+                                    <span>Недельная</span>
+                                </th>
+                                <th>
+                                    <span>Месячная</span>
+                                </th>
+                                <th>
+                                    <span>3 месяца</span>
+                                </th>
+                                <th>
+                                    <span>6 месяцев</span>
+                                </th>
+                                <th>
+                                    <span>9 месяцев</span>
+                                </th>
+                                <th>
+                                    <span>Общая</span>
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td data-title="Дневная" class=" table_rating_col_1">
+                                    <span class="">+0.00%</span>
+                                </td>
+                                <td data-title="Недельная">+0.00%</td>
+                                <td data-title="Месячная">
+                                    <span class="">50%</span>
+                                </td>
+                                <td data-title="3 месяца">
+                                    <span class="green_color">+0.00%</span>
+                                </td>
+                                <td data-title="6 месяцев">
+                                    <span class="">+0.00%</span>
+                                </td>
+                                <td data-title="9 месяцев">
+                                    <span class="green_color">+17%</span>
+                                </td>
+                                <td data-title="Общая">
+                                    <span class="">+17%</span>
+                                </td>
+                            </tr>
 
-
+                            </tbody>
+                        </table>
                     </div>
 
                 </section>
@@ -378,9 +427,46 @@
 
                     <h4 class="toggle_btn">Условия трейдера</h4>
 
-                    <div class="box2 box_informer">
+                    <div class="toggle_content tabl_quotes table_monitoring ">
+                        <table data-item='2'>
+                            <thead>
+                            <tr>
+                                <th>
+                                    <span>НОмер сета</span>
+                                </th>
+                                <th>
+                                    <span>Минимальная инвестиция</span>
+                                </th>
+                                <th>
+                                    <span>Комиссия</span>
+                                </th>
+                                <th>
+                                    <span>Минимальный срок</span>
+                                </th>
+                                <th>
+                                    <span>Штраф за дострочный возврат</span>
+                                </th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td data-title="НОмер сета" class=" table_rating_col_1">
+                                    <span class="">0.00%</span>
+                                </td>
+                                <td data-title="Минимальная инвестиция">1450.2 USD</td>
+                                <td data-title="Комиссия">
+                                    <span class="">50%</span>
+                                </td>
+                                <td data-title="Минимальный срок">
+                                    <span class="">7 Дней 0 часов</span>
+                                </td>
+                                <td data-title="Штраф за дострочный возврат">
+                                    <span class="">17%</span>
+                                </td>
+                            </tr>
 
-
+                            </tbody>
+                        </table>
                     </div>
 
                 </section>
@@ -394,7 +480,7 @@
 
                     <h4 class="toggle_btn">Агреcсивность торговли</h4>
 
-                    <div class="box2 box_informer">
+                    <div class="toggle_content box2 box_informer">
 
 
                     </div>
@@ -410,7 +496,7 @@
 
                     <h4 class="toggle_btn">График счета</h4>
 
-                    <div class="box2 box_informer account-chart">
+                    <div class="toggle_content box2 box_informer account-chart">
                         <!-- - - - - - - - - - - - - - Tabs - - - - - - - - - - - - - - - - -->
 
                         <div class="tabs_box section_offset account-chart_tabs">
@@ -515,7 +601,7 @@
 
                         <h4 class="toggle_btn section_title">Торговая активность</h4>
 
-                        <div class="box2 box_informer">
+                        <div class="toggle_content box2 box_informer">
                             <!-- - - - - - - - - - - - - - Tabs - - - - - - - - - - - - - - - - -->
 
                             <div class="tabs_box tabs_rating">
@@ -1166,7 +1252,7 @@
 
                         <h4 class="toggle_btn section_title">Отчет</h4>
 
-                        <div class="box2">
+                        <div class="toggle_content">
                             <section class="section_offset">
 
                                 <h5 class="info_title color2">
@@ -1825,7 +1911,7 @@
 <script>
     $(document).ready(function () {
         $('.toggle_btn').click(function(){
-            $(this).parent('.section_offset').find('.box2').slideToggle('slow');
+            $(this).parent('.section_offset').find('.toggle_content').slideToggle('slow');
         });
 
         $('.mycolumn li').click(function () {

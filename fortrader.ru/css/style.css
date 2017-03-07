@@ -13667,15 +13667,17 @@ hr.separator3 {
 }
 
 /*Table*/
-.box_monitoring .table_monitoring thead th {
+.table_monitoring thead th {
     color: #fff;
     font: 12px 'OpenSansSemibold', sans-serif;
     line-height: 16px;
     background: #b3b1b1;
     vertical-align: middle;
+    padding: 0 10px;
+    height:58px;
 }
 
-.box_monitoring .table_monitoring table td {
+.table_monitoring table td {
     text-align: center;
     vertical-align: middle;
     padding: 0 10px;
@@ -13684,7 +13686,7 @@ hr.separator3 {
     height:68px;
 }
 
-.box_monitoring .table_monitoring .red_color {
+.table_monitoring .red_color {
     color: #ff7e65;
 }
 
