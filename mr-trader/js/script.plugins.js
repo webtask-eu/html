@@ -73,4 +73,20 @@
 
 	});
 
+	/*---------------------------------------------------
+		article select
+	---------------------------------------------------*/
+
+	$(".article-form__select").styler();
+
+	$(".article-btn_profile").click(function(){
+		$(this).toggleClass("article-btn_profile-active");
+		$(".article-btn-profile__menu").toggleClass("article-btn-profile__menu-active");
+	});
+
+	$(".article-btn_edit-link").click(function(){
+		$(".article-btn_edit-link").toggleClass("article-btn_edit-active");
+		$(".article-btn_edit-drop").toggleClass("article-btn_drop-active");
+	});
+
 })(jQuery);
