@@ -380,6 +380,48 @@
 			End of the Calendar select
 		------------------------------------------------*/
 
+		/*-----------------------------------------------
+			Converter select
+		------------------------------------------------*/
+
+			$(".js_fx-sb-select").styler();
+
+		/*-----------------------------------------------
+			End of the Converter select
+		------------------------------------------------*/
+
+		/*-----------------------------------------------
+			Mobile footer list
+		------------------------------------------------*/
+
+			(function() {
+				var width = $(window).width();
+				if( width < 480) {
+					$(".fx_footer-mob-list").css({display: "none"});
+					$(".fx_footer-mob-btn").click(function(){
+						$(this).next(".fx_footer-mob-list").slideToggle();
+						$(this).find(".fx_ic-drop").toggleClass("fx_ic-drop-active");
+					});
+				}
+			}());
+
+		/*----------------------------------------------
+			End of the Mobile footer list
+		-----------------------------------------------*/
+
+		/*----------------------------------------------
+			Mobile menu
+		-----------------------------------------------*/
+
+			$(".fx_mob-menu").click(function() {
+				$(this).toggleClass("fx_mob-menu-active");
+				$(".fx_menu").slideToggle();
+			});
+
+		/*----------------------------------------------
+			End of the Mobile menu
+		-----------------------------------------------*/
+
 	});
 
 })(jQuery);
