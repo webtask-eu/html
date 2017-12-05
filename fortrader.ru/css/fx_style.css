@@ -351,6 +351,7 @@
     font-family: RC_Bold;
     font-size: 30px;
     color: #444;
+    line-height: 36px;
 }
 
 .fx_content-title-link:hover {
@@ -379,7 +380,7 @@
 }
 
 .fx_section-box {
-    margin-top: 35px;
+    margin-top: 25px;
 }
 
 .fx_box-small {
@@ -725,7 +726,7 @@
 }
 
 .fx_sl-data-wr::-webkit-scrollbar {
-    width: 5px;
+    width: 3px;
     visibility: hidden;
 }
 
@@ -811,7 +812,7 @@
 }
 
 .fx_rating-list-wr::-webkit-scrollbar {
-    width: 5px;
+    width: 3px;
     visibility: hidden;
 }
 
@@ -1323,7 +1324,7 @@
 }
 
 .fx_sb-section-box::-webkit-scrollbar {
-    width: 5px;
+    width: 3px;
     visibility: hidden;
 }
 

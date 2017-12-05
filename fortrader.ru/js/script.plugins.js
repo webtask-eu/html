@@ -384,7 +384,9 @@
 			Converter select
 		------------------------------------------------*/
 
-			$(".js_fx-sb-select").styler();
+			$(".js_fx-sb-select").styler({
+				singleSelectzIndex: '0'
+			});
 
 		/*-----------------------------------------------
 			End of the Converter select
@@ -422,6 +424,25 @@
 			End of the Mobile menu
 		-----------------------------------------------*/
 
-	});
+		$(".js_scrolling").jScrollPane();
+
+			$(".fx-graph__content").not(":first").hide();
+		$(".fx-graph__tab").click(function() {
+			$(".fx-graph__tab").removeClass("fx-graph__tab-active").eq($(this).index()).addClass("fx-graph__tab-active");
+			$(".fx-graph__content").hide().eq($(this).index()).fadeIn()
+		}).eq(0).addClass("fx-graph__tab-active");
+
+		});
+
+		$(".pf_more").on("click", function() {
+			$(this).closest(".pf_read-more").hide();
+			$(".pf_text-overflow").css({"maxHeight": "100%"});
+		});
+
+		$(".pf_radio").styler();
+
+		$(".pf_reviews-add").click(function() {
+			$(".pf_reviews-wr").slideToggle();
+		});
 
 })(jQuery);
