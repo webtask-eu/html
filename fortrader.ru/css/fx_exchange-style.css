@@ -1,4 +1,4 @@
-.fx_mob_btn {
+.fx_version_btn {
 	position: relative;
 	display: inline-block;
 	max-height: 42px;
@@ -11,9 +11,24 @@
 	background-color: #fff;
 }
 
-.fx_mob_btn:hover {
-	color: #454444;
-	background-color: #e3e3e3;
+.fx_version_btn> .svg_icon {
+	position: absolute;
+	top: 50%;
+	left: 10px;
+	-webkit-transform: translateY(-50%);
+	-moz-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+.fx_version_btn:hover {
+	color: #454545;
+	background-color: #f6f6f6;
+}
+
+.version_desk {
+	display: none;
 }
 
 .svg_sprite {
@@ -134,14 +149,12 @@
 	width: 14px;
 	height: 25px;
 	fill: #555;
-	position: absolute;
-	top: 50%;
-	left: 10px;
-	-webkit-transform: translateY(-50%);
-	-moz-transform: translateY(-50%);
-	-ms-transform: translateY(-50%);
-	-o-transform: translateY(-50%);
-	transform: translateY(-50%);
+}
+
+.svg_desktop {
+	width: 19px;
+	height: 15px;
+	fill: #555;
 }
 
 .fx-menu__item {

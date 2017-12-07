@@ -46,8 +46,11 @@
 }
 
 @media only screen and (max-width: 991px) {
-	.fx_mob_btn {
+	.version_mob {
 		display: none;
+	}
+	.version_desk {
+		display: inline-block;
 	}
 	.fx_menu {
 		max-width: 604px;
@@ -142,6 +145,11 @@
 }
 
 @media only screen and (max-width: 767px) {
+	.fx_version {
+		display: block;
+		margin-left: 0;
+		text-align: center;
+	}
 	.fx_menu {
 		width: 100%;
 		max-width: 160px;
@@ -341,6 +349,9 @@
 }
 
 @media only screen and (max-width: 480px) {
+	.fx_version {
+		margin-top: 20px;
+	}
 	.fx_sb-head {
 		max-width: 480px;
 		margin: 0 auto 20px;
@@ -390,8 +401,8 @@
 	}
 }
 
-@media only screen and (max-width: 380px) {
+/*@media only screen and (max-width: 380px) {
 	.sidebar {
 		display: block;
 	}
-}
+}*/
