@@ -334,6 +334,115 @@
 			End of the webRating
 		------------------------------------------------ */
 
-	});
+		/* ------------------------------------------------
+			Checkbox
+		-------------------------------------------------*/
+
+			$(".informer-news__checkbox").styler();
+
+		/* ------------------------------------------------
+			End of the Checkbox
+		-------------------------------------------------*/
+
+		/* -----------------------------------------------
+			Radio buttons
+		-------------------------------------------------*/
+
+			$(".informer-calendar__time-radio").styler();
+
+		/* -----------------------------------------------
+			End of the Radio buttons
+		------------------------------------------------*/
+
+		/*-----------------------------------------------
+			Inside select
+		------------------------------------------------*/
+
+			$(".inside-form__select").styler();
+
+		/*-----------------------------------------------
+			End of the Inside select
+		------------------------------------------------*/
+
+		/*-----------------------------------------------
+			Inside checkbox
+		------------------------------------------------*/
+
+			$(".inside-form__checkbox").styler();
+
+		/*-----------------------------------------------
+			Calendar select
+		------------------------------------------------*/
+
+			$(".calendar-header__select").styler();
+
+		/*-----------------------------------------------
+			End of the Calendar select
+		------------------------------------------------*/
+
+		/*-----------------------------------------------
+			Converter select
+		------------------------------------------------*/
+
+			$(".js_fx-sb-select").styler({
+				singleSelectzIndex: '0'
+			});
+
+		/*-----------------------------------------------
+			End of the Converter select
+		------------------------------------------------*/
+
+		/*-----------------------------------------------
+			Mobile footer list
+		------------------------------------------------*/
+
+			(function() {
+				var width = $(window).width();
+				if( width < 480) {
+					$(".fx_footer-mob-list").css({display: "none"});
+					$(".fx_footer-mob-btn").click(function(){
+						$(this).next(".fx_footer-mob-list").slideToggle();
+						$(this).find(".fx_ic-drop").toggleClass("fx_ic-drop-active");
+					});
+				}
+			}());
+
+		/*----------------------------------------------
+			End of the Mobile footer list
+		-----------------------------------------------*/
+
+		/*----------------------------------------------
+			Mobile menu
+		-----------------------------------------------*/
+
+			$(".fx_mob-menu").click(function() {
+				$(this).toggleClass("fx_mob-menu-active");
+				$(".fx_menu").slideToggle();
+			});
+
+		/*----------------------------------------------
+			End of the Mobile menu
+		-----------------------------------------------*/
+
+		$(".js_scrolling").jScrollPane();
+
+			$(".fx-graph__content").not(":first").hide();
+		$(".fx-graph__tab").click(function() {
+			$(".fx-graph__tab").removeClass("fx-graph__tab-active").eq($(this).index()).addClass("fx-graph__tab-active");
+			$(".fx-graph__content").hide().eq($(this).index()).fadeIn()
+		}).eq(0).addClass("fx-graph__tab-active");
+
+		});
+
+		$(".pf_more").on("click", function() {
+			$(this).closest(".pf_read-more").hide();
+			$(".pf_text-overflow").css({"maxHeight": "100%"});
+		});
+
+		$(".pf_radio").styler();
+
+		$(".pf_reviews-add").click(function() {
+			$(".pf_reviews-wr").slideToggle();
+		});
 
 })(jQuery);

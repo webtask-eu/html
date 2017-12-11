@@ -3377,3 +3377,366 @@ h3 {
 		text-transform: uppercase;
 	}
 }
+
+/* add pages 25.07.17 */
+
+@media only screen and (max-width: 1200px) {
+	.informer-news__item-title {
+		max-width: 500px;
+	}
+
+	.inside-menu__gen a {
+		padding-left: 15px;
+	}
+
+	.inside-menu__sub a {
+		padding-left: 20px;
+		font-size: 14px;
+	}
+
+	.informer-calendar__tb table td [class*="label_"] {
+		font-size: 10px;
+	}
+
+	.profile-card__right {
+		width: 363px;
+	}
+
+	.trade-account_status {
+		font-size: 10px;
+	}
+}
+
+@media only screen and (max-width: 992px) {
+	.informer-news__item-title {
+		max-width: 290px;
+	}
+
+	.inside-menu__gen a {
+		width: 49.5%;
+		margin-right: 1%;
+	}
+
+	.inside-menu__gen a:nth-child(2n) {
+		margin-right: 0;
+		margin-bottom: 1%;
+	}
+
+	.inside-menu__sub {
+		margin-top: 0;
+	}
+
+	.inside-menu__sub a {
+		width: 33%;
+		margin-right: 0.5%;
+		margin-bottom: 0.5%;
+	}
+
+	.inside-menu__sub a:nth-child(3n) {
+		margin-right: 0;
+	}
+
+	.inside-form__input {
+		width: 190px;
+	}
+
+	.inside-form__select {
+		width: 190px;
+	}
+
+	.inside-form__textarea {
+		width: 190px;
+	}
+
+	.inside-form__buttons {
+		margin-top: 0;
+	}
+
+	.inside-form__trader .inside-form__input {
+		width: 170px;
+	}
+
+	.inside-form__trader .inside-form__toltip {
+		max-width: 170px;
+	}
+
+	.inside-form__checkbox-text {
+		max-width: 90%;
+	}
+
+	.calendar-header__name {
+		max-width: 50%;
+		font-size: 11px;
+	}
+
+	.calendar-header__select {
+		max-width: 50%;
+	}
+
+	.calendar-header__select .jq-selectbox__select {
+		width: auto;
+		padding-right: 25px;
+	}
+
+	.informer-calendar__tb table td:not(:first-child) {
+		line-height: 40px;
+	}
+
+	.informer-calendar__event li {
+		margin: 10px 20px;
+	}
+
+	.informer-calendar__tb table td:first-child {
+		height: 100px;
+		padding: 30px 10px 6px;
+		line-height: 12px;
+	}
+
+	.informer-calendar__tb table td:first-child a {
+		max-height: 48px;
+		overflow: hidden;
+		display: block;
+	}
+
+	.informer-calendar__tb table .calendar_flag {
+		left: 50%;
+		top: 10px;
+		transform: translate(-50%, 0);
+	}
+
+	.informer-calendar__time-item {
+		width: 50%;
+		float: left;
+		margin-right: 0;
+	}
+
+	.informer-calendar__time-input {
+		width: 40px;
+		height: 35px;
+	}
+
+	.informer-calendar__tb table td:first-child:before {
+		height: auto;
+	}
+
+	.profile-card__left {
+		width: 100%;
+	}
+
+	.profile-card__about {
+		padding-bottom: 30px;
+	}
+
+	.profile-card__right {
+		width: 100%;
+	}
+
+	.trade-account_status {
+		padding: 0;
+	}
+
+	.account-status_accept {
+		display: inline;
+		max-width: 100%;
+		margin: 0;
+		padding: 10px;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+	.informer-news__wrap {
+		padding-bottom: 30px;
+	}
+
+	.informer-news__item-title {
+		max-width: 270px;
+	}
+
+	.inside-form__user {
+		padding-right: 10px;
+	}
+
+	.inside-form__contact {
+		padding-left: 10px;
+	}
+
+	.inside-form__input {
+		width: 185px;
+	}
+
+	.inside-form__select {
+		width: 185px;
+	}
+
+	.inside-form__textarea {
+		width: 185px;
+	}
+
+	.inside-form__column {
+		float: none;
+		width: 100%;
+	}
+
+	.inside-form__trader .inside-form__label {
+		width: 290px;
+		margin: 0 auto 20px;
+	}
+
+	.inside-form__trader .inside-form__input {
+		width: 250px;
+	}
+
+	.inside-form__trader .inside-form__toltip {
+		max-width: 250px;
+	}
+
+	.informer-calendar__event li {
+		width: 190px;
+		margin: 2px;
+	}
+
+	.profile-card__avatar {
+		margin: 0 auto;
+	}
+
+	.profile-card__message {
+		margin: 10px auto;
+	}
+
+}
+
+@media only screen and (max-width: 480px) {
+	.informer-news__item-title {
+		max-width: 215px;
+	}
+
+	.informer-news__filter-help {
+		font-size: 12px;
+		line-height: 14px;
+	}
+
+	.inside-menu__sub a {
+		width: 49.5%;
+		margin-right: 1%;
+		margin-bottom: 1%;
+	}
+
+	.inside-menu__sub a:nth-child(2n) {
+		margin-right: 0;
+	}
+
+	.inside-menu__sub a:nth-child(3n) {
+		margin-right: 1%;
+	}
+
+	.inside-form__user {
+		float: none;
+		width: 100%;
+		padding: 0;
+	}
+
+	.inside-form__contact {
+		float: none;
+		width: 100%;
+		padding: 0;
+	}
+
+	.inside-form__label {
+		width: 260px;
+		margin: 0 auto 20px;
+	}
+
+	.inside-form__input {
+		width: 100%;
+	}
+
+	.inside-form__buttons {
+		float: none;
+	}
+
+	.inside-form__select {
+		width: 100%;
+	}
+
+	.inside-form__textarea {
+		width: 100%;
+	}
+
+	.inside-form__btn-blue {
+		margin-right: 0;
+		margin-bottom: 10px;
+	}
+
+	.inside-form__inform:focus {
+	  background-image: url(../images/icon-info_hover.png);
+	}
+
+	.inside-form__inform:focus .inside-form__toltip {
+	  display: block;
+	}
+
+	.inside-form__settings .inside-form__label {
+		width: 100%;
+	}
+
+	.informer-calendar__header {
+		height: 70px;
+		text-align: center;
+	}
+
+	.calendar-header__name {
+		max-width: 100%;
+		float: none;
+	}
+
+	.calendar-header__select {
+		max-width: 100%;
+		float: none;
+	}
+
+	.calendar-header__icon:hover .calendar-header__info {
+		right: 0;
+		left: auto;
+		max-width: 230px;
+	}
+
+	.calendar-header__select .jq-selectbox__dropdown {
+		min-width: 100%;
+	}
+
+	.tabl_quotes table td:not(:first-child) {
+		font-size: 10px;
+	}
+
+	.informer-calendar__event li {
+		width: 146px;
+	}
+
+	.profile__title-wr {
+		border-bottom: none;
+		margin-bottom: 5px;
+	}
+
+	.profile-btn_settings {
+		float: none;
+		width: 100%;
+	}
+
+	.profile__title {
+		float: none;
+	}
+
+	.account-status_accept {
+		padding: 6px;
+	}
+
+	.profile-card__left {
+		width: 230px;
+		margin: 0 auto;
+		float: none;
+	}
+
+	.trade-account_switch li {
+		margin-bottom: 10px;
+	}
+}
