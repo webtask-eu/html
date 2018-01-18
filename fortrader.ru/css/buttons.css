@@ -39,7 +39,7 @@
 	margin-top: -4px;
 	width: 27px;
 	height: 12px;
-	background-image: url("../images/big-btn_white.png");
+	background-image: url("../images/lg-btn_white.png");
 }
 
 .lg_btn:before {
@@ -77,7 +77,7 @@
 }
 
 .lg_black:after {
-	background-image: url("../images/big-btn_black.png");
+	background-image: url("../images/lg-btn_black.png");
 }
 
 .lg_black:hover, .lg_black:focus {
@@ -129,4 +129,23 @@
 
 .lg-btn_sand {
 	background: #f7d05b;
+}
+
+@media only screen and (max-width: 480px) {
+	.lg_btn {
+		font-size: 10px;
+	}
+
+	.lg_btn:after {
+		right: 15px;
+		width: 20px;
+		height: 9px;
+		-webkit-background-size: cover;
+		background-size: cover;
+	}
+
+	.md_version:after {
+		width: 16px;
+		height: 10px;
+	}
 }
