@@ -408,7 +408,9 @@
 	transition: all 0.3s linear;
 }
 
-.js_scrolling:hover .jspVerticalBar {
+.js_scrolling:hover .jspVerticalBar,
+.js_scrolling:active .jspVerticalBar,
+.js_scrolling:focus .jspVerticalBar {
 	visibility: visible;
 	opacity: 1;
 }

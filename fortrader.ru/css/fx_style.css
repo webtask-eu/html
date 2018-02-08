@@ -343,7 +343,7 @@
 
 .fx_content-title {
     position: relative;
-    padding-bottom: 30px;
+    padding-bottom: 16px;
     border-bottom: 1px solid #787878;
 }
 
@@ -364,7 +364,8 @@
     margin-left: 5px;
     font-family: RC_Regular;
     font-size: 16px;
-    line-height: 16px;
+    /*line-height: 16px;*/
+    line-height: 28px;
     vertical-align: bottom;
     color: #858585;
 }
@@ -456,6 +457,7 @@
 }
 
 .fx_half-left-item {
+    position: relative;
     display: block;
     margin-bottom: 20px;
 }
