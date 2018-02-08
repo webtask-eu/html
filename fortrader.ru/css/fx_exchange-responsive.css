@@ -346,21 +346,6 @@
 	.pf_review-controls> div:nth-child(1) {
 		margin-bottom: 20px;
 	}
-}
-
-@media only screen and (max-width: 480px) {
-	.fx_version {
-		margin-top: 20px;
-	}
-	.fx_sb-head {
-		max-width: 480px;
-		margin: 0 auto 20px;
-	}
-	.fx_sb-section {
-		width: 100%;
-		max-width: 480px;
-		margin: 0 auto;
-	}
 	.fx_sb-convert-row {
 		width: 100%;
 		max-width: 290px;
@@ -386,6 +371,22 @@
 	.fx_sb-convert-select .jq-selectbox__select {
 		width: 100%;
 	}
+}
+
+@media only screen and (max-width: 480px) {
+	.fx_version {
+		margin-top: 20px;
+	}
+	.fx_sb-head {
+		max-width: 480px;
+		margin: 0 auto 20px;
+	}
+	.fx_sb-section {
+		width: 100%;
+		max-width: 480px;
+		margin: 0 auto;
+	}
+	
 	.fx_sb-news-item> div:nth-child(1) {
 		width: 17.25%;
 		max-width: 50px;
