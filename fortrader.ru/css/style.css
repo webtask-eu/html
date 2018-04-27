@@ -10788,6 +10788,12 @@ hr.separator3 {
       [data-icon="new_icon11"]:hover i{
         background-image: url(../images/new_icon11_hover.png);
       }
+    [data-icon="new_icon14"] i{
+      background-image: url(../images/new_icon14.png);
+    }
+      [data-icon="new_icon14"]:hover i{
+        background-image: url(../images/new_icon14_hover.png);
+      }
 
     [data-stiker]:after{
       position: absolute;
@@ -13594,7 +13600,7 @@ hr.separator3 {
   display: table;
   clear: both;
   content: '';
-  } 
+  }
 .box_monitoring  .quotes_search .quotes_search_input{
   float: left;
   width: calc(75% - 3px);
@@ -13804,7 +13810,7 @@ hr.separator3 {
   color: #333333;
   padding-left: 18px;
   position: relative;
-  z-index: 5; 
+  z-index: 5;
 }
 
 .progress-wrap .progress-value {
@@ -14307,22 +14313,22 @@ hr.separator3 {
   margin-right: 0;
 }
 
-.informer-calendar__event 
+.informer-calendar__event
 .calendar__event-high {
   border-color: #ff7e65;
 }
 
-.informer-calendar__event 
+.informer-calendar__event
 .calendar__event-medium {
   border-color: #fec05a;
 }
 
-.informer-calendar__event 
+.informer-calendar__event
 .calendar__event-low {
   border-color: #a1c25a;
 }
 
-/*.informer-calendar__event 
+/*.informer-calendar__event
 .calendar__event-none {
   border-color: #333030;
 }
@@ -14727,7 +14733,7 @@ hr.separator3 {
 
 .inside-form__select.focused .jq-selectbox__select {
   border: 1px solid #dbdbdb;
-  
+
 }
 
 .inside-form__select.opened .jq-selectbox__select {

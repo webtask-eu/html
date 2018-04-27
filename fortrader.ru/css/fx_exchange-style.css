@@ -45,6 +45,11 @@
 	transition: all 0.3s linear;
 }
 
+.svg_cryptocurrencies {
+	width: 29px;
+	height: 29px;
+}
+
 .svg_informers {
 	width: 27px;
 	height: 33px;
@@ -165,6 +170,7 @@
 
 .fx-menu__link {
 	margin-right: 0;
+	margin-top: 1px;
 }
 
 .fx-menu__link > span {
@@ -179,8 +185,8 @@
 	overflow: hidden;
 }
 
-.fx-menu__link:last-child {
-	margin-top: 1px;
+.fx-menu__link:first-child {
+	margin-top: 0;
 }
 
 .fx-menu_default .svg_icon {
