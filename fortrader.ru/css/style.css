@@ -10790,6 +10790,7 @@ hr.separator3 {
       }
     [data-icon="new_icon14"] i{
       background-image: url(../images/new_icon14.png);
+      background-size: 16px;
     }
       [data-icon="new_icon14"]:hover i{
         background-image: url(../images/new_icon14_hover.png);
