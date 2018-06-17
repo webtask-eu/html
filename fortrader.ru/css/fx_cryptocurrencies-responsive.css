@@ -96,6 +96,15 @@
 
 @media only screen and (max-width: 767px) {
 
+	.crypto__menu {
+		flex-wrap: wrap;
+	}
+
+	.crypto-menu__item {
+		flex-basis: 32.74%;
+		margin-bottom: 0.356%;
+	}
+
 	.crypto-graph__output {
 		min-height: 200px;
 	}
