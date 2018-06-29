@@ -339,6 +339,14 @@
 		margin-right: auto;
 	}
 
+	.fx_footer-metrics {
+		position: static;
+		width: 100%;
+		margin-top: 5px;
+		text-align: center;
+		transform: none;
+	}
+
 }
 
 @media only screen and (max-width: 767px) {

@@ -1712,7 +1712,7 @@
     background-color: #1a1a1a;
 }
 
-.fx_footer-copyright> a {
+.fx_footer-copyright a {
     color: #fff;
 }
 
@@ -1901,4 +1901,29 @@
     text-transform: none;
     padding: 0 14px;
     box-sizing: border-box;
+}
+
+.text_uppercase {
+    text-transform: uppercase;
+}
+
+.position_relative {
+    position: relative;
+}
+
+.fx_footer-metrics {
+    float: right;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.fx_metrics-btn {
+    display: inline-block;
+    margin-right: 3px;
+}
+
+.fx_metrics-btn:last-child {
+    margin-right: 0;
 }
