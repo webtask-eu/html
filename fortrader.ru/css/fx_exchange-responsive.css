@@ -50,6 +50,13 @@
 	.contest-table {
 		width: 750px;
 	}
+	.participant-table {
+		width: 700px;
+	}
+	.participant-table__box {
+		overflow-y: hidden;
+		overflow-x: scroll;
+	}
 }
 
 @media only screen and (max-width: 991px) {
@@ -391,6 +398,38 @@
 	.pagination-nav {
 		justify-content: center;
 	}
+	.graph-head {
+		flex-direction: column;
+		align-items: center;
+	}
+	.graph-head__title {
+		margin-right: 0;
+	}
+	.graph-head__controls {
+		margin-top: 20px;
+		margin-left: 0;
+	}
+	.contest-stat {
+		display: block;
+	}
+	.contest-stat__item {
+		margin-right: 0;
+		margin-bottom: 5px;
+	}
+	.fx_content-title-btns {
+		margin-top: 20px;
+		margin-left: 0;
+	}
+	.toggle-btn__more {
+		display: none;
+	}
+	.detail-stat__row {
+		display: block;
+		margin-bottom: 0;
+	}
+	.detail-stat__item {
+		margin-bottom: 15px;
+	}
 }
 
 @media only screen and (max-width: 480px) {
@@ -419,6 +458,62 @@
 	}
 	.fx_footer-social> div> .fx_social-btn {
 		margin-bottom: 2px;
+	}
+	.graph-head__controls {
+		margin: 20px -15px 0;
+	}
+	.graph-head__controls-item {
+		margin-right: 10px;
+	}
+	.section-auth {
+		display: block;
+	}
+	.section-auth__title {
+		padding-right: 0;
+	}
+	.section-auth__btns {
+		padding-left: 0;
+		margin-top: 20px;
+	}
+	.note-group {
+		flex-direction: column;
+	}
+	.note-label {
+		margin-right: 0;
+	}
+	.comment-photo {
+		min-width: 50px;
+		min-height: 50px;
+	}
+	.comment-controls {
+		margin-right: 10px;
+	}
+	.comment-control__item {
+		margin-right: 8px;
+	}
+	.comment-control__item:after {
+		right: -4px;
+	}
+	.comment-btn {
+		min-width: 65px;
+		padding: 0 5px;
+	}
+	.comment-btn svg {
+		width: 12px;
+	}
+	.comment-head__count {
+		padding: 10px;
+	}
+	.comment-head__title {
+		padding-right: 10px;
+	}
+	.comment-sort__title {
+		display: none;
+	}
+	.comment-sort__drop {
+		padding: 0 5px;
+		max-width: 120px;
+		overflow: hidden;
 	}
 }
 
