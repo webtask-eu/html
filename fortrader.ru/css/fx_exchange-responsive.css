@@ -44,7 +44,7 @@
 		padding-right: 20px;
 	}
 	.contest-table__box {
-		overflow-x: scroll;
+		overflow-x: auto;
 		overflow-y: hidden;
 	}
 	.contest-table {
@@ -55,8 +55,25 @@
 	}
 	.participant-table__box {
 		overflow-y: hidden;
-		overflow-x: scroll;
+		overflow-x: auto;
 	}
+    .table-box {
+        overflow-y: hidden;
+        overflow-x: auto;
+    }
+    .table {
+        min-width: 700px;
+        max-width: 700px;
+    }
+    .article-box .fx_half-left-item {
+        max-width: 100%;
+    }
+    .graph-body__list {
+        height: 340px;
+    }
+    .table-hint {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 991px) {
@@ -156,6 +173,9 @@
 	.fx_footer-social> div> .fx_social-btn {
 		width: 194px;
 	}
+    .fx_sidebar-wr:before {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 767px) {
@@ -430,6 +450,53 @@
 	.detail-stat__item {
 		margin-bottom: 15px;
 	}
+    .graph-body {
+        display: block;
+    }
+    .graph-body__list {
+        min-width: 100%;
+        max-width: 100%;
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+    .graph-stat {
+        display: block;
+    }
+    .graph-stat__item:after {
+        display: none;
+    }
+    .graph-head__controls {
+        flex-wrap: wrap;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        justify-content: center;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+    }
+    .control-btn {
+        margin-bottom: 2px;
+    }
+    .section-head {
+        display: block;
+    }
+    .section-head__column {
+        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+    }
+    .contest-search {
+        margin-right: 0;
+        margin-bottom: 5px;
+    }
+    .btn-score {
+        margin-bottom: 5px;
+    }
+    .article-box {
+        display: block;
+    }
 }
 
 @media only screen and (max-width: 480px) {
@@ -478,6 +545,9 @@
 	.note-group {
 		flex-direction: column;
 	}
+    .note-group-btn {
+        text-align: center;
+    }
 	.note-label {
 		margin-right: 0;
 	}
