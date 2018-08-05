@@ -99,6 +99,12 @@
     font-family: 'OpenSansBold';
     src: url('../fonts/OpenSansBold.ttf');
 }
+@font-face {
+    font-family: SSP_Regular;
+    font-style: normal;
+    /*font-weight: 400;*/
+    src: url(../fonts/SourceSansPro/SourceSansPro-Regular.eot?#iefix) format("embedded-opentype"), url(../fonts/SourceSansPro/SourceSansPro-Regular.woff) format("woff"), url(../fonts/SourceSansPro/SourceSansPro-Regular.ttf) format("truetype");
+}
 /* ------------------------------------------------
 
     1. Default stylesheets
@@ -15202,3 +15208,344 @@ hr.separator3 {
 .trade-account__table table td:first-child {
   width: 30%;
 }*/
+
+/* BEGIN trade idea */
+
+
+.state-box {
+    margin: 30px 0 10px;
+}
+
+.state-btn {
+    display: inline-block;
+    float: left;
+    width: 168px;
+    height: 48px;
+    margin-right: 19px;
+    margin-bottom: 19px;
+    line-height: 48px;
+    text-align: center;
+    font-family: PFD_Regular, sans-serif;
+    font-size: 16px;
+    color: #5e5d5d;
+    outline: none;
+    border: 2px solid #e3e3e3;
+    background-color: transparent;
+    background-position: center right 12px;
+    background-repeat: no-repeat;
+}
+
+.state-btn:last-child {
+    margin-right: 0;
+}
+
+.state-btn:hover {
+    color: #fff;
+    background-color: #333030;
+    border-color: #333030;
+}
+
+.state_up {
+    background-image: url('../images/state_up.png');
+}
+
+.state_down {
+    background-image: url('../images/state_down.png');
+}
+
+.state_updown {
+    background-image: url('../images/state_up-down.png');
+}
+
+.state_right {
+    background-image: url('../images/state_right.png');
+}
+
+.state_active {
+    color: #fff;
+    border-color: #333030;
+    background-color: #333030;
+}
+
+.state_active:hover {
+    color: #fff;
+}
+
+.add-btn {
+    display: inline-block;
+    width: 168px;
+    height: 48px;
+    font-family: PFD_Regular, sans-serif;
+    font-size: 16px;
+    line-height: 48px;
+    text-transform: uppercase;
+    text-align: center;
+    border: none;
+    outline: none;
+    color: #333030;
+    background-color: #eedd75;
+}
+
+.add-btn:hover {
+    color: #333030;
+    background-color: #edd53b;
+}
+
+
+/* END trade idea */
+
+/* BEGIN trade idea box */
+
+
+.section-title {
+    width: 100%;
+    display: table;
+    vertical-align: middle;
+}
+
+.section-title__text {
+    font-size: 19px;
+    color: #333131;
+    letter-spacing: 1px;
+    text-align: left;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.section-title__icon {
+    text-align: right;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.section-title__icon svg {
+    fill: #b2b2b2;
+}
+
+.idea-post {
+    float: left;
+    width: 33.33%;
+    padding: 0 5px;
+    margin-bottom: 20px;
+}
+
+.idea-post__img img {
+    width: 100%;
+}
+
+.idea-post__middle {
+    display: table;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+
+.idea-post__author {
+    width: 100%;
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;
+    font-size: 12px;
+}
+
+.idea-post__author > span {
+    color: #8c8c8c;
+}
+
+.idea-post__author > a {
+    color: #167ac6;
+}
+
+.idea-post__date {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 12px;
+    color: #fff;
+    background-color: #444444;
+    padding: 5px;
+}
+
+.idea-post__bottom {
+    font-family: 'Open-Sans', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    max-height: 155px;
+    overflow: hidden;
+}
+
+.idea-post__title {
+    font-weight: 700;
+    color: #454242;
+}
+
+.idea-post__text {
+    font-weight: 400;
+    color: #666666;
+}
+
+
+/* END trade idea box */
+
+/* BEGIN contest-slider */
+
+.sidebar-contest {
+    margin-bottom: 30px;
+}
+
+.sidebar-contest__head {
+    display: table;
+    width: 100%;
+    padding: 9px 0;
+    border-top: 1px solid #e3e3e3;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.sidebar-contest__title {
+    display: table-cell;
+    width: 100%;
+    text-align: left;
+    vertical-align: middle;
+    font-family: 'pf_dindisplay_prolight', sans-serif;
+    font-size: 22px;
+    letter-spacing: 1px;
+    color: #333333;
+}
+
+.sidebar-contest__icon {
+    display: table-cell;
+    vertical-align: middle;
+    line-height: 1;
+}
+
+.sidebar-contest__icon svg {
+    fill: #bfbfbf;
+    width: 28px;
+    height: 28px;
+    display: inline-block;
+}
+
+.slider-contest__item {
+    text-align: center;
+    padding-top: 25px;
+}
+
+.slider-contest__title {
+    margin-bottom: 22px;
+    text-align: center;
+    font-family: 'pf_dindisplay_prolight', sans-serif;
+    font-size: 24px;
+    color: #444444;
+}
+
+.slider-contest__img {
+    position: relative;
+    text-align: center;
+    margin-bottom: 13px;
+}
+
+.slider-contest__prize {
+    position: absolute;
+    left: 50%;
+    top: 65px;
+    font-family: 'pf_dindisplay_probold', sans-serif;
+    font-size: 26px;
+    letter-spacing: -1px;
+    line-height: 33px;
+    color: #444444;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.slider-contest__btn {
+    display: inline-block;
+    width: 175px;
+    min-height: 48px;
+    line-height: 48px;
+    font-family: 'Open-Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #fff;
+    text-align: center;
+    outline: none;
+    background-color: #f1543f;
+}
+
+.slider-contest__btn:hover {
+    color: #fff;
+    background-color: #fb7360;
+}
+
+.slider-contest .owl-controls {
+    position: relative;
+    width: 100%;
+    height: 30px;
+}
+
+.slider-contest .owl-pagination {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: auto;
+    height: 8px;
+    text-align: center;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.slider-contest .owl-page {
+    display: inline-block;
+    width: 6px;
+    height: 6px;
+    margin: 0 2px;
+    border-radius: 50%;
+    background-color: #dbdbdb;
+}
+
+.slider-contest .owl-page.active {
+    background-color: #555555;
+}
+
+/* BEGIN new sidebar contest design */
+
+.new-contest .sidebar-contest__head {
+    padding: 0 0 15px;
+    border-top: none;
+    border-bottom: 1px solid #787878;
+}
+
+.new-contest .sidebar-contest__title {
+    font-family: 'RC_Bold', sans-serif;
+    font-size: 30px;
+    color: #444444;
+    line-height: 36px;
+}
+
+.new-contest .sidebar-contest__icon svg {
+    fill: #787878;
+    width: 32px;
+    height: 32px;
+}
+
+.new-contest .slider-contest__title {
+    font-family: 'RC_Bold', sans-serif;
+    font-size: 28px;
+    color: #444444;
+}
+
+.new-contest .slider-contest__btn {
+    font-family: 'SSP_Semibold', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+/* END new sidebar contest design */
+
+/* END contest-slider */
+

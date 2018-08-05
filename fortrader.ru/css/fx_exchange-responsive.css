@@ -74,6 +74,16 @@
     .table-hint {
         display: none;
     }
+
+	/* BEGIN fx_trade-idea */
+
+
+	.ideas-post {
+		width: 50%;
+	}
+
+
+	/* END fx_trade-idea */
 }
 
 @media only screen and (max-width: 991px) {
@@ -497,6 +507,16 @@
     .article-box {
         display: block;
     }
+
+	/* BEGIN fx_trade-idea */
+
+
+	.ideas-post {
+		width: 100%;
+	}
+
+
+	/* END fx_trade-idea */
 }
 
 @media only screen and (max-width: 480px) {

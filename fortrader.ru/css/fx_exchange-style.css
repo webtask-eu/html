@@ -1701,7 +1701,15 @@
 
 .contest-table .data_1 {
 	padding-left: 15px;
-	width: 35%;
+	width: 43.5%;
+}
+
+.contest-table .data_3 {
+    width: 13%;
+}
+
+.contest-table .data_4 {
+    width: 11%;
 }
 
 .contest-table .img_preview {
@@ -2967,18 +2975,306 @@
 	height: auto;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* END Contest-table page */
+
+/* BEGIN file-download template */
+
+.button-back {
+	display: inline-block;
+	min-height: 46px;
+	line-height: 46px;
+	width: auto;
+	padding: 0 20px;
+	font-family: 'SSP_Regular', sans-serif;
+	font-size: 16px;
+	color: #444444;
+	text-align: center;
+	outline: none;
+	text-decoration: none;
+	vertical-align: middle;
+	border: none;
+	background-color: #f1f1f1;
+}
+
+.button-back svg {
+	display: inline-block;
+	margin-right: 5px;
+	fill: #444444;
+}
+
+.button-back:hover {
+	color: #146eb3;
+	background-color: #ebf2f7;
+}
+
+.button-back:hover svg {
+	fill: #146eb3;
+}
+
+.fdw__box {
+	padding: 45px 0;
+	text-align: center;
+}
+
+.fdw {
+	display: inline-block;
+	padding-top: 75px;
+	width: 200px;
+	height: 200px;
+	font-family: 'SSP_Regular', sans-serif;
+	line-height: 20px;
+	color: #fff;
+	overflow: hidden;
+	border-radius: 50%;
+	background: url('../images/fdw-img.png') center center no-repeat;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+.fdw-counter {
+	font-size: 42px;
+}
+
+.fdw-text {
+	max-width: 120px;
+	display: inline-block;
+	margin-top: 20px;
+	font-size: 15px;
+}
+
+.fdw-subtext {
+	margin-top: 30px;
+	text-align: center;
+	font-family: 'SSP_Regular', sans-serif;
+	font-size: 18px;
+	line-height: 18px;
+	color: #444;
+}
+
+/* BEGIN fx_trade-idea */
+
+
+.ideas-box {
+    margin: 25px -5px 0;
+}
+
+.ideas-post {
+    float: left;
+    width: 33.33%;
+    padding: 0 5px;
+    margin-bottom: 30px;
+}
+
+.ideas-post__cur {
+    margin-bottom: 20px;
+}
+
+.ideas-post__cur span {
+    font-family: RC_Bold, sans-serif;
+    font-size: 21px;
+    color: #444444;
+    text-transform: uppercase;
+    vertical-align: middle;
+}
+
+.ideas-post__cur img {
+    vertical-align: middle;
+}
+
+.ideas-post__img img {
+    width: 100%;
+}
+
+.ideas-post__middle {
+    display: table;
+    width: 100%;
+    padding: 8px 0;
+    border-bottom: 1px solid #dbdbdb;
+}
+
+.ideas-post__author {
+    width: 100%;
+    display: table-cell;
+    text-align: left;
+    vertical-align: middle;
+    font-family: SSP_Semibold, sans-serif;
+    font-size: 13px;
+}
+
+.ideas-post__author > span {
+    color: #8c8c8c;
+}
+
+.ideas-post__author > a {
+    color: #167ac6;
+}
+
+.ideas-post__date {
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 12px;
+    color: #fff;
+    background-color: #444444;
+    padding: 3px 6px;
+}
+
+.ideas-post__bottom {
+    padding-top: 10px;
+    font-family: 'Open-Sans', sans-serif;
+    font-size: 14px;
+    line-height: 22px;
+    max-height: 155px;
+    overflow: hidden;
+}
+
+.ideas-post__title {
+    font-weight: 700;
+    color: #454242;
+}
+
+.ideas-post__text {
+    font-weight: 400;
+    color: #666666;
+}
+
+.btn-more {
+    position: relative;
+    display: block;
+    width: 100%;
+    min-height: 58px;
+    font-family: SSP_Bold, sans-serif;
+    font-size: 16px;
+    line-height: 58px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #444444;
+    outline: none;
+    border: none;
+    background-color: #f1f1f1;
+}
+
+.btn-more svg {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    fill: #444444;
+    margin-top: -10px;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s;
+}
+
+.btn-more:hover {
+    color: #167ac6;
+    background-color: #ebf2f7;
+}
+
+.btn-more:hover svg {
+    fill: #167ac6;
+}
+
+
+/* END fx_trade-idea */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* END file-download template */
