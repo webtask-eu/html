@@ -84,6 +84,19 @@
 
 
 	/* END fx_trade-idea */
+
+	/* BEGIN fx_contest-form */
+
+	.form-box__row {
+		display: block;
+	}
+
+	.form-box__row-item {
+		width: 100%;
+		margin-right: 0;
+	}
+
+	/* END fx_contest-form */
 }
 
 @media only screen and (max-width: 991px) {
@@ -517,6 +530,51 @@
 
 
 	/* END fx_trade-idea */
+
+	/* BEGIN fx_contest-form */
+
+	.form-date__item {
+		display: block;
+	}
+
+	.form-date__item .hint-wrap {
+		margin-top: 15px;
+		margin-left: 0;
+	}
+
+	.checklist-label {
+		display: flex;
+		width: 100%;
+	}
+
+	.checklist-text {
+		white-space: normal;
+	}
+
+	.hinter .hint-wrap {
+		margin-left: 0;
+		margin-top: 15px;
+	}
+
+	.select_platform {
+		min-width: 100%;
+		max-width: 100%;
+	}
+
+	.form-date__select .jq-selectbox__select {
+		font-size: 16px;
+		padding: 0 25px 0 10px;
+	}
+
+	.form-date__select .jq-selectbox__dropdown ul {
+		font-size: 16px;
+	}
+
+	.form-date__select .jq-selectbox__trigger-arrow {
+		right: 8px;
+	}
+
+	/* END fx_contest-form */
 }
 
 @media only screen and (max-width: 480px) {
