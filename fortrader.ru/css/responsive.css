@@ -537,6 +537,16 @@
 		font-size: 11px;
 	}
 
+    /* BEGIN trade idea box */
+
+
+    .idea-post {
+        width: 50%;
+    }
+
+
+    /* END trade idea box */
+
 }
 
 @media only screen and (max-width: 1024px) {
@@ -2092,7 +2102,23 @@
 		font-size: 14px;
 	}
 
+	/* BEGIN trade idea block */
 
+	.state-btn {
+		width: 48%;
+		margin-right: 4%;
+		margin-bottom: 4%;
+	}
+
+	.state-btn:nth-child(even) {
+		margin-right: 0;
+	}
+
+	.add-btn {
+		width: 48%;
+	}
+
+	/* END trade idea block */
 }
 
 @media only screen and (max-width: 767px) {
@@ -2863,6 +2889,14 @@
 		/*float: none;*/
 	}
 
+    /* BEGIN trade idea box */
+
+    .idea-post {
+        width: 100%;
+    }
+
+    /* END trade idea box */
+
 }
 
 @media only screen and (max-width: 479px) {
@@ -3178,7 +3212,13 @@
 		float: none;
 	}
 
+	/* BEGIN trade idea block */
 
+	.state-btn {
+		font-size: 14px;
+	}
+
+	/* END trade idea block */
 
 }
  /*add currency_converter_page.html */
