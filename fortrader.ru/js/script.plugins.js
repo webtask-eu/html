@@ -424,21 +424,7 @@
 			End of the Mobile menu
 		-----------------------------------------------*/
 
-		/*----------------------------------------------
-			Scrolling style
-		-----------------------------------------------*/
-
 		$(".js_scrolling").jScrollPane();
-
-		/*----------------------------------------------
-			End scrolling style
-		-----------------------------------------------*/
-
-    $(".select-custom").styler();
-
-		/*----------------------------------------------
-			Tabs graphic
-		-----------------------------------------------*/
 
 			$(".fx-graph__content").not(":first").hide();
 		$(".fx-graph__tab").click(function() {
@@ -448,65 +434,15 @@
 
 		});
 
-		/*----------------------------------------------
-			End tabs graphic
-		-----------------------------------------------*/
-
-		/*----------------------------------------------
-			Btn show more
-		-----------------------------------------------*/
-
 		$(".pf_more").on("click", function() {
 			$(this).closest(".pf_read-more").hide();
 			$(".pf_text-overflow").css({"maxHeight": "100%"});
 		});
 
-		/*----------------------------------------------
-			End btn show more
-		-----------------------------------------------*/
-
-		/*----------------------------------------------
-			Radio button
-		-----------------------------------------------*/
-
 		$(".pf_radio").styler();
-
-		/*----------------------------------------------
-			End Radio button
-		-----------------------------------------------*/
 
 		$(".pf_reviews-add").click(function() {
 			$(".pf_reviews-wr").slideToggle();
 		});
-
-		/*----------------------------------------------
-			Toggle btns graph
-		-----------------------------------------------*/
-
-		$(".contrtoller__item").on("click", function(e) {
-			e.preventDefault();
-			$(".contrtoller__item").removeClass("contrtoller__item--active").eq($(this).index()).addClass("contrtoller__item--active");
-		}).eq(2).addClass("contrtoller__item--active");
-
-		/*----------------------------------------------
-			End Toggle btns graph
-		-----------------------------------------------*/
-
-		/*----------------------------------------------
-			Accordion
-		-----------------------------------------------*/
-
-		var accordion = new handorgel(document.querySelector('.fx_accordion'), {
-			multiSelectable: false
-		});
-
-		/*----------------------------------------------
-			End Accordion
-		-----------------------------------------------*/
-
-		if($(document).width() <= 767) {
-			$(".wide_scroll").removeClass("js_scrolling");
-		}
-
 
 })(jQuery);

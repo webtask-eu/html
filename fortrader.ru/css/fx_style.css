@@ -1,3 +1,8 @@
+/*@font-face {
+    font-family: 'SSP_Regular';
+    src: url(../fonts/SourceSansPro/SourceSansPro-Regular.ttf), url(../fonts/SourceSansPro/SourceSansPro-Regular.eot);
+}*/
+
 @font-face {
     font-family: SSP_Regular;
     font-style: normal;
@@ -140,7 +145,7 @@
 .fx-menu__link span {
     position: absolute;
     bottom: 10px;
-    left: 50%;
+    left: 50%;  
     width: 100%;
     transform: translate(-50%, 0);
 }
@@ -338,7 +343,7 @@
 
 .fx_content-title {
     position: relative;
-    padding-bottom: 16px;
+    padding-bottom: 30px;
     border-bottom: 1px solid #787878;
 }
 
@@ -359,8 +364,7 @@
     margin-left: 5px;
     font-family: RC_Regular;
     font-size: 16px;
-    /*line-height: 16px;*/
-    line-height: 28px;
+    line-height: 16px;
     vertical-align: bottom;
     color: #858585;
 }
@@ -452,7 +456,6 @@
 }
 
 .fx_half-left-item {
-    position: relative;
     display: block;
     margin-bottom: 20px;
 }
@@ -663,7 +666,7 @@
 .fx_slider-nav> a {
     width: 46px;
     height: 46px;
-    border: none;
+    border: none; 
     background-color: #f1f1f1;
     background-repeat: no-repeat;
     background-position: center center;
@@ -938,12 +941,12 @@
 }
 
 #reviewStars-input {
-
+  
   /*fix floating problems*/
   overflow: hidden;
   *zoom: 1;
   /*end of fix floating problems*/
-
+  
   position: relative;
   float: left;
 }
@@ -951,10 +954,10 @@
 #reviewStars-input input {
   filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
   opacity: 0;
-
+  
   width: 14px;
   height: 13px;
-
+  
   position: absolute;
   top: 0;
   z-index: 0;
@@ -973,7 +976,7 @@
   float: right;
   cursor: pointer;
   margin-right: 3px;
-
+  
   position: relative;
   z-index: 1;
 }
@@ -1251,24 +1254,6 @@
 
 .fx_linkedin:hover {
     background-color: #199ecf;
-}
-
-.fx_youtube {
-    background-color: #ff0000;
-    background-image: url(../images/social_youtube.png);
-}
-
-.fx_youtube:hover {
-    background-color: #ff4848;
-}
-
-.fx_telegram {
-    background-color: #27b9f8;
-    background-image: url(../images/social_telegram.png);
-}
-
-.fx_telegram:hover {
-    background-color: #54c5f6;
 }
 
 .fx_sidebar:before {
@@ -1558,7 +1543,7 @@
 
 .fx_sb-convert-select .jq-selectbox__dropdown ul {
     overflow-y: scroll;
-    max-height: 140px;
+    max-height: 14 0px;
 }
 
 .fx_sb-convert-select .jq-selectbox__dropdown ul li {
@@ -1707,7 +1692,7 @@
     background-color: #1a1a1a;
 }
 
-.fx_footer-copyright a {
+.fx_footer-copyright> a {
     color: #fff;
 }
 
@@ -1771,154 +1756,4 @@
 
 .fx_footer-social> div:nth-child(3) {
     margin-right: 2px;
-}
-
-.fx_footer-social-box {
-    width: 750px;
-    float: left;
-    padding: 30px 0;
-}
-
-.fx_footer-socials> div {
-    float: left;
-    width: 144px;
-    margin-right: 2px;
-}
-
-.fx_footer-socials> div:last-child {
-    margin-right: 0;
-}
-
-.fx_social-button {
-    position: relative;
-    display: inline-block;
-    width: 100%;
-    height: 50px;
-    padding-left: 50px;
-    line-height: 50px;
-    font-family: SSP_Bold;
-    font-size: 16px;
-    color: #ffffff;
-    text-transform: uppercase;
-}
-
-.fx_social-button:hover,
-.fx_social-button:focus {
-    color: #ffffff;
-    text-decoration: none;
-}
-
-.fx_social-icon {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 50px;
-    height: 50px;
-    background-color: transparent;
-    background-position: center center;
-    background-repeat: no-repeat;
-}
-
-.btn_gplus {
-    background-color: #e64c29;
-}
-
-.btn_gplus:hover {
-    background-color: #f36a4a;
-}
-
-.btn_gplus> .fx_social-icon {
-    background-image: url("../images/social_gplus.png");
-}
-
-.btn_facebook {
-    background-color: #415d9c;
-}
-
-.btn_facebook:hover {
-    background-color: #5173bf;
-}
-
-.btn_facebook> .fx_social-icon {
-    background-image: url("../images/social_facebook.png");
-}
-
-.btn_twitter {
-    background-color: #5ca7f2;
-}
-
-.btn_twitter:hover {
-    background-color: #72b3f3;
-}
-
-.btn_twitter> .fx_social-icon {
-    background-image: url("../images/social_twitter.png");
-}
-
-.btn_youtube {
-    background-color: #ff0000;
-}
-
-.btn_youtube:hover {
-    background-color: #ff4848;
-}
-
-.btn_youtube> .fx_social-icon {
-    background-image: url("../images/social_youtube.png");
-}
-
-.btn_telegram {
-    background-color: #27b9f8;
-}
-
-.btn_telegram:hover {
-    background-color: #54c5f6;
-}
-
-.btn_telegram> .fx_social-icon {
-    background-image: url("../images/social_telegram.png");
-}
-
-.fx_footer-subscribe-box {
-    width: 390px;
-    float: right;
-    padding: 30px 0;
-}
-
-.fx_footer-subscribe-box .fx_footer-subscribe {
-    margin-bottom: 0;
-}
-
-.fx_subscribe-ru> input[type="submit"] {
-    width: auto;
-    font-family: 'SSP_Regular';
-    font-size: 16px;
-    text-transform: none;
-    padding: 0 14px;
-    box-sizing: border-box;
-}
-
-.text_uppercase {
-    text-transform: uppercase;
-}
-
-.position_relative {
-    position: relative;
-}
-
-.fx_footer-metrics {
-    float: right;
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-}
-
-.fx_metrics-btn {
-    display: inline-block;
-    margin-right: 3px;
-}
-
-.fx_metrics-btn:last-child {
-    margin-right: 0;
 }
