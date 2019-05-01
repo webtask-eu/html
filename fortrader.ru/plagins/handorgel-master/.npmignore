@@ -1,6 +1,0 @@
-# ignore everything
-*
-
-# except the lib and src files
-!lib/**/*
-!src/**/*
